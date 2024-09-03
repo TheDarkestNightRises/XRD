@@ -1,5 +1,9 @@
 <H1> Blogpost 1 </H1>
 
+<img>![image](https://github.com/user-attachments/assets/3671f786-0359-4439-b959-5656fabe1b78)</img>
+
+In this first blog post for this course we will explore the world of XR, its potential to solve world problems and how it might evolve in the future by answering the following questions.
+
 <H2>What is AR/VR/AV/MR/XR and how do the terminologies compare?</H2>
 
 AR (Augmented Reality): Enhances the real world by adding digital elements to what we see. It uses devices like smartphones or smart glasses to overlay information or objects.<br>
