@@ -4,6 +4,7 @@ Shader "Unlit/PortalShader"
     {
         ZWrite Off
         ColorMask 0
+        Cull Off
 
         Stencil
         {
