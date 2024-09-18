@@ -331,6 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materials:
   - {fileID: 2100000, guid: 5c700b60ae1649c43ad9e97136bb5b90, type: 2}
+  - {fileID: 2100000, guid: 58d53420af384224ea4cfee8973d18cb, type: 2}
+  - {fileID: 2100000, guid: 6f5a79b17fdba0244a38ef61a6af1ee9, type: 2}
 --- !u!1 &8689605234238858451
 GameObject:
   m_ObjectHideFlags: 0
