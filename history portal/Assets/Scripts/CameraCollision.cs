@@ -1,51 +1,60 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class CameraCollision : MonoBehaviour
 {
     public Material[] materials;
+    public Transform camera;
+    private bool wasInFront;
+    private bool inVirtualWorld;
 
-    void Start()
+    private void Start()
     {
+        SetMaterials(false);
+    }
+
+    private void SetMaterials(bool render)
+    {
+        var stencilTest = render ? CompareFunction.NotEqual : CompareFunction.Equal;
+
         foreach (var mat in materials)
         {
-            mat.SetInt("_StencilTest", (int) CompareFunction.Equal);
+            mat.SetInt("_StencilTest", (int)stencilTest);
         }
     }
 
-    void OnTriggerStay(Collider other)
+    private bool IsInFront()
     {
-        if (other.name != "Main Camera")
+        return transform.InverseTransformPoint(camera.position).z >= 0;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform == camera)
+        {
+            wasInFront = IsInFront();
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.transform != camera)
         {
             return;
         }
 
-        if (transform.position.z > other.transform.position.z)
+        bool isInFront = IsInFront();
+        if (isInFront != wasInFront)
         {
-            foreach(var mat in materials)
-            {
-                mat.SetInt("_StencilTest", (int)CompareFunction.Equal);  
-            }
+            inVirtualWorld = !inVirtualWorld;
+            SetMaterials(inVirtualWorld);
         }
-        else
-        {
-            foreach (var mat in materials)
-            {
-                mat.SetInt("_StencilTest", (int)CompareFunction.NotEqual);
-            }
-        }
+        wasInFront = isInFront;
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
-        foreach (var mat in materials)
-        {
-            mat.SetInt("_StencilTest", (int) CompareFunction.NotEqual);
-        }
+        SetMaterials(true);
     }
-
 }
