@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.iOS;
 using UnityEngine.Rendering;
 
 public class CameraCollision : MonoBehaviour
@@ -8,6 +9,7 @@ public class CameraCollision : MonoBehaviour
     public Transform camera;
     private bool wasInFront;
     private bool inVirtualWorld;
+    private bool hasCollided;
 
     private void Start()
     {
@@ -26,24 +28,33 @@ public class CameraCollision : MonoBehaviour
 
     private bool IsInFront()
     {
-        return transform.InverseTransformPoint(camera.position).z >= 0;
+        var worldPos = camera.position + camera.forward * Camera.main.nearClipPlane;
+        return transform.InverseTransformPoint(worldPos).z >= 0;
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        if (other.transform == camera)
-        {
-            wasInFront = IsInFront();
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
     {
         if (other.transform != camera)
         {
             return;
         }
+    
+        wasInFront = IsInFront();
+        hasCollided = true;
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform != camera)
+        {
+            return;
+        }
+        hasCollided = false;
+    }
+
+    private void WhileColliding()
+    {
+        if (!hasCollided) return;
         bool isInFront = IsInFront();
         if (isInFront != wasInFront)
         {
@@ -51,6 +62,11 @@ public class CameraCollision : MonoBehaviour
             SetMaterials(inVirtualWorld);
         }
         wasInFront = isInFront;
+    }
+
+    private void Update()
+    {
+        WhileColliding();
     }
 
     private void OnDestroy()
