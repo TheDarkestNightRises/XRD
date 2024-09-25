@@ -5,13 +5,14 @@ using UnityEngine.Rendering;
 public class CameraCollision : MonoBehaviour
 {
     public Material[] materials;
-    public Transform camera;
     private bool wasInFront;
     private bool inVirtualWorld;
     private bool hasCollided;
+    private Transform mainCamera;
 
     private void Start()
     {
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         SetMaterials(false);
     }
 
@@ -27,27 +28,20 @@ public class CameraCollision : MonoBehaviour
 
     private bool IsInFront()
     {
-        var worldPos = camera.position + camera.forward * Camera.main.nearClipPlane;
+        var worldPos = mainCamera.position + mainCamera.forward * Camera.main.nearClipPlane;
         return transform.InverseTransformPoint(worldPos).z >= 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform != camera)
-        {
-            return;
-        }
-    
+        if (!other.CompareTag("MainCamera")) return;
         wasInFront = IsInFront();
         hasCollided = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform != camera)
-        {
-            return;
-        }
+        if (!other.CompareTag("MainCamera")) return;
         hasCollided = false;
     }
 
