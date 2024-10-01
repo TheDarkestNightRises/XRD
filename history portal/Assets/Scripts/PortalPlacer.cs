@@ -8,7 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PortalPlacer : MonoBehaviour
+public class PortalPlacer : PressInputBase
 {
     [SerializeField] public GameObject SpawnablePortal;
     [SerializeField] public ARRaycastManager raycastManager;
@@ -16,30 +16,16 @@ public class PortalPlacer : MonoBehaviour
 
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-    private void Update()
+    protected override void OnPress(Vector3 position)
     {
-        // Only proceed if there's at least one touch on the screen
-        if (Input.touchCount <= 0) return;
+        if (!raycastManager.Raycast(position, hits, TrackableType.PlaneWithinPolygon)) return;
 
-        // Get the first touch
-        var touch = Input.GetTouch(0);
-
-        // Proceed when the touch phase is "Began" (when the user first touches the screen)
-        if (touch.phase != TouchPhase.Began) return;
-
-        // Check if the raycast hits a plane within the polygon
-        if (!raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon)) return;
-
-        // Ensure no UI button was touched
         if (!isButtonPressed()) return;
 
-        // Get the position and rotation from the hit pose
         var hitpose = hits[0].pose;
 
-        // Place the portal at the hit location
         Instantiate(SpawnablePortal, hitpose.position, hitpose.rotation);
 
-        // Disable all planes and the plane manager after placing the portal
         foreach (var plane in planeManager.trackables)
         {
             plane.gameObject.SetActive(false);
