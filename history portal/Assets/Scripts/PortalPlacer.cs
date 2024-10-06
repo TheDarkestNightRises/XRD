@@ -26,12 +26,12 @@ public class PortalPlacer : PressInputBase
 
         Instantiate(SpawnablePortal, hitpose.position, hitpose.rotation);
 
-        foreach (var plane in planeManager.trackables)
-        {
-            plane.gameObject.SetActive(false);
-        }
+        // foreach (var plane in planeManager.trackables)
+        // {
+        //     plane.gameObject.SetActive(false);
+        // }
 
-        planeManager.enabled = false;
+        // planeManager.enabled = false;
     }
 
     public void SwitchLocation(GameObject location)
