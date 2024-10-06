@@ -482,6 +482,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2194621248898939716}
     m_Modifications:
+    - target: {fileID: 1993995992720824074, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 67.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993995992720824074, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993995992720824074, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.994
+      objectReference: {fileID: 0}
     - target: {fileID: 4936700980634465573, guid: 4dcb025dc3b746b43a8c9c12065d362b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -540,7 +555,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1992345925756993822, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4036303069185826868}
+    - targetCorrespondingSourceObject: {fileID: 1992345925756993822, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6824410396830984796}
   m_SourcePrefab: {fileID: 100100000, guid: 4dcb025dc3b746b43a8c9c12065d362b, type: 3}
 --- !u!4 &2070197452380641248 stripped
 Transform:
@@ -548,3 +571,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6356970510082581189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4872405444538819547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1992345925756993822, guid: 4dcb025dc3b746b43a8c9c12065d362b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6356970510082581189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4036303069185826868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872405444538819547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: THAT S A TREE MOTHERFUCKER
+--- !u!65 &6824410396830984796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872405444538819547}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.2341895, y: 3.8631508, z: 2.2639785}
+  m_Center: {x: -0.45355296, y: 1.928943, z: 0.08576415}
