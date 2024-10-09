@@ -34,7 +34,7 @@ public class Gaze : MonoBehaviour
             {
                 info.OpenInfo();
             }
-            else
+            else if (info != desiredInfo)
             {
                 info.CloseInfo();
             }
