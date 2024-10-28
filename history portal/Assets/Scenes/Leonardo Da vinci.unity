@@ -634,7 +634,7 @@ Transform:
   m_GameObject: {fileID: 230484910}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.393, y: 1.109, z: 0.3}
+  m_LocalPosition: {x: -0.408, y: 1.109, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1248,11 +1248,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci invented an odometer in the late 15th century to measure
+    the distance traveled by vehicles. His design used gears and a rotating wheel
+    mechanism, showcasing his ingenuity in combining engineering with practical applications
+    for transportation.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1279,7 +1278,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2718,11 +2717,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci designed mechanical wings in 1485, inspired by birds
+    and bats, aiming to achieve human flight. His sketches demonstrated an understanding
+    of aerodynamics, with articulated wings intended to be powered by human movement.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2749,7 +2746,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2864,7 +2861,7 @@ Transform:
   m_GameObject: {fileID: 1227875164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.029, y: 1.382, z: -0.472}
+  m_LocalPosition: {x: -0.041, y: 1.38, z: -0.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3079,11 +3076,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci developed advanced designs for the catapult around 1485,
+    enhancing its efficiency and range. His concepts included innovative mechanisms
+    for launching projectiles, reflecting his deep understanding of physics and military
+    engineering.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3110,7 +3106,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4568,11 +4564,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci's drum was a mechanical percussion instrument designed
+    to produce sound through vibrating membranes, featuring adjustable tension for
+    varied tonal quality. This invention showcased his ability to blend art and science,
+    enhancing musical expression in his era.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4599,7 +4594,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5337,11 +5332,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci designed an early bicycle prototype in the late 15th
+    century, featuring two wheels and a frame that resembled modern bicycles. His
+    invention emphasized the principles of balance and human-powered motion, highlighting
+    his innovative approach to mechanics and transportation.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5368,7 +5362,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6079,11 +6073,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic energy
-    by spinning at high speeds, using its mass and rotational inertia to maintain
-    consistent energy output. This innovative device releases stored energy when
-    needed, helping machines run smoothly and efficiently by balancing fluctuations
-    in power demand.
+  m_text: Leonardo da Vinci, born in **1452**, was a Renaissance genius renowned
+    for designing innovative machines and engineering solutions. He also achieved
+    great mastery in art, combining creativity with scientific thinking, and left
+    a lasting influence on both technology and artistic expression.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6110,7 +6103,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.35
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
