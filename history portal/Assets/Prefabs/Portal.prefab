@@ -332,7 +332,9 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 5c700b60ae1649c43ad9e97136bb5b90, type: 2}
   - {fileID: 2100000, guid: 58d53420af384224ea4cfee8973d18cb, type: 2}
+  - {fileID: 2100000, guid: d3c0c481c54b2d84bb7a006958f20d81, type: 2}
   - {fileID: 2100000, guid: 6f5a79b17fdba0244a38ef61a6af1ee9, type: 2}
+  - {fileID: 2100000, guid: 18ec75af7046f5b4195a82cd4ed971c3, type: 2}
 --- !u!1 &8689605234238858451
 GameObject:
   m_ObjectHideFlags: 0
