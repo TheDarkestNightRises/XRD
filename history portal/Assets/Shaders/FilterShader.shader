@@ -1,4 +1,4 @@
-Shader "Unlit/FilterShader"
+Shader "Custom/FilterShader"
 {
     Properties 
     {
