@@ -16,7 +16,7 @@ public class FaceCamera : MonoBehaviour
         transform.LookAt(cam);
         targetAngel = transform.localEulerAngles;
         targetAngel.x = 0;
-        targetAngel.y = 0;
+        targetAngel.z = 0;
         transform.localEulerAngles = targetAngel;
     }
 }
