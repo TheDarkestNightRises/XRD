@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa0bf18fb307374188cf9698eaed715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnablePortal: {fileID: 8689605234238858451, guid: 4bf38865827fa78408f4a04958c91220,
+  SpawnablePortal: {fileID: 8689605234238858451, guid: 19c500f7a8d96464593d7af34272b92a,
     type: 3}
   raycastManager: {fileID: 263435341}
   planeManager: {fileID: 263435342}
@@ -1439,7 +1439,7 @@ MonoBehaviour:
         m_MethodName: SwitchLocation
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8689605234238858451, guid: 4bf38865827fa78408f4a04958c91220,
+          m_ObjectArgument: {fileID: 8689605234238858451, guid: 19c500f7a8d96464593d7af34272b92a,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
