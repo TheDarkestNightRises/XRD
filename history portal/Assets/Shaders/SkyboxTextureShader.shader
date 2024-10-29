@@ -8,7 +8,7 @@
 Shader "Custom/SkyboxTextureShader" {
 Properties {
     _MainTex ("Base (RGB)", 2D) = "white" {}
-    [Enum(Equal,3,NotEqual,6)] _StencilTest ("Stencil Test", int) = 6
+    [Enum(Equal,3,NotEqual,6)] _StencilTest ("Stencil Test", int) = 3
 }
 
 SubShader {
