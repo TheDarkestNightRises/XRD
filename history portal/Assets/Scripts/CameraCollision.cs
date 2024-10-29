@@ -61,9 +61,4 @@ public class CameraCollision : MonoBehaviour
     {
         WhileColliding();
     }
-
-    private void OnDestroy()
-    {
-        SetMaterials(true);
-    }
 }
