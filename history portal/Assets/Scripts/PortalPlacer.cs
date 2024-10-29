@@ -15,6 +15,7 @@ public class PortalPlacer : PressInputBase
     [SerializeField] public ARPlaneManager planeManager;
 
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    private GameObject currentPortal; 
 
     protected override void OnPress(Vector3 position)
     {
@@ -22,27 +23,23 @@ public class PortalPlacer : PressInputBase
 
         if (!isButtonPressed()) return;
 
-        var hitpose = hits[0].pose;
+        var hitPose = hits[0].pose;
 
-        Instantiate(SpawnablePortal, hitpose.position, hitpose.rotation);
+        if (currentPortal != null)
+        {
+            Destroy(currentPortal);
+        }
 
-        // foreach (var plane in planeManager.trackables)
-        // {
-        //     plane.gameObject.SetActive(false);
-        // }
-
-        // planeManager.enabled = false;
+        currentPortal = Instantiate(SpawnablePortal, hitPose.position, hitPose.rotation);
     }
 
     public void SwitchLocation(GameObject location)
     {
-        // Switch the portal prefab
         SpawnablePortal = location;
     }
 
     public bool isButtonPressed()
     {
-        // Return true if no UI button is pressed
         return EventSystem.current.currentSelectedGameObject?.GetComponent<Button>() == null;
     }
 }
