@@ -593,9 +593,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 397685907519294022, guid: 98eec24d212d28c498314f2ebedeb001,
-    type: 3}
-  m_DetectionMode: -1
+  m_PlanePrefab: {fileID: 0}
+  m_DetectionMode: 1
 --- !u!114 &263435343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,6 +658,8 @@ MonoBehaviour:
     type: 3}
   raycastManager: {fileID: 263435341}
   planeManager: {fileID: 263435342}
+  markerPrefab: {fileID: 3454171349075798337, guid: 22de8779ce78bd94a92508daab3873be,
+    type: 3}
 --- !u!114 &263435347
 MonoBehaviour:
   m_ObjectHideFlags: 0
