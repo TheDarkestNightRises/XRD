@@ -6112,6 +6112,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1244260853}
+    - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1244260852}
   m_SourcePrefab: {fileID: 100100000, guid: a067c70fa964895469af3591bc9f4eb1, type: 3}
 --- !u!1 &1244260851 stripped
@@ -6120,7 +6124,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1244260850}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1244260852
+--- !u!114 &1244260852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244260851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Pachycephalosaurus meaning "thick-headed lizard" is a genus of pachycephalosaurid
+    ornithischian dinosaur. Pachycephalosaurus was among the last species of non-avian
+    dinosaurs on Earth. Like other pachycephalosaurids, Pachycephalosaurus was a
+    bipedal herbivore, possessing long, strong legs and somewhat small arms with
+    five-fingered hands.
+--- !u!65 &1244260853
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
