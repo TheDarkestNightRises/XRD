@@ -970,8 +970,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356757855}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 157.71973, y: 95.52331, z: -302.8513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1047,7 +1047,7 @@ Transform:
   - {fileID: 1509181405}
   - {fileID: 897918115}
   - {fileID: 1141792853}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1773960937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &362611984
 PrefabInstance:
@@ -4509,6 +4509,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1723764035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1773960936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1773960937}
+  m_Layer: 0
+  m_Name: DinosaursEnvironment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1773960937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773960936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -157.71973, y: -95.52331, z: 302.8513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 356757856}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782648771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6015,4 +6047,4 @@ SceneRoots:
   - {fileID: 1018072041}
   - {fileID: 1040281124}
   - {fileID: 437454817}
-  - {fileID: 356757856}
+  - {fileID: 1773960937}
