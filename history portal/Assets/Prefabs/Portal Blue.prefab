@@ -4850,8 +4850,6 @@ GameObject:
   - component: {fileID: 2642203841556381934}
   - component: {fileID: 6261256068784791485}
   - component: {fileID: 6955671617923763701}
-  - component: {fileID: 3248248091274361477}
-  - component: {fileID: 790221700703386045}
   m_Layer: 0
   m_Name: Portal Window
   m_TagString: Untagged
@@ -4869,7 +4867,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.63, z: 0.1}
+  m_LocalScale: {x: 1.2, y: 1.63, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2194621248898939716}
@@ -4924,46 +4922,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3248248091274361477
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655951014993158691}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &790221700703386045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655951014993158691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82ab5f96942009342a75bb990342ff42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 5c700b60ae1649c43ad9e97136bb5b90, type: 2}
-  - {fileID: 2100000, guid: 58d53420af384224ea4cfee8973d18cb, type: 2}
-  - {fileID: 2100000, guid: d3c0c481c54b2d84bb7a006958f20d81, type: 2}
-  - {fileID: 2100000, guid: 6f5a79b17fdba0244a38ef61a6af1ee9, type: 2}
-  - {fileID: 2100000, guid: 18ec75af7046f5b4195a82cd4ed971c3, type: 2}
 --- !u!1 &1770121801123216163
 GameObject:
   m_ObjectHideFlags: 0
@@ -19591,6 +19549,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2194621248898939716}
+  - component: {fileID: 7696590465721882112}
+  - component: {fileID: 616934110470628329}
   m_Layer: 0
   m_Name: Portal Blue
   m_TagString: Untagged
@@ -19616,6 +19576,45 @@ Transform:
   - {fileID: 7676893136599176906}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7696590465721882112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689605234238858451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ab5f96942009342a75bb990342ff42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 5c700b60ae1649c43ad9e97136bb5b90, type: 2}
+  - {fileID: 2100000, guid: 58d53420af384224ea4cfee8973d18cb, type: 2}
+  - {fileID: 2100000, guid: d3c0c481c54b2d84bb7a006958f20d81, type: 2}
+  - {fileID: 2100000, guid: 6f5a79b17fdba0244a38ef61a6af1ee9, type: 2}
+  - {fileID: 2100000, guid: 18ec75af7046f5b4195a82cd4ed971c3, type: 2}
+--- !u!65 &616934110470628329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689605234238858451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.578929, z: 0.090097345}
+  m_Center: {x: 0, y: 0.96424437, z: 0.022874635}
 --- !u!1001 &6356970510082581189
 PrefabInstance:
   m_ObjectHideFlags: 0
