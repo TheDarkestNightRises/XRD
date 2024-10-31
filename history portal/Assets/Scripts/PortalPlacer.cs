@@ -7,27 +7,28 @@ using UnityEngine.UI;
 
 public class PortalPlacer : PressInputBase
 {
-    [SerializeField] public GameObject SpawnablePortal;
     [SerializeField] public ARRaycastManager raycastManager;
     [SerializeField] public ARPlaneManager planeManager;
     [SerializeField] public GameObject markerPrefab;
+    private GameObject SpawnablePortal;
 
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     private GameObject currentPortal;
     private GameObject markerInstance;
     private Pose lastHitPose;
 
+    private bool isTouchingUI; 
+
     void Start()
     {
-        if (markerPrefab != null)
-        {
-            markerInstance = Instantiate(markerPrefab);
-            markerInstance.SetActive(false);
-        }
+        markerInstance = Instantiate(markerPrefab);
+        markerInstance.SetActive(false);
     }
 
     void Update()
     {
+        isTouchingUI = EventSystem.current.IsPointerOverGameObject();
+
         UpdateMarkerPosition();
     }
 
@@ -56,6 +57,7 @@ public class PortalPlacer : PressInputBase
 
     protected override void OnPress(Vector3 position)
     {
+        if (isTouchingUI) return;
         if (markerInstance == null || !markerInstance.activeSelf) return;
 
         if (currentPortal != null)
@@ -69,10 +71,5 @@ public class PortalPlacer : PressInputBase
     public void SwitchLocation(GameObject location)
     {
         SpawnablePortal = location;
-    }
-
-    public bool isButtonPressed()
-    {
-        return EventSystem.current.currentSelectedGameObject?.GetComponent<Button>() == null;
     }
 }
