@@ -28,13 +28,15 @@ public class CameraCollision : MonoBehaviour
 
     private bool IsInFront()
     {
-        var worldPos = mainCamera.position + mainCamera.forward * Camera.main.nearClipPlane;
+        float offsetDistance = Camera.main.nearClipPlane;
+        var worldPos = mainCamera.position + mainCamera.forward * offsetDistance;
         return transform.InverseTransformPoint(worldPos).z >= 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("MainCamera")) return;
+        mainCamera.position += mainCamera.forward * 0.02f;
         wasInFront = IsInFront();
         hasCollided = true;
     }
@@ -53,8 +55,8 @@ public class CameraCollision : MonoBehaviour
         {
             inVirtualWorld = !inVirtualWorld;
             SetMaterials(inVirtualWorld);
+            wasInFront = isInFront;
         }
-        wasInFront = isInFront;
     }
 
     private void Update()
