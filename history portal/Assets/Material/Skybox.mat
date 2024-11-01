@@ -124,7 +124,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StencilTest: 6
+    - _StencilTest: 3
     - _SunDisk: 2
     - _SunSize: 0.112
     - _SunSizeConvergence: 3.14
