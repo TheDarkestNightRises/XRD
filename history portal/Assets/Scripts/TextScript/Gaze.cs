@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Gaze : MonoBehaviour
 {
+    private InfoBehaviour currentInfo; 
+
     void Update()
     {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
@@ -11,20 +13,32 @@ public class Gaze : MonoBehaviour
             GameObject go = hit.collider.gameObject;
             if (go.CompareTag("hasInfo"))
             {
-                OpenInfo(go.GetComponent<InfoBehaviour>());
+                InfoBehaviour infoBehaviour = go.GetComponent<InfoBehaviour>();
+
+                if (currentInfo != infoBehaviour)
+                {
+                    CloseCurrentInfo(); 
+                    currentInfo = infoBehaviour; 
+                    currentInfo.OpenInfo(); 
+                }
             }
-        } else
+            else
+            {
+                CloseCurrentInfo(); 
+            }
+        }
+        else
         {
-            CloseAll();
+            CloseCurrentInfo(); 
         }
     }
-    void OpenInfo(InfoBehaviour desiredInfo)
-    {
-        desiredInfo.OpenInfo();
-    }
 
-    void CloseAll()
+    private void CloseCurrentInfo()
     {
-        
+        if (currentInfo != null)
+        {
+            currentInfo.CloseInfo();
+            currentInfo = null; 
+        }
     }
 }
