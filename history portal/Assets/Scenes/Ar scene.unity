@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 154751281}
   - component: {fileID: 154751283}
   - component: {fileID: 154751282}
+  - component: {fileID: 154751284}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -546,6 +547,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &154751284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154751274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5074bc6ee809a4884e26f324a98b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &263435340
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,8 +667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa0bf18fb307374188cf9698eaed715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnablePortal: {fileID: 8689605234238858451, guid: 19c500f7a8d96464593d7af34272b92a,
-    type: 3}
   raycastManager: {fileID: 263435341}
   planeManager: {fileID: 263435342}
   markerPrefab: {fileID: 3454171349075798337, guid: 22de8779ce78bd94a92508daab3873be,
