@@ -139,6 +139,19 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 18ec75af7046f5b4195a82cd4ed971c3, type: 2}
   - {fileID: 2100000, guid: 659c24e3845ed1649a0f2a59db8c61ad, type: 2}
   - {fileID: 2100000, guid: 8cd95f59b90f9fe439c2f54bdeabf514, type: 2}
+  - {fileID: 2100000, guid: 4d87abd7a0fba1b4d8a211e209a539e0, type: 2}
+  - {fileID: 2100000, guid: 219e7891995d9a54cb286332b46b9c61, type: 2}
+  - {fileID: 2100000, guid: bb72aea13d0c6b24f910e7aa972d6ac8, type: 2}
+  - {fileID: 2100000, guid: d1cb5f5244d1878459bf626ffcb0be94, type: 2}
+  - {fileID: 2100000, guid: f8f062c39389a1d44b6345fd300613fd, type: 2}
+  - {fileID: 2100000, guid: 7863105ab84990241bcf8886a7220ba2, type: 2}
+  - {fileID: 2100000, guid: a538e49054a6d37448a2718b2aa026a0, type: 2}
+  - {fileID: 2100000, guid: 936c942963ca34844be1ad8caebcb56d, type: 2}
+  - {fileID: 2100000, guid: 587f57cd7b6b55346a1644d93768e50b, type: 2}
+  - {fileID: 2100000, guid: ebfdbac1b34ecae4fbbcc3eead77c965, type: 2}
+  - {fileID: 2100000, guid: 99950e791e0ab894a8abdc42828538a4, type: 2}
+  - {fileID: 2100000, guid: 57f4fd6d35e904847a964e61d0186ccf, type: 2}
+  - {fileID: 2100000, guid: 6da58adf81c223141a68bd23da64fab2, type: 2}
 --- !u!65 &616934110470628329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -224,7 +237,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3715667651387759749, guid: bf7fce6b374d85e4ca60f6618a2d3472, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf7fce6b374d85e4ca60f6618a2d3472, type: 3}

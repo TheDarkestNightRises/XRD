@@ -383,7 +383,13 @@ Transform:
   m_Children:
   - {fileID: 417688876928626326}
   - {fileID: 9156180281036337285}
+  - {fileID: 5645764224919964930}
+  - {fileID: 8665019356520034162}
   - {fileID: 945587361538592607}
+  - {fileID: 2228646639839530430}
+  - {fileID: 6163939420079660991}
+  - {fileID: 984014849471303964}
+  - {fileID: 6969890218588590375}
   m_Father: {fileID: 8520899664043315273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7673318652637770138
@@ -1859,6 +1865,157 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1593728396153506606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1830439688624515669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 117.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -309
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Name
+      value: Pachycephalasaurus_24K (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397061038289669435, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d87abd7a0fba1b4d8a211e209a539e0, type: 2}
+    - target: {fileID: 5397061038289669435, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d87abd7a0fba1b4d8a211e209a539e0, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7876319666796043666}
+    - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 922986341262797308}
+  m_SourcePrefab: {fileID: 100100000, guid: a067c70fa964895469af3591bc9f4eb1, type: 3}
+--- !u!4 &2228646639839530430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1830439688624515669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8107898825626134337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1830439688624515669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7876319666796043666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107898825626134337}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4313473, y: 2.659735, z: 4.214913}
+  m_Center: {x: 0.009339195, y: 0.7225475, z: -0.40575877}
+--- !u!114 &922986341262797308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107898825626134337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Pachycephalosaurus meaning "thick-headed lizard" is a genus of pachycephalosaurid
+    ornithischian dinosaur. Pachycephalosaurus was among the last species of non-avian
+    dinosaurs on Earth. Like other pachycephalosaurids, Pachycephalosaurus was a
+    bipedal herbivore, possessing long, strong legs and somewhat small arms with
+    five-fingered hands.
 --- !u!1001 &1871259800387215639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2958,6 +3115,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4607489187838822, guid: 00e2e59cbc04eab4a982218df54ce70b,
     type: 3}
   m_PrefabInstance: {fileID: 2672241922234529363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2720370950132005437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -6938986035272928436, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb72aea13d0c6b24f910e7aa972d6ac8, type: 2}
+    - target: {fileID: -6938986035272928436, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb72aea13d0c6b24f910e7aa972d6ac8, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 194
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 118.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -289
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.86602545
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Name
+      value: Raptor_Animated_FBX (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 923da24417bde954e8eb93a36c143958, type: 3}
+--- !u!4 &6969890218588590375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+    type: 3}
+  m_PrefabInstance: {fileID: 2720370950132005437}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2783658192415954574
 PrefabInstance:
@@ -5001,12 +5257,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6da58adf81c223141a68bd23da64fab2, type: 2}
+      objectReference: {fileID: 2100000, guid: 24426a67436e27c4dbabce5380d1300b, type: 2}
     - target: {fileID: -6938986035272928436, guid: 923da24417bde954e8eb93a36c143958,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 6da58adf81c223141a68bd23da64fab2, type: 2}
+      objectReference: {fileID: 2100000, guid: 24426a67436e27c4dbabce5380d1300b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5605,6 +5861,105 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5239442461782453900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5250450065715886598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -6938986035272928436, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a538e49054a6d37448a2718b2aa026a0, type: 2}
+    - target: {fileID: -6938986035272928436, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a538e49054a6d37448a2718b2aa026a0, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 177
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 117.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -301
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 923da24417bde954e8eb93a36c143958,
+        type: 3}
+      propertyPath: m_Name
+      value: Raptor_Animated_FBX(1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 923da24417bde954e8eb93a36c143958, type: 3}
+--- !u!4 &984014849471303964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 923da24417bde954e8eb93a36c143958,
+    type: 3}
+  m_PrefabInstance: {fileID: 5250450065715886598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5309066966820808830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5676,6 +6031,178 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5309066966820808830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5319720770690869993
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 117.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -303
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5733670820373371063, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 219e7891995d9a54cb286332b46b9c61, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Stegasaurus_20K (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889176775813613426}
+    - targetCorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005607481454972332}
+  m_SourcePrefab: {fileID: 100100000, guid: 0f65eb0400553da4eafb6c938021d0b8, type: 3}
+--- !u!4 &5645764224919964930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5319720770690869993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8830084946608569386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5319720770690869993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1889176775813613426
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830084946608569386}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.21531664, y: 2.1410787}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1330607, y: 4.675629}
+  m_EdgeRadius: 0
+--- !u!114 &1005607481454972332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830084946608569386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Stegosaurus is a herbivorous, four-legged, armored dinosaur from the
+    Late Jurassic. It is characterized by the distinctive kite-shaped upright plates
+    along its backs and spikes on its tails, which date to between 155 and 145 million
+    years ago. They were large, heavily built, herbivorous quadrupeds with rounded
+    backs, short fore limbs, long hind limbs, and tails held high in the air. Due
+    to their distinctive combination of broad, upright plates and tails tipped with
+    spikes, Stegosaurus is one of the most recognizable dinosaurs.
 --- !u!1001 &5332390038566461232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6168,6 +6695,157 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835789832631930, guid: bdf8e7438a7816543998181bd3067573,
     type: 3}
   m_PrefabInstance: {fileID: 5808990926361633050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5908739495311538260
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 117.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.34202018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Name
+      value: Pachycephalasaurus_24K (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397061038289669435, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebfdbac1b34ecae4fbbcc3eead77c965, type: 2}
+    - target: {fileID: 5397061038289669435, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebfdbac1b34ecae4fbbcc3eead77c965, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8370157381942077264}
+    - targetCorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5523388983445265189}
+  m_SourcePrefab: {fileID: 100100000, guid: a067c70fa964895469af3591bc9f4eb1, type: 3}
+--- !u!1 &4315015204743181632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1593697897982128876, guid: a067c70fa964895469af3591bc9f4eb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5908739495311538260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8370157381942077264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315015204743181632}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4313473, y: 2.659735, z: 4.214913}
+  m_Center: {x: 0.009339195, y: 0.7225475, z: -0.40575877}
+--- !u!114 &5523388983445265189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315015204743181632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Pachycephalosaurus meaning "thick-headed lizard" is a genus of pachycephalosaurid
+    ornithischian dinosaur. Pachycephalosaurus was among the last species of non-avian
+    dinosaurs on Earth. Like other pachycephalosaurids, Pachycephalosaurus was a
+    bipedal herbivore, possessing long, strong legs and somewhat small arms with
+    five-fingered hands.
+--- !u!4 &6163939420079660991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a067c70fa964895469af3591bc9f4eb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5908739495311538260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5920556882855459838
 PrefabInstance:
@@ -9969,4 +10647,152 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4802134562677756, guid: 68cbfa1438162b243ac02fb9e3e30581,
     type: 3}
   m_PrefabInstance: {fileID: 9135223765962430347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9208432214105114777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2827288021594183451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 117.52331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -268
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5733670820373371063, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7fe8c1d6aa9c11841b85e950d1d83870, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Stegasaurus_20K (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6516243138887785040}
+    - targetCorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1676359337789344395}
+  m_SourcePrefab: {fileID: 100100000, guid: 0f65eb0400553da4eafb6c938021d0b8, type: 3}
+--- !u!1 &5517858343841209946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3700184980843615939, guid: 0f65eb0400553da4eafb6c938021d0b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 9208432214105114777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6516243138887785040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517858343841209946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05a49412bbe97940bbad40fd60f386c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Stegosaurus is a herbivorous, four-legged, armored dinosaur from the
+    Late Jurassic. It is characterized by the distinctive kite-shaped upright plates
+    along its backs and spikes on its tails, which date to between 155 and 145 million
+    years ago. They were large, heavily built, herbivorous quadrupeds with rounded
+    backs, short fore limbs, long hind limbs, and tails held high in the air. Due
+    to their distinctive combination of broad, upright plates and tails tipped with
+    spikes, Stegosaurus is one of the most recognizable dinosaurs.
+--- !u!65 &1676359337789344395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517858343841209946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1330612, y: 4.6756287, z: 8.139588}
+  m_Center: {x: -0.21531954, y: 2.1410785, z: -1.622668}
+--- !u!4 &8665019356520034162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f65eb0400553da4eafb6c938021d0b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 9208432214105114777}
   m_PrefabAsset: {fileID: 0}
