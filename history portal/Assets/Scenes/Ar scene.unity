@@ -434,7 +434,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 20
   field of view: 60
   orthographic: 0
@@ -654,8 +654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa0bf18fb307374188cf9698eaed715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnablePortal: {fileID: 8689605234238858451, guid: 19c500f7a8d96464593d7af34272b92a,
-    type: 3}
   raycastManager: {fileID: 263435341}
   planeManager: {fileID: 263435342}
   markerPrefab: {fileID: 3454171349075798337, guid: 22de8779ce78bd94a92508daab3873be,
@@ -1115,7 +1113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: acca90f5302a08f4da86805e4c45ea8a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1241,7 +1239,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
@@ -1602,7 +1600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b6c313b32d09fd945a51f734329dc653, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
