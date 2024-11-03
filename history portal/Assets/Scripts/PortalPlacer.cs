@@ -38,20 +38,13 @@ public class PortalPlacer : PressInputBase
         if (raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
         {
             lastHitPose = hits[0].pose;
-
-            if (markerInstance != null)
-            {
-                markerInstance.SetActive(true);
-                markerInstance.transform.position = lastHitPose.position;
-                markerInstance.transform.rotation = Quaternion.Euler(-90, lastHitPose.rotation.eulerAngles.y, lastHitPose.rotation.eulerAngles.z);
-            }
+            markerInstance.SetActive(true);
+            markerInstance.transform.position = lastHitPose.position;
+            markerInstance.transform.rotation = Quaternion.Euler(0, lastHitPose.rotation.eulerAngles.y, lastHitPose.rotation.eulerAngles.z);
         }
         else
         {
-            if (markerInstance != null)
-            {
-                markerInstance.SetActive(false);
-            }
+            markerInstance.SetActive(false);
         }
     }
 

@@ -684,7 +684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycastManager: {fileID: 263435341}
   planeManager: {fileID: 263435342}
-  markerPrefab: {fileID: 3454171349075798337, guid: 22de8779ce78bd94a92508daab3873be,
+  markerPrefab: {fileID: 747600564794469064, guid: 753357b0b1292cd42acf5c740e69b344,
     type: 3}
 --- !u!114 &263435347
 MonoBehaviour:
