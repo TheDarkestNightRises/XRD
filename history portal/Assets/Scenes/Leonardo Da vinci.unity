@@ -187,8 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa0bf18fb307374188cf9698eaed715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnablePortal: {fileID: 8689605234238858451, guid: 4bf38865827fa78408f4a04958c91220,
-    type: 3}
   raycastManager: {fileID: 437454813}
   planeManager: {fileID: 437454814}
   markerPrefab: {fileID: 0}
@@ -1083,6 +1081,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 433199019283892619, guid: 5443d53de126dac4b9cc408f524e689b,
+        type: 3}
+      propertyPath: m_text
+      value: Leonardo da Vinci, born in 1452, was a Renaissance genius renowned for
+        designing innovative machines and engineering solutions. He also achieved
+        great mastery in art, combining creativity with scientific thinking, and
+        left a lasting influence on both technology and artistic expression.
+      objectReference: {fileID: 0}
+    - target: {fileID: 914697914803057902, guid: 5443d53de126dac4b9cc408f524e689b,
+        type: 3}
+      propertyPath: m_text
+      value: The volano (flywheel), studied by Leonardo da Vinci, stores kinetic
+        energy by spinning at high velocity, using its mass and rotational inertia
+        to maintain consistent energy output. This innovative device releases stored
+        energy when needed, helping machines run smoothly and efficiently by balancing
+        fluctuations in power demand.
+      objectReference: {fileID: 0}
     - target: {fileID: 2922014241331875120, guid: 5443d53de126dac4b9cc408f524e689b,
         type: 3}
       propertyPath: m_LocalPosition.x
