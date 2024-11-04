@@ -34,6 +34,8 @@ The `SwitchLocation` method adds flexibility, allowing users to switch between d
 
 The `UpdateMarkerPosition` function continuously keeps the marker in sync with surfaces as they are detected. This ensures users always know exactly where they can place their portal, enhancing their overall experience and making it feel more connected to the environment.
 
+![image](https://github.com/user-attachments/assets/09dfe894-0b10-4492-8cc8-f170509ffb59)
+
 
 <H2> Portal collision <H2>
 
