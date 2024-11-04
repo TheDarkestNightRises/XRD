@@ -43,6 +43,32 @@ The Mesozoic era is known as the "Age of Reptiles" marking the existence of diff
 
 ### Vikings era (Emanuel) ###
 
-### Leonardo da Vinci's pieces of art (Oriana) ###
+### Leonardo da Vinci's enginnering (Oriana) ###
+### Crafting a Portal Space that Reflects Leonardo’s Vision
+
+![image](https://github.com/user-attachments/assets/ebe704c6-1ec8-49e0-aff2-8f7ab367b4d2)
+
+The portal is designed to evoke the feeling of stepping into Leonardo da Vinci's world. Using a clean, minimalist room layout, I assembled an environment inspired by the essence of his workshop. While I didn’t create the 3D models of his inventions, I added custom pedestals that highlight each piece. This arrangement invites visitors to fully engage with Leonardo’s mechanical concepts, from early prototypes of helicopters to innovative bicycle designs, all within a cohesive and focused space. Leonardo da Vinci was not just a famous artist; he was also a brilliant engineer. His collection of engineering designs showcases his fascination with flight and mechanics, making them perfect for educational purposes in a portal. A bust of Leonardo da Vinci is placed in the middle of the display to introduce the subject. The text pops up whenever you look at any object in the room, providing a good user experience and quick insights about the items.
+
+### Wings
+Leonardo's wing designs reflect his dream of human flight. He studied birds and imagined wings that could flap like theirs, showing his understanding of how to soar through the skies.
+
+### Flying Airplane
+One of his most daring ideas was a flying machine, similar to an airplane. This concept combined glider and helicopter elements, illustrating his creative vision of what flying could be long before it became reality.
+
+### Odometer
+The odometer is a clever invention that measured how far a vehicle traveled. It demonstrates Leonardo's practical side and his interest in helping people navigate better.
+
+### Bicycle
+Leonardo also sketched a bicycle, showing his forward-thinking approach to personal transportation. His design had two wheels and a frame that resembles modern bicycles, highlighting his innovative spirit.
+
+![image](https://github.com/user-attachments/assets/aa507be3-119c-42af-8ec3-c0cca58b05bb)
+
+
+### Catapult
+His designs for catapults reveal his understanding of physics and mechanics. Leonardo created different types, each with unique ways to launch projectiles, showcasing his talent for improving existing technology.
+
+### Drum
+Lastly, his sketches of drums show his appreciation for music. By exploring how instruments work, he combined art and engineering in a way that was truly inspiring.
 
 ## Clipping Issue ##    
