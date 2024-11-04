@@ -22,6 +22,19 @@ The structure of it has the following elements:
 
 <H2> Portal placement <H2>
 
+   
+![image](https://github.com/user-attachments/assets/28536cb6-caf8-44cf-96a1-633c6b8ab005)
+
+
+The **PortalPlacer** script is designed to ensure that placing a portal in AR feels smooth and intuitive. It starts by using Unity’s `ARRaycastManager` and `ARPlaneManager` to scan the environment for flat surfaces. When a suitable spot is found, a marker pops up in the center of the screen. This visual guide adjusts its position and rotation to fit the surface perfectly, helping users easily see where their portal will be placed.
+
+When the user taps the screen, the `OnPress` method kicks in. It first checks whether the tap is on a UI element or if the marker is properly positioned on a detected surface. If both conditions are true, the script clears away any existing portal to keep things tidy and then creates a new portal right at the marker’s location and angle, ensuring it blends seamlessly into the environment.
+
+The `SwitchLocation` method adds flexibility, allowing users to switch between different portal types. By assigning a new object to `SpawnablePortal`, they can easily choose from various styles or destinations to place in the AR space.
+
+The `UpdateMarkerPosition` function continuously keeps the marker in sync with surfaces as they are detected. This ensures users always know exactly where they can place their portal, enhancing their overall experience and making it feel more connected to the environment.
+
+
 <H2> Portal collision <H2>
 
 <H2> Portal Shader <H2>  
