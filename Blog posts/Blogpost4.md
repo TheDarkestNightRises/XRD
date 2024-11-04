@@ -7,6 +7,24 @@ In this update, we've made some improvements to the placement marker and fixed s
 
 <H2> Marker <H2>
 
+![image](https://github.com/user-attachments/assets/d5d93ac1-4764-48c7-9aff-8dc19b8b6bdf)
+
+# Marker Component Overview
+
+The marker component enhances the immersive experience and user interaction by providing a clear visual guide. By using raycasting to detect flat surfaces, the script helps users easily identify the ideal spots for their portals.
+
+## UpdateMarkerPosition Method
+
+The `UpdateMarkerPosition` method plays a crucial role in keeping the marker accurately positioned. It calculates the center of the screen and performs a raycast to check for valid surfaces below. When it finds a suitable surface, the method updates the marker’s position and rotation to match, ensuring it remains clear and visible for users. If no valid surface is detected, the marker is turned off, giving users straightforward feedback about where they can and cannot place a portal.
+
+## OnPress Method
+
+Meanwhile, the `OnPress` method manages the user's interactions when they tap the screen to place a portal. It first checks whether the marker is active and ensures that the user isn’t touching any UI elements that could interfere with the action. The method allows the portal to be placed right at the marker’s last detected position.
+
+This design highlights the user experience and allows users to engage with the virtual environment fluently.
+
+![image](https://github.com/user-attachments/assets/c4831b6a-2da1-421b-ac01-d931a9af28cf)
+
 <H2> App UI (Andrei) <H2>  
 
 The UI of the application consists of 3 buttons that resemble 3 different historic places: Leonardo da Vinci's pieces of art, the Vikings era, and the Mesozoic era.
