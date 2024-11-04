@@ -1,10 +1,10 @@
-<H1> Blogpost 2 </H1>
+# Blogpost 2 #
 
-<H2> Description <H2>
+## Description ##
 
-In this update, we have implemented the portal and the method to place it, along with a custom portal shader that ensures objects within the portal are only visible from inside of it. Additionally, we configured the AR scene, which includes essential components such as buttons for summoning the portal, XR Origin, XR Interaction Manager, and AR Session
+In this blog post update, we have implemented the portal and the method to place it, along with a custom portal shader that ensures objects within the portal are only visible from inside of it. Additionally, we configured the AR scene, which includes essential components such as buttons for summoning the portal, XR Origin, XR Interaction Manager, and AR Session 
 
-<H2> AR Scene (Andrei)<H2>
+## AR Scene ##
 
 This Augmented Reality allows users to place virtual objects in the real world using their mobile phones.
 
@@ -20,9 +20,8 @@ The structure of it has the following elements:
    
 4. Canvas - which represents the UI of the application (buttons for summoning the portal and object description pop-up)
 
-<H2> Portal placement <H2>
+## Portal placement ##
 
-   
 ![image](https://github.com/user-attachments/assets/28536cb6-caf8-44cf-96a1-633c6b8ab005)
 
 
@@ -36,7 +35,21 @@ The `UpdateMarkerPosition` function continuously keeps the marker in sync with s
 
 ![image](https://github.com/user-attachments/assets/09dfe894-0b10-4492-8cc8-f170509ffb59)
 
+## Portal collision ##
 
-<H2> Portal collision <H2>
+## Portal Shader ##  
+![image](https://github.com/user-attachments/assets/06bf79d3-1bb2-4e72-9db1-d0f839b51d88)
+Using Unity’s ShaderLab, we can develop powerful shaders that control how the GPU renders objects. This is incredibly useful for managing which parts of a scene should or shouldn’t be rendered, enabling effects like object masking, outlines, mirrors, and shadows with ease.
 
-<H2> Portal Shader <H2>  
+In the code above, a custom shader named `Custom/FilterShader` is created. It defines two properties: a color (defaulting to white) and a stencil property, `_StencilTest`. The `_StencilTest` property can be set to either Equal or NotEqual. When set to Equal and the stencil buffer value is `1`, the shader will render objects on the screen, making them visible. If set to NotEqual, objects using this shader will not be rendered in areas marked with `1` in the stencil buffer. This property effectively controls whether objects are displayed on the screen, which can be useful in scenarios like switching between real-world and virtual-world like in our portal.
+
+In the `Stencil` block, we define the stencil reference value as 1, and then compare the stencil buffer to this value. If `_StencilTest` is set to Equal, only areas marked with 1 will render objects. Conversely, if _StencilTest is set to NotEqual, those areas will mask the objects, hiding them from view. This setup enables the portal to act as an interactive medium, where we can switch between displaying objects in the real world and in a virtual world.
+
+In the project, similar shaders(Lit, Skybox, Unlit,etc.) were created with the same `_StencilTest` property to accommodate different needs, while following the same logic to control object visibility through code. This flexible approach allows us to dynamically set whether objects render or not based on the stencil buffer values, adapting to the requirements of different effects.
+
+![image](https://github.com/user-attachments/assets/c2939e27-ea8d-4da9-a10c-320d71ed5984)
+
+For the `PortalShader` the approach is similar but we should also take into account that this object can be walked through. The portal shader should be see through and should not use many resources to render since it will only display the virtual world. We tag this object as `Opaque` so that it is processed in the appropiate queue, this helps with clipping and rendering even though the object is meant to be transparent. The `LOD` is set to 100 which means that the object will not have a high level of detail since its not rendering any complex visual effects. The `ZWRITE` property is set to off because the object should not have any depth as to not obscure anything in the way. The `Cull` is set to off means that both the front and the back of the object is rendered because the portal has 2 faces. The `ColorMask` is set to 0 because this portal has no color so we have no need to set any color channels. 
+
+In the `Stencil` block we want to make sure that we always write 1 to the stencil buffer. The `Comp` is set to always, which means the stencil operation will always be applied, regardless of any existing stencil values. The purpose of `CPROGRAM` block is to define a minimal vertex and fragment shader that render nothing visible to the screen. The frag function determines the color of each pixel. `return fixed4(0.0, 0.0, 0.0, 0.0);` returns a fully transparent color (black with zero opacity). This renders nothing visible on the screen.
+
