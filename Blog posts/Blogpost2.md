@@ -22,18 +22,14 @@ The structure of it has the following elements:
 
 ## Portal placement ##
 
-![image](https://github.com/user-attachments/assets/28536cb6-caf8-44cf-96a1-633c6b8ab005)
+![image](https://github.com/user-attachments/assets/1859c7e8-a9bb-48b3-8bcd-452bc4c7c3ad)
 
+The **PortalPlacer** script allows us to place portals using unity's AR raycast manager. It starts by using Unity’s `ARRaycastManager` and `ARPlaneManager` to scan the environment for flat horizontal surfaces. The portal placer inherits from the press input base which listens to touch input.
 
-The **PortalPlacer** script is designed to ensure that placing a portal in AR feels smooth and intuitive. It starts by using Unity’s `ARRaycastManager` and `ARPlaneManager` to scan the environment for flat surfaces. When a suitable spot is found, a marker pops up in the center of the screen. This visual guide adjusts its position and rotation to fit the surface perfectly, helping users easily see where their portal will be placed.
+![image](https://github.com/user-attachments/assets/75e61b54-8c5d-4c33-8764-fd2d2e9830af)
 
-When the user taps the screen, the `OnPress` method kicks in. It first checks whether the tap is on a UI element or if the marker is properly positioned on a detected surface. If both conditions are true, the script clears away any existing portal to keep things tidy and then creates a new portal right at the marker’s location and angle, ensuring it blends seamlessly into the environment.
+When the user taps the screen, the `OnPress` method is invoked. If the user was actually touching an UI element then we will not perform the summoning of the portal. We can check if the user pressed a button by using `EventSystem.current.IsPointerOverGameObject();`. Also if there is no marker present at the time means that the user is not pointing to the centre of the screen, which means we shouldn't place a portal. If there is a portal in effect we will destroy that portal and make sure we instantiate another one. The `SwitchLocation` method allows the user to switch between what kind of portal can be instantiated.
 
-The `SwitchLocation` method adds flexibility, allowing users to switch between different portal types. By assigning a new object to `SpawnablePortal`, they can easily choose from various styles or destinations to place in the AR space.
-
-The `UpdateMarkerPosition` function continuously keeps the marker in sync with surfaces as they are detected. This ensures users always know exactly where they can place their portal, enhancing their overall experience and making it feel more connected to the environment.
-
-![image](https://github.com/user-attachments/assets/09dfe894-0b10-4492-8cc8-f170509ffb59)
 
 ## Portal collision ##
 ![image](https://github.com/user-attachments/assets/0aa4d63d-6800-4d1c-8ba6-163d3d8e37cd)
