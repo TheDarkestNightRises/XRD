@@ -16,13 +16,18 @@ To create a beautiful skybox a procedural skybox was used. The values of the tin
 ### Interactive Storytelling with Pop-Up Text Features
 To make the Leonardo's portal experience both educational and immersive, I integrated a pop-up text feature that provides background information on each invention. Here’s an overview of how this interaction is implemented:
 
-![poputextLeonardoenvironment](https://github.com/user-attachments/assets/c1c4367e-cab3-491a-986e-775c1d9e6cb4)
-
 - FaceCamera Script: The FaceCamera script in Unity ensures that a GameObject continuously faces the main camera. It stores a reference to the camera's transform and uses the Update method to rotate the GameObject toward the camera using transform.LookAt(cam). It then modifies the local rotation angles to lock the x and z axes at 0, preventing any tilt or roll. This behavior is ideal for UI elements or labels that should always remain oriented toward the camera for visibility.
+
+![image](https://github.com/user-attachments/assets/9d908641-eef3-4ba9-91df-4e4ef7ef505b)
   
 - Gaze Script: The Gaze script in Unity allows a GameObject to display information when the player looks at it. It uses raycasting to detect if the object being gazed at has the tag "hasInfo". If so, it retrieves the InfoBehaviour component and opens the associated information. If the player gazes away or looks at a different object, it closes the current information display. This enhances interactivity by providing relevant context about objects in the scene.
 
+![image](https://github.com/user-attachments/assets/6d8e469d-61d9-4287-b626-ac93e30fbe36)
+
 - InfoBehaviour Script: The InfoBehaviour script controls the animation of pop-up panels that display information about specific inventions. When a user focuses on a particular object, the associated information panel scales up smoothly to provide relevant details, enhancing user engagement and interactivity. Conversely, as the user’s gaze moves away, the panel scales back down to zero, ensuring that the interface remains uncluttered and visually appealing.
+
+![image](https://github.com/user-attachments/assets/fae712fa-3ea1-4ead-941c-23424c67a56d)
+
 
 ![popuptext](https://github.com/user-attachments/assets/ed67d19b-e6fe-49b0-bebc-460f730f1a6e)
 
