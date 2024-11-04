@@ -7,8 +7,8 @@ In this update, we have added a skybox to the dimension inside of the portal so 
 ## Skybox ##  
 ![image](https://github.com/user-attachments/assets/b0faed82-3aab-4388-a5d5-6d3a1b17e26b)
 
-In Unity AR projects, a typical skybox isn’t rendered because the real-world camera feed takes priority. To circumvent this we added a quad where a camera will project the look of the skybox using a render material. 
-First, a secondary `kybox Camera` is created specifically to render only the skybox, which optimizes performance by ignoring other layers. This Skybox Camera is made a child of the main AR camera so it moves and rotates together, ensuring the skybox effect stays consistent with the user's view. The Skybox Camera’s output is directed to a Render Texture, which is then applied to a material. This material, now containing the skybox view, is applied to a large quad positioned far away from the main camera, simulating a distant sky.
+In Unity AR projects, a typical skybox isn’t rendered because the real-world camera feed takes priority. To circumvent this we added a quad where a camera will project the look of the skybox using a render material. <br>
+First, a secondary `Skybox Camera` is created specifically to render only the skybox, which optimizes performance by ignoring other layers. This Skybox Camera is made a child of the main AR camera so it moves and rotates together, ensuring the skybox effect stays consistent with the user's view. The Skybox Camera’s output is directed to a Render Texture, which is then applied to a material. This material, now containing the skybox view, is applied to a large quad positioned far away from the main camera, simulating a distant sky. <br>
 To create a beautiful skybox a procedural skybox was used. The values of the tint color and the ground tint were changed to simulate more of a sunset.
 
 ## 3D Text box ##  
