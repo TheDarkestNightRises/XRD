@@ -69,6 +69,31 @@ Leonardo also sketched a bicycle, showing his forward-thinking approach to perso
 His designs for catapults reveal his understanding of physics and mechanics. Leonardo created different types, each with unique ways to launch projectiles, showcasing his talent for improving existing technology.
 
 ### Drum
-Lastly, his sketches of drums show his appreciation for music. By exploring how instruments work, he combined art and engineering in a way that was truly inspiring.
+Leonardo da Vinci's sketches of drums show his appreciation for music. By exploring how instruments work, he combined art and engineering in a way that was truly inspiring.
 
 ## Clipping Issue ##    
+
+
+
+
+### Assets sources
+
+"VR Gallery" [link](https://skfb.ly/ooRLp) by Maxim Mavrichev is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+Music by [Mikhail Smusev](https://pixabay.com/users/sigmamusicart-36860929/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=256262) from [Pixabay](https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=256262).
+
+"Wings" [link](https://skfb.ly/6XRDM) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Leonardo Da Vinci - 3407 (Arte Italiano)" [link](https://skfb.ly/6vvpL) by Ministerio de Cultura Perú is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Da Vinci Flying Airplane" [link](https://skfb.ly/oJxp8) by Rukh3D is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Odometer" [link](https://skfb.ly/o7OX7) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Bicicle without turning" [link](https://skfb.ly/6YsMv) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Catapult" [link](https://skfb.ly/6YPCs) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+"Drum" [link](https://skfb.ly/6WWIJ) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+
