@@ -13,6 +13,22 @@ To create a beautiful skybox a procedural skybox was used. The values of the tin
 
 ## 3D Text box ##  
 
+### Interactive Storytelling with Pop-Up Text Features
+To make the Leonardo's portal experience both educational and immersive, I integrated a pop-up text feature that provides background information on each invention. Here’s an overview of how this interaction is implemented:
+
+![poputextLeonardoenvironment](https://github.com/user-attachments/assets/c1c4367e-cab3-491a-986e-775c1d9e6cb4)
+
+- FaceCamera Script: The FaceCamera script in Unity ensures that a GameObject continuously faces the main camera. It stores a reference to the camera's transform and uses the Update method to rotate the GameObject toward the camera using transform.LookAt(cam). It then modifies the local rotation angles to lock the x and z axes at 0, preventing any tilt or roll. This behavior is ideal for UI elements or labels that should always remain oriented toward the camera for visibility.
+  
+- Gaze Script: The Gaze script in Unity allows a GameObject to display information when the player looks at it. It uses raycasting to detect if the object being gazed at has the tag "hasInfo". If so, it retrieves the InfoBehaviour component and opens the associated information. If the player gazes away or looks at a different object, it closes the current information display. This enhances interactivity by providing relevant context about objects in the scene.
+
+- InfoBehaviour Script: The InfoBehaviour script controls the animation of pop-up panels that display information about specific inventions. When a user focuses on a particular object, the associated information panel scales up smoothly to provide relevant details, enhancing user engagement and interactivity. Conversely, as the user’s gaze moves away, the panel scales back down to zero, ensuring that the interface remains uncluttered and visually appealing.
+
+![popuptext](https://github.com/user-attachments/assets/ed67d19b-e6fe-49b0-bebc-460f730f1a6e)
+
+### Enhancing Engagement and Learning with Pop-Up Text
+The pop-up text system encourages focused exploration, displaying information only when the visitor is actively engaging with a model. This design choice avoids information overload and helps create a more interactive and personalized learning experience. Visitors are free to explore each invention at their own pace, gaining a deeper understanding of Leonardo's contributions to engineering.
+
 ## 2D Object Description (Andrei)##
 
 As a way of learning about specific objects or animals, we have implemented a 2D object description on tap. To be able to find out about some information about a specific object or animal, the user can tap on the hitbox of an object and the text will appear on the top of the screen.
@@ -28,3 +44,29 @@ The AR scene uses the Object Tap Handler to identify the objects that have a des
 <br>![image](https://github.com/user-attachments/assets/71b507a3-e88c-44de-872d-05c6791299d9)<br><br>
 
 ## Spatial Music ##  
+
+# Interactive Portal Project
+
+In this interactive portal project, visitors can embark on **immersive journeys** through different eras, each with its own distinctive atmosphere.
+
+## Viking-Inspired Environment music
+
+One path leads to a **Viking-inspired environment**, where epic, atmospheric music sets the tone, transporting visitors into the world of **Norse explorers** and legendary warriors. The evocative soundscape brings this ancient setting to life, adding a sense of **adventure and discovery**.
+
+## Leonardo da Vinci environment music
+
+In the **Leonardo da Vinci** section, a soothing piano melody fills the air, creating a calm, contemplative ambiance ideal for exploring **Leonardo’s mechanical innovations**. This relaxing soundtrack enhances the thoughtful design and interactive storytelling, inviting visitors to reflect on **Leonardo’s genius** and the impact of his inventions.
+
+## Prehistoric Environment music
+
+Another path offers a **prehistoric environment** steeped in mystery, with subtle dinosaur sounds that evoke the **primal landscapes of ancient Earth**.
+
+Each of these environments is carefully crafted, combining **ambient sound, design, and interactivity** to fully engage visitors in the stories of **innovation and history**, making each exploration a memorable journey through time.
+
+![image](https://github.com/user-attachments/assets/288ed01e-1bb7-4ed4-8bad-55ede0f8994d)
+
+The Inspector panel in Unity for the **BackgroundMusic** object shows its **Audio Source** component settings. The audio file titled *music* is assigned to play automatically when the scene loads, and it will loop continuously. The sound is centered, with a moderate volume of just over half, and will be affected by environmental effects like reverb zones since all the bypass options are unchecked.
+
+The audio has **3D effects** meaning that the volume and direction will change based on the listener's position. It has a standard **Doppler effect**, and the volume decreases logarithmically with distance, ensuring a natural sound experience. The volume is full within a radius of **0.37 units** and drops off significantly beyond **100 units**.
+
+The rolloff graph illustrates how the volume fades with distance, while other parameters like **spatial blend** and **reverb zone mix** remain relatively stable. Overall, these settings contribute to an immersive audio experience, making it feel like the music is part of the 3D environment.
