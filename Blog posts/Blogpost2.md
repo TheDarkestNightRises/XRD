@@ -4,7 +4,7 @@
 
 In this update, we have implemented the portal and the method to place it, along with a custom portal shader that ensures objects within the portal are only visible from inside of it. Additionally, we configured the AR scene, which includes essential components such as buttons for summoning the portal, XR Origin, XR Interaction Manager, and AR Session
 
-<H3> AR Scene (Andrei)<H3>
+<H2> AR Scene (Andrei)<H2>
 
 This Augmented Reality allows users to place virtual objects in the real world using their mobile phones.
 
@@ -20,8 +20,8 @@ The structure of it has the following elements:
    
 4. Canvas - which represents the UI of the application (buttons for summoning the portal and object description pop-up)
 
-<H3> Portal placement <H3>
+<H2> Portal placement <H2>
 
-<H3> Portal collision <H3>
+<H2> Portal collision <H2>
 
-<H3> Portal Shader <H3>  
+<H2> Portal Shader <H2>  
