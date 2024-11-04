@@ -42,6 +42,7 @@ For the portal effect, we detect when the camera collides with the portal's box 
 programatically change the render of the object. 
 
 ![image](https://github.com/user-attachments/assets/7968e685-daf4-493b-806f-95e792ec8acc)
+
 The `IsInFront()` method checks whether the camera is positioned in front of or behind the portal. It does this by converting the camera position to the portal’s local space using InverseTransformPoint(), which helps determine if the camera is in front of or behind the portal. We also add an offsett forward to avoid the camera annoying clipping effect when colliding with objects.
 
 ![image](https://github.com/user-attachments/assets/fc82db4d-8e8e-4af2-bcc9-7087ee903ac9)
