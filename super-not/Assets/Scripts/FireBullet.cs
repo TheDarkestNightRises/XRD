@@ -22,7 +22,7 @@ public class FireBullet : MonoBehaviour
         
     }
 
-    public void Fire(ActivateEventArgs arg)
+    public void Fire(ActivateEventArgs arg = null)
     {
         var spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnpoint.transform.position;
