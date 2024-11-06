@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     private NavMeshAgent agent;
     public Transform playerTarget;
+    public Transform playerHead;
     private Animator animator;
     public float attackRange = 5;
     public FireBullet gun;
@@ -34,6 +35,8 @@ public class Enemy : MonoBehaviour
 
     public void ShootEnemy()
     {
+        var playerHeadPosition = playerHead.position - Random.Range(0, 0.04f) * Vector3.up;
+        gun.spawnpoint.forward = (playerHeadPosition - gun.spawnpoint.position).normalized;
         gun.Fire();
     }
 

@@ -50298,6 +50298,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 393192086078062898, guid: 5ac4cd5dd5798b046861e6a163861353,
         type: 3}
+      propertyPath: playerHead
+      value: 
+      objectReference: {fileID: 1464947100}
+    - target: {fileID: 393192086078062898, guid: 5ac4cd5dd5798b046861e6a163861353,
+        type: 3}
       propertyPath: playerTarget
       value: 
       objectReference: {fileID: 386296054}
