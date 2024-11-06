@@ -8,6 +8,9 @@ public class FireBullet : MonoBehaviour
     public GameObject bullet;
     public Transform spawnpoint;
     public float speed = 20f;
+    public AudioSource source;
+    public AudioClip clip;
+
     void Start()
     {
         var grab = GetComponent<XRGrabInteractable>();
@@ -22,8 +25,9 @@ public class FireBullet : MonoBehaviour
     public void Fire(ActivateEventArgs arg)
     {
         var spawnBullet = Instantiate(bullet);
-        spawnBullet.transform.position = spawnBullet.transform.position;
+        spawnBullet.transform.position = spawnpoint.transform.position;
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnpoint.forward * speed;
         Destroy(spawnBullet,5);
+        source.PlayOneShot(clip);
     }
 }
