@@ -13878,27 +13878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501bf0447d62db2489996788ba141bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &656491398
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656491395}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00aecaaa9121bc847a8fd88410255983, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &664479667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34382,7 +34361,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -49797,6 +49776,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2126354368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6035183651627662562, guid: 5ac4cd5dd5798b046861e6a163861353,
+    type: 3}
+  m_PrefabInstance: {fileID: 8270629841540975616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2126354370
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126354368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 00aecaaa9121bc847a8fd88410255983, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2132413769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50559,10 +50565,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 656491397}
-    - targetCorrespondingSourceObject: {fileID: 1125780893370185019, guid: 5ac4cd5dd5798b046861e6a163861353,
+    - targetCorrespondingSourceObject: {fileID: 6035183651627662562, guid: 5ac4cd5dd5798b046861e6a163861353,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 656491398}
+      addedObject: {fileID: 2126354370}
     - targetCorrespondingSourceObject: {fileID: 2015120296733211325, guid: 5ac4cd5dd5798b046861e6a163861353,
         type: 3}
       insertIndex: -1
