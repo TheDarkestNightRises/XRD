@@ -30596,6 +30596,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1372915079}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1375354840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375354841}
+  - component: {fileID: 1375354842}
+  m_Layer: 0
+  m_Name: Time Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375354841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375354840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.5907907, y: 1.1652876, z: 7.4842963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1375354842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375354840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22d26985021aa64ba9d9665cf2b186d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 1464947105}
+  leftHand: {fileID: 1520313169}
+  rightHand: {fileID: 1456020479}
+  timeSensitivy: 0.05
+  minTimeScale: 0.03
 --- !u!1001 &1381180489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33403,6 +33452,7 @@ GameObject:
   - component: {fileID: 1456020476}
   - component: {fileID: 1456020475}
   - component: {fileID: 1456020478}
+  - component: {fileID: 1456020479}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Right Hand
@@ -33792,6 +33842,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec19b854c722714fb91869a1f4c04c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1456020479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456020473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a234ba609bdfe498b742ea4330fb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAverageFrames: 5
+  angularVelocityAverageFrames: 11
+  estimateOnAwake: 1
 --- !u!1001 &1460498305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34064,6 +34129,7 @@ GameObject:
   - component: {fileID: 1464947103}
   - component: {fileID: 1464947102}
   - component: {fileID: 1464947101}
+  - component: {fileID: 1464947105}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -34298,6 +34364,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1464947105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464947099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a234ba609bdfe498b742ea4330fb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAverageFrames: 5
+  angularVelocityAverageFrames: 11
+  estimateOnAwake: 1
 --- !u!1001 &1469014743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35227,6 +35308,7 @@ GameObject:
   - component: {fileID: 1520313166}
   - component: {fileID: 1520313165}
   - component: {fileID: 1520313168}
+  - component: {fileID: 1520313169}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Left Hand
@@ -35616,6 +35698,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec19b854c722714fb91869a1f4c04c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1520313169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520313163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a234ba609bdfe498b742ea4330fb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAverageFrames: 5
+  angularVelocityAverageFrames: 11
+  estimateOnAwake: 1
 --- !u!1001 &1522032462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50450,3 +50547,4 @@ SceneRoots:
   - {fileID: 1345464203}
   - {fileID: 8618872942255724164}
   - {fileID: 8270629841540975616}
+  - {fileID: 1375354841}
