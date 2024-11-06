@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    private NavMeshAgent agent;
+    public Transform playerTarget;
+
     public void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         SetUpRag();    
+    }
+
+    public void Update()
+    {
+        agent.SetDestination(playerTarget.position);
     }
 
     public void SetKinematic(bool kinematic)
