@@ -29594,9 +29594,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 313684998765352649, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
         type: 3}
+      propertyPath: m_UseDynamicAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 313684998765352649, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
+        type: 3}
       propertyPath: m_InteractionLayers.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1583117939875830448, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 106738c8b4c7d1145ba2de6ea709a87c, type: 3}
+    - target: {fileID: 1583117939875830448, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
+        type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1345464205}
     - target: {fileID: 1841140731833337569, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
         type: 3}
       propertyPath: m_Layer
