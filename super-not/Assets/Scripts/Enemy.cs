@@ -7,9 +7,13 @@ public class Enemy : MonoBehaviour
 {
     private NavMeshAgent agent;
     public Transform playerTarget;
+    private Animator animator;
+    public float attackRange = 5;
+    public FireBullet gun;
 
     public void Start()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         SetUpRag();    
     }
@@ -17,7 +21,20 @@ public class Enemy : MonoBehaviour
     public void Update()
     {
         agent.SetDestination(playerTarget.position);
+        float distance = Vector3.Distance(playerTarget.position, transform.position);
+
+        if (distance > attackRange)
+        {
+            agent.isStopped = true;
+            animator.SetBool("Shoot", true);
+        }
+
         Debug.DrawLine(transform.position, playerTarget.position, Color.red);
+    }
+
+    public void ShootEnemy()
+    {
+        gun.Fire();
     }
 
     public void SetKinematic(bool kinematic)

@@ -50296,16 +50296,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 393192086078062898, guid: 5ac4cd5dd5798b046861e6a163861353,
+        type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 386296054}
     - target: {fileID: 1125780893370185019, guid: 5ac4cd5dd5798b046861e6a163861353,
         type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4886427243066095194, guid: 5ac4cd5dd5798b046861e6a163861353,
-        type: 3}
-      propertyPath: playerTarget
-      value: 
-      objectReference: {fileID: 386296054}
     - target: {fileID: 5745683486927678155, guid: 5ac4cd5dd5798b046861e6a163861353,
         type: 3}
       propertyPath: m_LocalPosition.x
