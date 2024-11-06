@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public void Update()
     {
         agent.SetDestination(playerTarget.position);
+        Debug.DrawLine(transform.position, playerTarget.position, Color.red);
     }
 
     public void SetKinematic(bool kinematic)
