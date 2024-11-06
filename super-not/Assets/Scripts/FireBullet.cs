@@ -22,7 +22,7 @@ public class FireBullet : MonoBehaviour
     public void Fire(ActivateEventArgs arg)
     {
         var spawnBullet = Instantiate(bullet);
-        spawnBullet.transform.position = spawnBullet.transform.position;
+        spawnBullet.transform.position = spawnpoint.transform.position;
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnpoint.forward * speed;
         Destroy(spawnBullet,5);
     }
