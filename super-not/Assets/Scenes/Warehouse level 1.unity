@@ -17068,7 +17068,7 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 0.38431373}
-    key2: {r: 0, g: 0, b: 0, a: 0}
+    key2: {r: 0, g: 0, b: 0, a: 0.38431373}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -17084,7 +17084,7 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
+    atime2: 65535
     atime3: 0
     atime4: 0
     atime5: 0
@@ -17285,7 +17285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1238994524}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -30339,6 +30339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 7604900720113134503, guid: fe3a7afe447f6ff42ad4ac77e44fac94,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1238994524}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31093,7 +31098,7 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 0.38431373}
-    key2: {r: 0, g: 0, b: 0, a: 0}
+    key2: {r: 0, g: 0, b: 0, a: 0.38431373}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -31109,7 +31114,7 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
+    atime2: 65535
     atime3: 0
     atime4: 0
     atime5: 0
@@ -31310,7 +31315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1238994524}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -33389,7 +33394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1238994524}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -35200,7 +35205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1238994524}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -50203,23 +50208,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 437997551768638593, guid: c27ad5b1f4907ac4ebd81e087b05617f,
         type: 3}
-      propertyPath: m_ThrowVelocityScale
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1966964614183337726, guid: c27ad5b1f4907ac4ebd81e087b05617f,
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1238994524}
+    - target: {fileID: 437997551768638593, guid: c27ad5b1f4907ac4ebd81e087b05617f,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1966964614183337726, guid: c27ad5b1f4907ac4ebd81e087b05617f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1966964614183337726, guid: c27ad5b1f4907ac4ebd81e087b05617f,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.03
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966964614183337726, guid: c27ad5b1f4907ac4ebd81e087b05617f,
         type: 3}
