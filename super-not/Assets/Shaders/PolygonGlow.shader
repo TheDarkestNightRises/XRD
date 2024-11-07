@@ -1,94 +1,67 @@
-// Upgrade NOTE: commented out 'float3 _WorldSpaceCameraPos', a built-in variable
-
 Shader "Custom/PolygonGlow"
 {
     Properties
     {
-        _GlowColor("Glow Color", Color) = (1, 0.5, 0, 1)
-        _GlowIntensity("Glow Intensity", Float) = 1.0
-        _Metallic("Metallic", Range(0, 1)) = 0.0
-        _Smoothness("Smoothness", Range(0, 1)) = 0.5
+        _BaseColor ("Base Color", Color) = (0.5, 0, 0, 1)
+        _ReflectionColor ("Reflection Color", Color) = (1, 0.5, 0, 1)
+        _Refraction ("Refraction", Range(1, 2)) = 1.45
+        _Glossiness ("Glossiness", Range(0, 1)) = 0.8
+        _MainTex ("Base Texture", 2D) = "white" { }
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" }
-        LOD 200
-
+        
         Pass
         {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_fog
+            #include "UnityCG.cginc"
 
-            struct appdata
+            struct appdata_t
             {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
-            };
-
-            struct v2f
-            {
-                float4 pos : SV_POSITION;
-                float3 worldNormal : TEXCOORD0;
-                float3 worldPos : TEXCOORD1;
                 float4 color : COLOR;
             };
-
-            // Added properties for metallic and smoothness
-            float _GlowIntensity;
-            float4 _GlowColor;
-            float _Metallic;
-            float _Smoothness;
-
-            // PBR Lighting Model Variables
-            // float3 _WorldSpaceCameraPos;
-
-            v2f vert(appdata v)
+            
+            struct v2f
+            {
+                float4 pos : POSITION;
+                float3 normal : NORMAL;
+            };
+            
+            float4 _BaseColor;
+            float4 _ReflectionColor;
+            float _Refraction;
+            float _Glossiness;
+            sampler2D _MainTex;
+            float4 _MainTex_ST;
+            
+            v2f vert(appdata_t v)
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+                o.normal = v.normal;
                 return o;
             }
-
-            // PBR lighting calculation function (simplified)
-            half4 LightingCustom(half3 normal, half3 lightDir, half3 viewDir, half metallic, half smoothness)
-            {
-                // Simple Lambertian diffuse term
-                half diffuse = max(0.0, dot(normal, lightDir));
-
-                // Fresnel-Schlick for metallic reflectance (simplified)
-                half fresnel = pow(1.0 - max(0.0, dot(viewDir, normal)), 5.0);
-                half3 specColor = lerp(half3(0.04, 0.04, 0.04), _GlowColor.rgb, metallic); // Blend between diffuse and metallic color
-                half specular = lerp(1.0, fresnel, smoothness);
-
-                return half4(diffuse * (1.0 - metallic) + specColor * specular, 1.0);
-            }
-
+            
             float4 frag(v2f i) : SV_Target
             {
-                // Calculate view direction
-                float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
+                // Sample the base color
+                float4 baseColor = _BaseColor * tex2D(_MainTex, i.pos.xy);
 
-                // Calculate dot product between view direction and normal for face "intensity"
-                float intensity = dot(i.worldNormal, viewDir);
+                // Simulate reflection (just an approximation)
+                float3 reflection = reflect(i.normal, normalize(float3(0, 1, 0))); // simulate light direction
+                float4 reflectionColor = _ReflectionColor * max(dot(reflection, float3(0, 1, 0)), 0.0);
 
-                // Apply a smoothstep to make glow softer near edges
-                intensity = smoothstep(0.3, 1.0, intensity);
-
-                // Call custom lighting function for PBR calculations (metallic, smoothness)
-                half4 pbrColor = LightingCustom(i.worldNormal, viewDir, viewDir, _Metallic, _Smoothness);
-
-                // Final color is based on glow color, intensity, and the PBR result
-                float4 color = _GlowColor * intensity * _GlowIntensity;
-                color.rgb = lerp(color.rgb, pbrColor.rgb, 0.5); // Blend glow with the PBR result
-
-                return color;
+                // Combine base color with reflection
+                float4 finalColor = baseColor + reflectionColor;
+                
+                return finalColor;
             }
             ENDCG
         }
     }
-    FallBack "Diffuse"
 }
