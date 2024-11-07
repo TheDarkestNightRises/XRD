@@ -41,8 +41,9 @@ public class EnemyGunner : EnemyBase
 
     public override void Dead(Vector3 position)
     {
-        base.Dead(position);
+        if (isDead) return;
         ThrowGun();
+        base.Dead(position);
     }
 
     private void ThrowGun()
@@ -54,17 +55,30 @@ public class EnemyGunner : EnemyBase
         rb.angularVelocity = Vector3.zero;
     }
 
-    private Vector3 BallisticVelocityVector(Vector3 source, Vector3 target, float angle)
+    Vector3 BallisticVelocityVector(Vector3 startPoint, Vector3 targetPoint, float angle)
     {
-        Vector3 direction = target - source;
-        float h = direction.y;
-        direction.y = 0;
-        float distance = direction.magnitude;
-        float a = angle * Mathf.Deg2Rad;
-        direction.y = distance * Mathf.Tan(a);
-        distance += h / Mathf.Tan(a);
+        Vector3 direction = targetPoint - startPoint; 
+        float heightDifference = direction.y; 
+        direction.y = 0; 
+        float distance = direction.magnitude; 
+        float angleRad = angle * Mathf.Deg2Rad; 
 
-        float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
-        return velocity * direction.normalized;
+        float velocitySquared = (Physics.gravity.magnitude * distance * distance) /
+                                (2 * (distance * Mathf.Tan(angleRad) - heightDifference));
+
+        if (velocitySquared <= 0)
+        {
+            Debug.LogError("Invalid ballistic calculation, returning zero vector");
+            return Vector3.zero; 
+        }
+
+        float velocity = Mathf.Sqrt(velocitySquared);
+
+        Vector3 velocityVector = direction.normalized; 
+        velocityVector *= velocity * Mathf.Cos(angleRad); 
+        velocityVector.y = velocity * Mathf.Sin(angleRad); 
+
+        return velocityVector;
     }
+
 }
