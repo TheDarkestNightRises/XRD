@@ -34,16 +34,6 @@ public abstract class EnemyBase : MonoBehaviour
     public virtual void Dead(Vector3 position)
     {
         SetKinematic(false);
-
-        foreach (var item in Physics.OverlapSphere(position, 0.3f))
-        {
-            var rb = item.GetComponent<Rigidbody>();
-            if (rb)
-            {
-                rb.AddExplosionForce(1000, position, 0.3f);
-            }
-        }
-
         animator.enabled = false;
         agent.enabled = false;
         this.enabled = false;
