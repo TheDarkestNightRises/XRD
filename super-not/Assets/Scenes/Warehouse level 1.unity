@@ -25730,10 +25730,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 532034656162614328, guid: fe3a7afe447f6ff42ad4ac77e44fac94, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 410a2dd7b68a7cb48a3e1fb7262ed377, type: 2}
     - target: {fileID: 3904961997745417124, guid: fe3a7afe447f6ff42ad4ac77e44fac94, type: 3}
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5109850579021294507, guid: fe3a7afe447f6ff42ad4ac77e44fac94, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 410a2dd7b68a7cb48a3e1fb7262ed377, type: 2}
     - target: {fileID: 6147680985184118499, guid: fe3a7afe447f6ff42ad4ac77e44fac94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.32
@@ -43236,7 +43244,7 @@ PrefabInstance:
     - target: {fileID: 4213135079662530000, guid: 4e7450aaa89c7ec4bad4292fc5f030db, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0e91b031168ed564d888e0935077ecde, type: 2}
+      objectReference: {fileID: 2100000, guid: 410a2dd7b68a7cb48a3e1fb7262ed377, type: 2}
     - target: {fileID: 6028185865355274131, guid: 4e7450aaa89c7ec4bad4292fc5f030db, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -43318,6 +43326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Gunner
       objectReference: {fileID: 0}
+    - target: {fileID: 3084338215464995862, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
     - target: {fileID: 4222110243703075246, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
       propertyPath: playerHead
       value: 
@@ -43326,6 +43338,26 @@ PrefabInstance:
       propertyPath: playerTarget
       value: 
       objectReference: {fileID: 386296054}
+    - target: {fileID: 4487970672881884063, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
+    - target: {fileID: 5075873889556707745, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
+    - target: {fileID: 5620666254311036787, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
+    - target: {fileID: 8011962431892888079, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
+    - target: {fileID: 8622020833894303834, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9faa403d82a11204f89fb7c1a46d08f7, type: 2}
     - target: {fileID: 8822208757143967994, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.334
@@ -43439,6 +43471,10 @@ PrefabInstance:
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 849724417545463124, guid: c27ad5b1f4907ac4ebd81e087b05617f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 410a2dd7b68a7cb48a3e1fb7262ed377, type: 2}
     - target: {fileID: 1966964614183337726, guid: c27ad5b1f4907ac4ebd81e087b05617f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.72
