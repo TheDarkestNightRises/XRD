@@ -10,6 +10,10 @@ public class EnemyBruiser : EnemyBase
     {
         agent.SetDestination(playerTarget.position);
         float distance = Vector3.Distance(playerTarget.position, transform.position);
+        Vector3 directionToPlayer = playerTarget.position - transform.position;
+        directionToPlayer.y = 0; 
+        Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5); 
 
         if (distance <= punchRange)
         {
