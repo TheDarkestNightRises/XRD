@@ -1,35 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class EnemyGunner : EnemyBase
 {
-    private NavMeshAgent agent;
-    public Transform playerTarget;
     public Transform playerHead;
-    private Animator animator;
     public float attackRange = 5;
     public FireBullet gun;
     private Quaternion localRotationGun;
 
-    public void Start()
+    public override void Start()
     {
-        animator = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
-        SetUpRag();    
+        base.Start();
         localRotationGun = gun.spawnpoint.localRotation;
     }
 
-    public void Update()
+    public override void Update()
     {
         agent.SetDestination(playerTarget.position);
         float distance = Vector3.Distance(playerTarget.position, transform.position);
 
-        if (distance > attackRange)
+        if (distance <= attackRange)
         {
             agent.isStopped = true;
             animator.SetBool("Shoot", true);
+        }
+        else
+        {
+            agent.isStopped = false;
+            animator.SetBool("Shoot", false);
         }
 
         Debug.DrawLine(transform.position, playerTarget.position, Color.red);
@@ -42,7 +39,13 @@ public class Enemy : MonoBehaviour
         gun.Fire();
     }
 
-    public void ThrowGun()
+    public override void Dead(Vector3 position)
+    {
+        base.Dead(position);
+        ThrowGun();
+    }
+
+    private void ThrowGun()
     {
         gun.spawnpoint.localRotation = localRotationGun;
         gun.transform.parent = null;
@@ -51,7 +54,7 @@ public class Enemy : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
     }
 
-    Vector3 BallisticVelocityVector(Vector3 source, Vector3 target, float angle)
+    private Vector3 BallisticVelocityVector(Vector3 source, Vector3 target, float angle)
     {
         Vector3 direction = target - source;
         float h = direction.y;
@@ -63,37 +66,5 @@ public class Enemy : MonoBehaviour
 
         float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
         return velocity * direction.normalized;
-    }    
-
-    public void SetKinematic(bool kinematic)
-    {
-        foreach (var item in GetComponentsInChildren<Rigidbody>())
-        {
-            item.isKinematic = kinematic;
-        }
-    }
-
-    public void SetUpRag()
-    {
-        SetKinematic(true);
-    }
-
-    public void Dead(Vector3 position)
-    {
-        SetKinematic(false);
-
-        foreach(var item in Physics.OverlapSphere(position, 0.3f))
-        {
-            var rb = item.GetComponent<Rigidbody>();
-            if (rb)
-            {
-                rb.AddExplosionForce(1000, position, 0.3f);
-            }
-        }
-
-        ThrowGun();
-        animator.enabled = false;
-        agent.enabled = false;
-        this.enabled = false;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyOnCollision : MonoBehaviour
 {
-    public Enemy enemy;
+    public EnemyBase enemy;
     public string targetTag;
 
     private void OnCollisionEnter(Collision collision)
