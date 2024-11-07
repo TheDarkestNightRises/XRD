@@ -5,12 +5,15 @@ using UnityEngine.AI;
 
 public abstract class EnemyBase : MonoBehaviour
 {
+    public bool isDead;
+    public GameObject hitParticlePrefab;
     protected NavMeshAgent agent;
     protected Animator animator;
     public Transform playerTarget;
 
     public virtual void Start()
     {
+        isDead = false;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         SetUpRag();
@@ -33,6 +36,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Dead(Vector3 position)
     {
+        isDead = true;
         SetKinematic(false);
         animator.enabled = false;
         agent.enabled = false;

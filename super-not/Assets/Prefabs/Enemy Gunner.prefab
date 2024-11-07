@@ -1451,6 +1451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501bf0447d62db2489996788ba141bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitParticlePrefab: {fileID: 2462045763441574653, guid: bc20e11fe125f0c4985a160e93e1a272,
+    type: 3}
   playerTarget: {fileID: 0}
   playerHead: {fileID: 0}
   attackRange: 5

@@ -12,7 +12,7 @@ public class EnemyOnCollision : MonoBehaviour
         if (collision.gameObject.tag == targetTag)
         {
             BodyPartScript bp = this.gameObject.GetComponent<BodyPartScript>();
-            //Instantiate(EnemyBase.instance.hitParticlePrefab, transform.position, transform.rotation);
+            Instantiate(enemy.hitParticlePrefab, transform.position, transform.rotation);
             bp.HidePartAndReplace();
             enemy.Dead(collision.contacts[0].point);
         }
