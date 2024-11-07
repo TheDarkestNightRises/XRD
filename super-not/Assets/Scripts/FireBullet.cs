@@ -10,16 +10,12 @@ public class FireBullet : MonoBehaviour
     public float speed = 20f;
     public AudioSource source;
     public AudioClip clip;
+    public ParticleSystem muzzleFlash;
 
     void Start()
     {
         var grab = GetComponent<XRGrabInteractable>();
         grab.activated.AddListener(Fire);
-    }
-
-    void Update()
-    {
-        
     }
 
     public void Fire(ActivateEventArgs arg = null)
@@ -29,5 +25,6 @@ public class FireBullet : MonoBehaviour
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnpoint.forward * speed;
         Destroy(spawnBullet,5);
         source.PlayOneShot(clip);
+        muzzleFlash.Play();
     }
 }

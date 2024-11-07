@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BodyPartScript : MonoBehaviour
 {
-    public Rigidbody rb;
     public EnemyBase enemy;
     public Renderer bodyPartRenderer;
     public GameObject bodyPartPrefab;
-    public bool replaced;
+    private Rigidbody rb;
+    private bool replaced;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
