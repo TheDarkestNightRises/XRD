@@ -1,13 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FogManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float targetFogEndDistance = 5f;  
+    private float initialFogEndDistance = 50f;
+
+    private void Start()
     {
-        RenderSettings.fogEndDistance = 5;
+        RenderSettings.fogEndDistance = initialFogEndDistance;
     }
 
     public void SetFog()
@@ -15,12 +16,17 @@ public class FogManager : MonoBehaviour
         StartCoroutine(SetFogRoutine());
     }
 
-    public IEnumerator SetFogRoutine()
+    private IEnumerator SetFogRoutine()
     {
-        while(RenderSettings.fogEndDistance < 45)
+        while (RenderSettings.fogEndDistance > targetFogEndDistance)
         {
-            RenderSettings.fogEndDistance = Mathf.Lerp(RenderSettings.fogEndDistance, 50, 0.01f);
+            RenderSettings.fogEndDistance = Mathf.Lerp(RenderSettings.fogEndDistance, targetFogEndDistance, 0.1f);
             yield return null;
         }
+    }
+
+    public void ResetFog()
+    {
+        RenderSettings.fogEndDistance = initialFogEndDistance;
     }
 }
