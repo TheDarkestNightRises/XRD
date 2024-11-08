@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public abstract class EnemyBase : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public abstract class EnemyBase : MonoBehaviour
     protected NavMeshAgent agent;
     protected Animator animator;
     public Transform playerTarget;
+    public UnityEvent onDeath;
 
     public virtual void Start()
     {
@@ -36,10 +38,13 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Dead(Vector3 position)
     {
+        if (isDead) return;
         isDead = true;
         SetKinematic(false);
         animator.enabled = false;
         agent.enabled = false;
         this.enabled = false;
+        Debug.Log("I died");
+        onDeath.Invoke();
     }
 }
