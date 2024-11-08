@@ -36646,11 +36646,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1453485022173259434, guid: eb4b38db67a56dc469a2c2aafcc36add, type: 3}
   m_PrefabInstance: {fileID: 1836971397}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1839738347 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4966891696654062860, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-  m_PrefabInstance: {fileID: 8927102382824180047}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1843726359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38731,11 +38726,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1554161176115921225, guid: f9e1a0158e9f7a545a16fa7c2aa7be4e, type: 3}
   m_PrefabInstance: {fileID: 1948420675}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1950931231 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 850293995143391933, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-  m_PrefabInstance: {fileID: 8927102382824180047}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1954469316
 PrefabInstance:
@@ -43015,23 +43005,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8822208757143967994, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
   m_PrefabInstance: {fileID: 7984020734970285124}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7208369269005082174 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 776127528813408744, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-  m_PrefabInstance: {fileID: 8927102382824180047}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7208369269005082175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7208369269005082174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec19b854c722714fb91869a1f4c04c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7984020734970285124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43234,57 +43207,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife
       objectReference: {fileID: 0}
-    - target: {fileID: 850293995143391933, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0094
-      objectReference: {fileID: 0}
-    - target: {fileID: 850293995143391933, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0122
-      objectReference: {fileID: 0}
-    - target: {fileID: 850293995143391933, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0109
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914820537496808975, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914820537496808975, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914820537496808975, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659397171259382848, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659397171259382848, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: leftAttachTransform
-      value: 
-      objectReference: {fileID: 1950931231}
     - target: {fileID: 4659397171259382848, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1238994524}
-    - target: {fileID: 4659397171259382848, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: rightAttachTransform
-      value: 
-      objectReference: {fileID: 1839738347}
-    - target: {fileID: 4659397171259382848, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_SecondaryAttachTransform
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4966891696654062860, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0171
-      objectReference: {fileID: 0}
-    - target: {fileID: 4966891696654062860, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0186
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: 8634151087250868271, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43329,10 +43258,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 776127528813408744, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7208369269005082175}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed721bee5bdf0df4c8bbc8936356ddb5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

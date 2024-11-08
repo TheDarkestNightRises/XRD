@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8634151087250868271}
   - component: {fileID: 3179057552382816282}
   - component: {fileID: 4659397171259382848}
+  - component: {fileID: 8315347250139100484}
   m_Layer: 0
   m_Name: Knife
   m_TagString: Untagged
@@ -216,8 +217,20 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  leftAttachTransform: {fileID: 0}
-  rightAttachTransform: {fileID: 0}
+  leftAttachTransform: {fileID: 850293995143391933}
+  rightAttachTransform: {fileID: 4966891696654062860}
+--- !u!114 &8315347250139100484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776127528813408744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec19b854c722714fb91869a1f4c04c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3996116213737668261
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +256,7 @@ Transform:
   m_GameObject: {fileID: 3996116213737668261}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0171, y: 0, z: 0.0215}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -274,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 8339944651923969539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0219, y: -0.0122, z: 0.0349}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -290,15 +303,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 17ff05755a84c1a4997fb40b710a87f5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17ff05755a84c1a4997fb40b710a87f5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17ff05755a84c1a4997fb40b710a87f5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17ff05755a84c1a4997fb40b710a87f5, type: 3}
       propertyPath: m_LocalPosition.x
