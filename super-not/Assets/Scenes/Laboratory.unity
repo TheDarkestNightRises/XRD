@@ -3161,6 +3161,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8250113047921840432, guid: b76f846b3379607468a593969b575654, type: 3}
   m_PrefabInstance: {fileID: 178137520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &184751908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184751910}
+  - component: {fileID: 184751909}
+  m_Layer: 0
+  m_Name: Fog manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184751909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184751908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fafd5d58c6c8a145ab442027e104fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &184751910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184751908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.13445, y: 1.2235352, z: 15.573271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &190119697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6241,6 +6285,7 @@ GameObject:
   - component: {fileID: 386296047}
   - component: {fileID: 386296046}
   - component: {fileID: 386296055}
+  - component: {fileID: 386296056}
   m_Layer: 6
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -6489,6 +6534,22 @@ MonoBehaviour:
   rightGrabRay: {fileID: 1392909525}
   leftDirectGrab: {fileID: 1520313166}
   rightDirectGrab: {fileID: 1456020476}
+--- !u!114 &386296056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386296045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e5559db86098f44b75b6bca97bba13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: 
+  onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &391884125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13939,6 +14000,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 290277099006970003, guid: d5ae87b7dbfdf5d4fb46ad152ff2a687, type: 3}
   m_PrefabInstance: {fileID: 746262343}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &748086936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748086938}
+  - component: {fileID: 748086937}
+  m_Layer: 0
+  m_Name: Game manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &748086937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748086936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613e886dc1b5d0946955335eb4f8cbdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 386296056}
+  fogManager: {fileID: 184751909}
+  resetDelay: 0.6
+--- !u!4 &748086938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748086936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.742918, y: 1.4953489, z: 11.466462}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766232735
 GameObject:
   m_ObjectHideFlags: 0
@@ -25984,7 +26092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1375354841
 Transform:
   m_ObjectHideFlags: 0
@@ -43275,3 +43383,5 @@ SceneRoots:
   - {fileID: 1375354841}
   - {fileID: 1883180753}
   - {fileID: 1057450497}
+  - {fileID: 184751910}
+  - {fileID: 748086938}
