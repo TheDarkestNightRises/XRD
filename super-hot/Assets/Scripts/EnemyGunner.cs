@@ -6,6 +6,7 @@ public class EnemyGunner : EnemyBase
     public float attackRange = 5;
     public FireBullet gun;
     private Quaternion localRotationGun;
+    public float turnSpeed = 5f; 
 
     public override void Start()
     {
@@ -21,6 +22,7 @@ public class EnemyGunner : EnemyBase
         if (distance <= attackRange)
         {
             agent.isStopped = true;
+            FaceTarget();
             animator.SetBool("Shoot", true);
         }
         else
@@ -30,6 +32,13 @@ public class EnemyGunner : EnemyBase
         }
 
         Debug.DrawLine(transform.position, playerTarget.position, Color.red);
+    }
+
+    private void FaceTarget()
+    {
+        Vector3 direction = (playerTarget.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     public void ShootEnemy()
@@ -57,11 +66,11 @@ public class EnemyGunner : EnemyBase
 
     Vector3 BallisticVelocityVector(Vector3 startPoint, Vector3 targetPoint, float angle)
     {
-        Vector3 direction = targetPoint - startPoint; 
-        float heightDifference = direction.y; 
-        direction.y = 0; 
-        float distance = direction.magnitude; 
-        float angleRad = angle * Mathf.Deg2Rad; 
+        Vector3 direction = targetPoint - startPoint;
+        float heightDifference = direction.y;
+        direction.y = 0;
+        float distance = direction.magnitude;
+        float angleRad = angle * Mathf.Deg2Rad;
 
         float velocitySquared = (Physics.gravity.magnitude * distance * distance) /
                                 (2 * (distance * Mathf.Tan(angleRad) - heightDifference));
@@ -69,16 +78,15 @@ public class EnemyGunner : EnemyBase
         if (velocitySquared <= 0)
         {
             Debug.LogError("Invalid ballistic calculation, returning zero vector");
-            return Vector3.zero; 
+            return Vector3.zero;
         }
 
         float velocity = Mathf.Sqrt(velocitySquared);
 
-        Vector3 velocityVector = direction.normalized; 
-        velocityVector *= velocity * Mathf.Cos(angleRad); 
-        velocityVector.y = velocity * Mathf.Sin(angleRad); 
+        Vector3 velocityVector = direction.normalized;
+        velocityVector *= velocity * Mathf.Cos(angleRad);
+        velocityVector.y = velocity * Mathf.Sin(angleRad);
 
         return velocityVector;
     }
-
 }
