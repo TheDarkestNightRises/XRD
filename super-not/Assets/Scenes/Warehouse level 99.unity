@@ -23405,8 +23405,8 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  leftAttachTransform: {fileID: 0}
-  rightAttachTransform: {fileID: 0}
+  leftAttachTransform: {fileID: 1898515627}
+  rightAttachTransform: {fileID: 193458146}
 --- !u!1001 &1157067975
 PrefabInstance:
   m_ObjectHideFlags: 0
