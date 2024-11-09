@@ -23109,6 +23109,7 @@ GameObject:
   - component: {fileID: 1141011481}
   - component: {fileID: 1141011480}
   - component: {fileID: 1141011482}
+  - component: {fileID: 1141011483}
   m_Layer: 0
   m_Name: Katana
   m_TagString: Untagged
@@ -23407,6 +23408,18 @@ MonoBehaviour:
   m_AddDefaultGrabTransformers: 1
   leftAttachTransform: {fileID: 1898515627}
   rightAttachTransform: {fileID: 193458146}
+--- !u!114 &1141011483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141011475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec19b854c722714fb91869a1f4c04c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1157067975
 PrefabInstance:
   m_ObjectHideFlags: 0
