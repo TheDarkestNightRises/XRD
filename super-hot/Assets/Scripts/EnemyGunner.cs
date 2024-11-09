@@ -60,7 +60,7 @@ public class EnemyGunner : EnemyBase
         gun.spawnpoint.localRotation = localRotationGun;
         gun.transform.parent = null;
         var rb = gun.GetComponent<Rigidbody>();
-        rb.velocity = BallisticVelocityVector(gun.transform.position, playerHead.position, 45);
+        rb.linearVelocity = BallisticVelocityVector(gun.transform.position, playerHead.position, 45);
         rb.angularVelocity = Vector3.zero;
     }
 

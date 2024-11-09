@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class ActivateGrabRay : MonoBehaviour
 {
     public GameObject leftGrabRay;
     public GameObject rightGrabRay;
 
-    public XRDirectInteractor leftDirectGrab;
-    public XRDirectInteractor rightDirectGrab;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor leftDirectGrab;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor rightDirectGrab;
 
     void Update()
     {

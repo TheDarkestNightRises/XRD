@@ -14,7 +14,7 @@ public class FireBullet : MonoBehaviour
 
     void Start()
     {
-        var grab = GetComponent<XRGrabInteractable>();
+        var grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         grab.activated.AddListener(Fire);
     }
 
@@ -22,7 +22,7 @@ public class FireBullet : MonoBehaviour
     {
         var spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnpoint.transform.position;
-        spawnBullet.GetComponent<Rigidbody>().velocity = spawnpoint.forward * speed;
+        spawnBullet.GetComponent<Rigidbody>().linearVelocity = spawnpoint.forward * speed;
         Destroy(spawnBullet,5);
         source.PlayOneShot(clip);
         muzzleFlash.Play();

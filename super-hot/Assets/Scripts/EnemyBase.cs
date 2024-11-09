@@ -10,12 +10,13 @@ public abstract class EnemyBase : MonoBehaviour
     public GameObject hitParticlePrefab;
     protected NavMeshAgent agent;
     protected Animator animator;
-    public Transform playerTarget;
+    protected Transform playerTarget;
     public UnityEvent onDeath;
 
     public virtual void Start()
     {
         isDead = false;
+        playerTarget = GameObject.FindWithTag("MainCamera").transform;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         SetUpRag();

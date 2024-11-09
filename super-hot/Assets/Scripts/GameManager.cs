@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        var enemies = FindObjectsOfType<EnemyBase>();
+        var enemies = FindObjectsByType<EnemyBase>(FindObjectsSortMode.None);
         enemiesRemaining = enemies.Length;
         Debug.Log($"Kill {enemiesRemaining}");
 

@@ -11,14 +11,14 @@ public class AK47Fire : MonoBehaviour
     public AudioClip clip;
     public ParticleSystem muzzleFlash;
 
-    private XRGrabInteractable grab;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grab;
     private bool isFiring = false;
     public float fireRate = 0.1f; 
     private float lastFiredTime = 0f;
 
     void Start()
     {
-        grab = GetComponent<XRGrabInteractable>();
+        grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         grab.activated.AddListener(OnActivate);
         grab.deactivated.AddListener(OnDeactivate);
     }
@@ -48,7 +48,7 @@ public class AK47Fire : MonoBehaviour
 
         var spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnpoint.position;
-        spawnBullet.GetComponent<Rigidbody>().velocity = spawnpoint.forward * speed;
+        spawnBullet.GetComponent<Rigidbody>().linearVelocity = spawnpoint.forward * speed;
 
         Destroy(spawnBullet, 5f);
 
