@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private int enemiesRemaining;
-    [SerializeField] private PlayerOnCollision player;
+    [SerializeField] private Player player;
     [SerializeField] private FogManager fogManager;
     [SerializeField] private float resetDelay = 0.7f;
 

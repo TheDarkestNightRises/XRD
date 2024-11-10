@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OnCollisionEnterDeath : MonoBehaviour
+public class OnTriggerDie : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
