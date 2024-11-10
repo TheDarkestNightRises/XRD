@@ -13,7 +13,7 @@ public class EnemyBruiser : EnemyBase
     private float distanceToPlayer = Mathf.Infinity;
     private bool isProvoked = false;
 
-    public override void Update()
+    public void Update()
     {
         if (isDead)
         {
@@ -82,5 +82,10 @@ public class EnemyBruiser : EnemyBase
         Gizmos.DrawWireSphere(transform.position, chaseRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, punchRange);
+    }
+
+    public override void Dead(Vector3 hitPosition)
+    {
+        base.Dead(hitPosition);
     }
 }
