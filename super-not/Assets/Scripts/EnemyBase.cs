@@ -6,12 +6,12 @@ using UnityEngine.Events;
 
 public abstract class EnemyBase : MonoBehaviour
 {
-    public bool isDead;
-    public GameObject hitParticlePrefab;
+    [SerializeField] public GameObject hitParticlePrefab;
+    [SerializeField] public Transform playerTarget;
+    [HideInInspector] public UnityEvent onDeath;
+    protected bool isDead;
     protected NavMeshAgent agent;
     protected Animator animator;
-    public Transform playerTarget;
-    public UnityEvent onDeath;
 
     protected virtual void Start()
     {
