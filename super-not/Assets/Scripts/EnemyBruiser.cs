@@ -15,13 +15,6 @@ public class EnemyBruiser : EnemyBase
 
     public void Update()
     {
-        if (isDead)
-        {
-            enabled = false;
-            agent.enabled = false;
-            return;
-        }
-
         distanceToPlayer = Vector3.Distance(playerTarget.position, transform.position);
 
         if (isProvoked)

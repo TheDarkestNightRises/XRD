@@ -5,11 +5,11 @@ using UnityEngine.AI;
 
 public class EnemyGunner : EnemyBase
 {
-    public Transform playerHead;
-    public float stopDistance = 5;
-    public float attackRange = 5;
-    public float turnSpeed = 5;
-    public FireBullet gun;
+    [SerializeField] public FireBullet gun;
+    [SerializeField] public Transform playerHead;
+    [SerializeField] public float stopDistance = 5;
+    [SerializeField] public float attackRange = 5;
+    [SerializeField] public float turnSpeed = 5;
 
     private Quaternion localRotationGun;
 
@@ -69,14 +69,6 @@ public class EnemyGunner : EnemyBase
         gun.spawnpoint.forward = (playerHeadPosition - gun.spawnpoint.position).normalized;
 
         gun.Fire();
-    }
-
-    public void SetupRagdoll()
-    {
-        foreach (var item in GetComponentsInChildren<Rigidbody>())
-        {
-            item.isKinematic = true;
-        }
     }
 
     private void FaceTarget()
