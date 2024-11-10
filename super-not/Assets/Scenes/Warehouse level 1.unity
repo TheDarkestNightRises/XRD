@@ -4782,12 +4782,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 386221723}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &386296054 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
-    type: 3}
-  m_PrefabInstance: {fileID: 8107037192317025541}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &386296056 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6106269893025638229, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
@@ -4916,7 +4910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerHead
       value: 
-      objectReference: {fileID: 386296054}
+      objectReference: {fileID: 1464947100}
     - target: {fileID: 4222110243703075246, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}
       propertyPath: attackRange
@@ -31877,7 +31871,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerHead
       value: 
-      objectReference: {fileID: 386296054}
+      objectReference: {fileID: 1464947100}
     - target: {fileID: 4222110243703075246, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}
       propertyPath: attackRange
