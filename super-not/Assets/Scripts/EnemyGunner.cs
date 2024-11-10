@@ -24,10 +24,17 @@ public class EnemyGunner : EnemyBase
         agent.SetDestination(playerTarget.position);
 
         float distance = Vector3.Distance(playerTarget.position, transform.position);
+
         if (distance < stopDistance)
         {
             agent.isStopped = true;
+            FaceTarget();
             animator.SetBool("Shoot", true);
+        }
+        else
+        {
+            agent.isStopped = false;
+            animator.SetBool("Shoot", false);
         }
     }
 
@@ -51,11 +58,9 @@ public class EnemyGunner : EnemyBase
         direction.y = distance * Mathf.Tan(a);
         distance += h / Mathf.Tan(a);
 
-        // calculate velocity
         float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
         return velocity * direction.normalized;
     }
-
 
     public void ShootEnemy()
     {
@@ -72,6 +77,13 @@ public class EnemyGunner : EnemyBase
         {
             item.isKinematic = true;
         }
+    }
+
+    private void FaceTarget()
+    {
+        Vector3 direction = (playerTarget.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     public override void Dead(Vector3 hitPosition)
