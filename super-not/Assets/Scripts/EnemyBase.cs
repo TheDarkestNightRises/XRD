@@ -13,38 +13,44 @@ public abstract class EnemyBase : MonoBehaviour
     public Transform playerTarget;
     public UnityEvent onDeath;
 
-    public virtual void Start()
+    protected virtual void Start()
     {
-        isDead = false;
-        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        SetUpRag();
+        animator = GetComponent<Animator>();
+        SetKinematic(true);
     }
 
-    public abstract void Update();
+    public virtual void Dead(Vector3 hitPosition)
+    {
+        if (isDead) return;
 
-    public void SetKinematic(bool kinematic)
+        isDead = true;
+        onDeath.Invoke();
+        EnableRagdoll(hitPosition);
+        animator.enabled = false;
+        agent.enabled = false;
+        this.enabled = false;
+    }
+
+    protected void EnableRagdoll(Vector3 hitPosition)
+    {
+        SetKinematic(false);
+
+        foreach (var item in Physics.OverlapSphere(hitPosition, 0.3f))
+        {
+            Rigidbody rb = item.GetComponent<Rigidbody>();
+            if (rb)
+            {
+                rb.AddExplosionForce(1000, hitPosition, 0.3f);
+            }
+        }
+    }
+
+    private void SetKinematic(bool kinematic)
     {
         foreach (var item in GetComponentsInChildren<Rigidbody>())
         {
             item.isKinematic = kinematic;
         }
-    }
-
-    public void SetUpRag()
-    {
-        SetKinematic(true);
-    }
-
-    public virtual void Dead(Vector3 position)
-    {
-        if (isDead) return;
-        isDead = true;
-        SetKinematic(false);
-        animator.enabled = false;
-        agent.enabled = false;
-        this.enabled = false;
-        Debug.Log("I died");
-        onDeath.Invoke();
     }
 }
