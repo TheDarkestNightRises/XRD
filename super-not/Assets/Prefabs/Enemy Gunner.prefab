@@ -651,6 +651,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8633815518019810747}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 55855f82ccc20a84fa9e3f06870d53e1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5467678874249069686}
     - targetCorrespondingSourceObject: {fileID: 4969453239897013006, guid: 55855f82ccc20a84fa9e3f06870d53e1,
         type: 3}
       insertIndex: -1
@@ -1443,18 +1447,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501bf0447d62db2489996788ba141bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
   hitParticlePrefab: {fileID: 2462045763441574653, guid: bc20e11fe125f0c4985a160e93e1a272,
     type: 3}
   playerTarget: {fileID: 0}
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+  gun: {fileID: 1200228642105315801}
   playerHead: {fileID: 0}
   stopDistance: 5
   attackRange: 5
   turnSpeed: 5
-  gun: {fileID: 1200228642105315801}
 --- !u!195 &8633815518019810747
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1477,6 +1480,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5467678874249069686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279084413730533723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4266c00c87983d4d96e46057b87756d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3448030439635870895 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8171480954102454107, guid: 55855f82ccc20a84fa9e3f06870d53e1,

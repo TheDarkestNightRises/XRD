@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator HandleLevelReset()
     {
-        fogManager.SetFog();
+        //fogManager.SetFog();
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(resetDelay);
         Time.timeScale = 1;
@@ -62,6 +62,6 @@ public class GameManager : MonoBehaviour
 
     private void ResetLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ResetManager.ResetScene();
     }
 }
