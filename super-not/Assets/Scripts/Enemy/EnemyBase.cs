@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField] public GameObject hitParticlePrefab;
     [SerializeField] protected Transform playerTarget;
-    [HideInInspector] public UnityEvent onDeath;
+    [SerializeField] public UnityEvent onDeath;
     public bool isDead;
     protected NavMeshAgent agent;
     protected Animator animator;

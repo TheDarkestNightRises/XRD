@@ -12723,7 +12723,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 386296056}
   fogManager: {fileID: 1261464502}
-  resetDelay: 0.7
 --- !u!1001 &880523675
 PrefabInstance:
   m_ObjectHideFlags: 0

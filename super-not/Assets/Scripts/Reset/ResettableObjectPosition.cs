@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResettablePosition : Resettable
+public class ResetattableObjectPosition : Resettable
 {
     private Vector3 originalPosition;
     private Quaternion originalRotation;

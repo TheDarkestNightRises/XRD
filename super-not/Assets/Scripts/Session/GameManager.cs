@@ -8,10 +8,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private FogManager fogManager;
 
-    private void Start()
+    public void Start()
     {
+        ResetEnemiesRemaining();
+    }
+
+    public void ResetEnemiesRemaining()
+    {
+        enemiesRemaining = 0;
         var enemies = FindObjectsOfType<EnemyBase>();
         enemiesRemaining = enemies.Length;
+        Debug.Log($"Enemies remaining: {enemiesRemaining}");
 
         foreach (var enemy in enemies)
         {
@@ -19,7 +26,6 @@ public class GameManager : MonoBehaviour
         }
 
         player.onPlayerDeath.AddListener(HandlePlayerDeath);
-
     }
 
     private void OnEnemyDied()
@@ -51,6 +57,7 @@ public class GameManager : MonoBehaviour
     private void GoToNextLevel()
     {
         Time.timeScale = 1;
+        Time.fixedDeltaTime = 0.01f;
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
     }
@@ -60,11 +67,11 @@ public class GameManager : MonoBehaviour
         ResetManager.ResetScene();
     }
 
-    private void ResetLevelWithScene()
-    {
-        Time.timeScale = 1;
-        Time.fixedDeltaTime = 0.01f;
-        var currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene);
-    }
+    //private void ResetLevelWithScene()
+    //{
+    //    Time.timeScale = 1;
+    //    Time.fixedDeltaTime = 0.01f;
+    //    var currentScene = SceneManager.GetActiveScene().buildIndex;
+    //    SceneManager.LoadScene(currentScene);
+    //}
 }
