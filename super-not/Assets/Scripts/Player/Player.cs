@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public string targetTag;
     public UnityEvent onPlayerDeath;
-    public bool IsDead { get; private set; }
+    public bool IsDead { get; set; }
 
     private void OnCollisionEnter(Collision collision)
     {

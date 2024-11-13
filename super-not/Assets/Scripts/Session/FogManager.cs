@@ -8,7 +8,7 @@ public class FogManager : MonoBehaviour
 
     private void Start()
     {
-        RenderSettings.fogEndDistance = initialFogEndDistance;
+        ResetFog();
     }
 
     public void SetFog()

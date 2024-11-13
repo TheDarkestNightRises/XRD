@@ -9,7 +9,7 @@ public abstract class EnemyBase : MonoBehaviour
     [SerializeField] public GameObject hitParticlePrefab;
     [SerializeField] public Transform playerTarget;
     [HideInInspector] public UnityEvent onDeath;
-    protected bool isDead;
+    public bool isDead;
     protected NavMeshAgent agent;
     protected Animator animator;
 

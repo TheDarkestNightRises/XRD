@@ -7,8 +7,8 @@ public class BodyPartScript : MonoBehaviour
     public EnemyBase enemy;
     public Renderer bodyPartRenderer;
     public GameObject bodyPartPrefab;
-    private Rigidbody rb;
-    private bool replaced;
+    public Rigidbody rb;
+    public bool replaced;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
