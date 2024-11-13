@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField] public GameObject hitParticlePrefab;
-    [SerializeField] protected Transform playerTarget;
+    protected Transform playerTarget;
     private GameManager gameManager;
 
     public bool isDead;
