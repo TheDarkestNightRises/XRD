@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8822208757143967994}
+  - component: {fileID: 8184868622226404395}
   m_Layer: 0
   m_Name: Enemy Fighter
   m_TagString: Weapon
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 2795175480471186401}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8184868622226404395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535440831565205092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf73426c0816a940a0d4b85b12f5b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2396139539444829194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -912,6 +925,8 @@ MonoBehaviour:
   bodyPartRenderer: {fileID: 4487970672881884063}
   bodyPartPrefab: {fileID: 3441970818036421683, guid: 03cd3381438646d4e95d62f0555f5348,
     type: 3}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &1846472020625259489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4098047728300357611, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1043,6 +1058,8 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &1889275253179269639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4937983812919407091, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1175,6 +1192,8 @@ MonoBehaviour:
   bodyPartRenderer: {fileID: 5075873889556707745}
   bodyPartPrefab: {fileID: 6877994808578447893, guid: b42f66d61f12eb7469be268bbd7836a5,
     type: 3}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &2247342136123415804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4499348860934017270, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1306,6 +1325,8 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!4 &2795175480471186401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1385,6 +1406,7 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+  isDead: 0
   chaseRange: 20
   punchRange: 2.5
   attackCooldown: 1.5
@@ -1533,6 +1555,8 @@ MonoBehaviour:
   bodyPartRenderer: {fileID: 8011962431892888079}
   bodyPartPrefab: {fileID: 8801732548567301636, guid: 301147a17a25bec47bc200f3ab249664,
     type: 3}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &4158885337778346055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1799073810695803981, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1662,6 +1686,8 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!137 &4487970672881884063 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2236237030686087061, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1806,6 +1832,8 @@ MonoBehaviour:
   bodyPartRenderer: {fileID: 3084338215464995862}
   bodyPartPrefab: {fileID: 6934357218538561259, guid: 3ac65079358bd7b4d87658c8ae550baa,
     type: 3}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &5342468834282614358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1484904548792130980, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -1937,6 +1965,8 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &5536923313128569251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1326355867708426839, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -2069,6 +2099,8 @@ MonoBehaviour:
   bodyPartRenderer: {fileID: 8622020833894303834}
   bodyPartPrefab: {fileID: 5174364098437167931, guid: 40f6b82fc19fca64da66c15d3b9a1192,
     type: 3}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!1 &7329546078722275076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4969453239897013006, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -2152,6 +2184,8 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0
 --- !u!137 &8011962431892888079 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5652291683100956165, guid: 55855f82ccc20a84fa9e3f06870d53e1,
@@ -2295,3 +2329,5 @@ MonoBehaviour:
   enemy: {fileID: 7877142066688856780}
   bodyPartRenderer: {fileID: 0}
   bodyPartPrefab: {fileID: 0}
+  rb: {fileID: 0}
+  replaced: 0

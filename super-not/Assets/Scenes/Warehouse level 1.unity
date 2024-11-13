@@ -4906,6 +4906,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1515257030237751877, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: enemyPrefab
+      value: 
+      objectReference: {fileID: 1858046705}
+    - target: {fileID: 1515257030237751877, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: originalPosition.x
+      value: 10.696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1515257030237751877, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: originalPosition.z
+      value: 3.04
+      objectReference: {fileID: 0}
     - target: {fileID: 4222110243703075246, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}
       propertyPath: playerHead
@@ -12708,8 +12723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 386296056}
   fogManager: {fileID: 1261464502}
-  timeManager: {fileID: 1375354842}
-  resetDelay: 0.6
+  resetDelay: 0.7
 --- !u!1001 &880523675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19289,7 +19303,6 @@ MonoBehaviour:
   rightHand: {fileID: 1456020479}
   sensitivity: 0.13
   minTimeScale: 0.05
-  smoothingFactor: 5
 --- !u!1001 &1381180489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21355,6 +21368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472413356}
   - component: {fileID: 1472413355}
+  - component: {fileID: 1472413357}
   m_Layer: 0
   m_Name: Reset manager
   m_TagString: Untagged
@@ -21389,6 +21403,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472413357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472413354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd5feee84ee5ec46ac8de3464f9ae3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106, type: 3}
+  enemyDataList: []
 --- !u!1 &1474755130
 GameObject:
   m_ObjectHideFlags: 0
@@ -27412,6 +27440,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1858046705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106,
+    type: 3}
+  m_PrefabInstance: {fileID: 7984020734970285124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1859642915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31935,6 +31969,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1515257030237751877, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: originalPosition.x
+      value: 3.334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1515257030237751877, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: originalPosition.z
+      value: 9.94
       objectReference: {fileID: 0}
     - target: {fileID: 4222110243703075246, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}

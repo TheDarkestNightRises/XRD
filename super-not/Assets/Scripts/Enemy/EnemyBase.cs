@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField] public GameObject hitParticlePrefab;
-    [SerializeField] public Transform playerTarget;
+    [SerializeField] protected Transform playerTarget;
     [HideInInspector] public UnityEvent onDeath;
     public bool isDead;
     protected NavMeshAgent agent;
@@ -15,6 +15,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
+        playerTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         SetKinematic(true);

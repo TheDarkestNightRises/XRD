@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     private int enemiesRemaining;
     [SerializeField] private Player player;
     [SerializeField] private FogManager fogManager;
-    [SerializeField] private float resetDelay = 0.4f;
+    [SerializeField] private float resetDelay = 0.1f;
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator HandleNextLevelTransition()
     {
-        fogManager.SetFog();
+        //fogManager.SetFog();
         yield return new WaitForSeconds(resetDelay);
         GoToNextLevel();
     }
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator HandleLevelReset()
     {
-        fogManager.SetFog();
+        //fogManager.SetFog();
         yield return new WaitForSecondsRealtime(resetDelay);
         ResetLevel();
     }
@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
     }
 
     private void ResetLevel()
+    {
+        ResetManager.ResetScene();
+    }
+
+    private void ResetLevelWithScene()
     {
         Time.timeScale = 1;
         Time.fixedDeltaTime = 0.01f;
