@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyResetManager : Resettable
 {
-    [SerializeField] public GameObject enemy;
+    [SerializeField] public GameObject enemyGunner;  
+    [SerializeField] public GameObject enemyBruiser; 
     [SerializeField] private List<EnemyData> enemyDataList = new List<EnemyData>();  
 
     private void Awake()
@@ -20,10 +21,22 @@ public class EnemyResetManager : Resettable
 
         foreach (var enemy in enemies)
         {
+            var enemyType = EnemyType.Gunner;
+
+            if (enemy is EnemyGunner)
+            {
+                enemyType = EnemyType.Gunner;
+            }
+            else if (enemy is EnemyBruiser)
+            {
+                enemyType = EnemyType.Bruiser;
+            }
+
             enemyDataList.Add(new EnemyData
             {
                 position = enemy.transform.position,
-                rotation = enemy.transform.rotation
+                rotation = enemy.transform.rotation,
+                type = enemyType 
             });
         }
     }
@@ -37,14 +50,36 @@ public class EnemyResetManager : Resettable
     {
         foreach (var enemyData in enemyDataList)
         {
-            Instantiate(enemy, enemyData.position, enemyData.rotation);
+            GameObject prefabToInstantiate = null;
+
+            switch (enemyData.type)
+            {
+                case EnemyType.Gunner:
+                    prefabToInstantiate = enemyGunner;
+                    break;
+
+                case EnemyType.Bruiser:
+                    prefabToInstantiate = enemyBruiser;
+                    break;
+
+                default:
+                    continue;
+            }
+
+            Instantiate(prefabToInstantiate, enemyData.position, enemyData.rotation);
         }
     }
 }
 
-[System.Serializable]
+public enum EnemyType
+{
+    Gunner,
+    Bruiser
+}
+
 public class EnemyData
 {
     public Vector3 position;    
     public Quaternion rotation; 
+    public EnemyType type; 
 }

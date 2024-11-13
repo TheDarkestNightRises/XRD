@@ -22,9 +22,7 @@ public class ResettablePlayer : Resettable
     {
         transform.position = originalPosition;
         transform.rotation = originalRotation;
-
         // Reset the player's state
         player.IsDead = false;
-        player.gameObject.SetActive(true);
     }
 }

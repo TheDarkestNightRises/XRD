@@ -574,10 +574,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7877142066688856780}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 55855f82ccc20a84fa9e3f06870d53e1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6461749975894439594}
     - targetCorrespondingSourceObject: {fileID: 4969453239897013006, guid: 55855f82ccc20a84fa9e3f06870d53e1,
         type: 3}
       insertIndex: -1
@@ -1411,18 +1407,6 @@ MonoBehaviour:
   punchRange: 2.5
   attackCooldown: 1.5
   turnSpeed: 5
---- !u!114 &6461749975894439594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3279084413730533723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4266c00c87983d4d96e46057b87756d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3448030439635870895 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8171480954102454107, guid: 55855f82ccc20a84fa9e3f06870d53e1,
