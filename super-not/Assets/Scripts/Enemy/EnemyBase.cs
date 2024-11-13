@@ -8,7 +8,8 @@ public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField] public GameObject hitParticlePrefab;
     [SerializeField] protected Transform playerTarget;
-    [HideInInspector] public UnityEvent onDeath;
+    private GameManager gameManager;
+
     public bool isDead;
     protected NavMeshAgent agent;
     protected Animator animator;
@@ -18,6 +19,7 @@ public abstract class EnemyBase : MonoBehaviour
         playerTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        gameManager = FindObjectOfType<GameManager>();
         SetKinematic(true);
     }
 
@@ -26,7 +28,7 @@ public abstract class EnemyBase : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
-        onDeath.Invoke();
+        gameManager.OnEnemyDied();
         EnableRagdoll(hitPosition);
         animator.enabled = false;
         agent.enabled = false;
