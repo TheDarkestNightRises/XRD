@@ -5,17 +5,18 @@ using UnityEngine.AI;
 
 public class EnemyGunner : EnemyBase
 {
-    [SerializeField] public FireBullet gun;
-    [SerializeField] public Transform playerHead;
-    [SerializeField] public float stopDistance = 5;
-    [SerializeField] public float attackRange = 5;
-    [SerializeField] public float turnSpeed = 5;
+    public FireBullet gun;
+    [SerializeField] private float stopDistance = 5;
+    [SerializeField] private float attackRange = 5;
+    [SerializeField] private float turnSpeed = 5;
+    private Transform playerHead;
 
     private Quaternion localRotationGun;
 
     protected override void Start()
     {
         base.Start();
+        playerHead = GameObject.FindGameObjectWithTag("MainCamera").transform;
         localRotationGun = gun.spawnpoint.localRotation;
     }
 

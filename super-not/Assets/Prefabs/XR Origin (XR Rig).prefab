@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1901206493417998383}
   - component: {fileID: 8324360605840411940}
   - component: {fileID: 6106269893025638229}
+  - component: {fileID: 7007639280378740206}
   m_Layer: 6
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -289,6 +290,18 @@ MonoBehaviour:
   onPlayerDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7007639280378740206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750182326734497954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c0780dae296a04cac55b7b8322512e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4077008511351102932
 GameObject:
   m_ObjectHideFlags: 0
