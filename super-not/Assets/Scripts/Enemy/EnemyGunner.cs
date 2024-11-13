@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class EnemyGunner : EnemyBase
 {
     public FireBullet gun;
-    [SerializeField] private float stopDistance = 5;
     [SerializeField] private float attackRange = 5;
     [SerializeField] private float turnSpeed = 5;
     private Transform playerHead;
@@ -26,7 +25,7 @@ public class EnemyGunner : EnemyBase
 
         float distance = Vector3.Distance(playerTarget.position, transform.position);
 
-        if (distance < stopDistance)
+        if (distance < attackRange)
         {
             agent.isStopped = true;
             FaceTarget();

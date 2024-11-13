@@ -7,13 +7,11 @@ public class GameManager : MonoBehaviour
     private int enemiesRemaining;
     [SerializeField] private Player player;
     [SerializeField] private FogManager fogManager;
-    [SerializeField] private float resetDelay = 0.1f;
 
     private void Start()
     {
         var enemies = FindObjectsOfType<EnemyBase>();
         enemiesRemaining = enemies.Length;
-        Debug.Log($"Kill {enemiesRemaining}");
 
         foreach (var enemy in enemies)
         {
@@ -21,6 +19,7 @@ public class GameManager : MonoBehaviour
         }
 
         player.onPlayerDeath.AddListener(HandlePlayerDeath);
+
     }
 
     private void OnEnemyDied()
@@ -28,32 +27,30 @@ public class GameManager : MonoBehaviour
         enemiesRemaining--;
         if (enemiesRemaining <= 0)
         {
-            StartCoroutine(HandleNextLevelTransition());
+            HandleNextLevelTransition();
         }
     }
 
-    private IEnumerator HandleNextLevelTransition()
+    private void HandleNextLevelTransition()
     {
-        //fogManager.SetFog();
-        yield return new WaitForSeconds(resetDelay);
+        fogManager.ClearFog();
         GoToNextLevel();
     }
 
     private void HandlePlayerDeath()
     {
-        StartCoroutine(HandleLevelReset());
+        HandleLevelReset();
     }
 
-    private IEnumerator HandleLevelReset()
+    private void HandleLevelReset()
     {
-        //fogManager.SetFog();
-        yield return new WaitForSecondsRealtime(resetDelay);
+        fogManager.ClearFog();
         ResetLevel();
     }
 
     private void GoToNextLevel()
     {
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
     }

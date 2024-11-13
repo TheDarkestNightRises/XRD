@@ -3,29 +3,56 @@ using UnityEngine;
 
 public class FogManager : MonoBehaviour
 {
-    private float targetFogEndDistance = 5f;  
+    private float targetFogEndDistance = 5f;
     private float initialFogEndDistance = 50f;
+    private float fogFadeDuration = 0.5f;  
 
     private void Start()
     {
-        ResetFog();
+        ClearFog();
     }
 
-    public void SetFog()
+    public void SetFog() 
     {
-        StartCoroutine(SetFogRoutine());
+        StopAllCoroutines(); 
+        StartCoroutine(FadeInFog());
     }
 
-    private IEnumerator SetFogRoutine()
+    public void ClearFog() 
     {
-        while (RenderSettings.fogEndDistance > targetFogEndDistance)
+        StopAllCoroutines(); 
+        StartCoroutine(FadeOutFog());
+    }
+
+    private IEnumerator FadeInFog()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fogFadeDuration)
         {
-            RenderSettings.fogEndDistance = Mathf.Lerp(RenderSettings.fogEndDistance, targetFogEndDistance, 0.1f);
+            RenderSettings.fogEndDistance = Mathf.Lerp(initialFogEndDistance, targetFogEndDistance, elapsedTime / fogFadeDuration);
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        RenderSettings.fogEndDistance = targetFogEndDistance;
     }
 
-    public void ResetFog()
+    private IEnumerator FadeOutFog()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fogFadeDuration)
+        {
+            RenderSettings.fogEndDistance = Mathf.Lerp(targetFogEndDistance, initialFogEndDistance, elapsedTime / fogFadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        RenderSettings.fogEndDistance = initialFogEndDistance;
+    }
+
+    public void ResetFog() 
     {
         RenderSettings.fogEndDistance = initialFogEndDistance;
     }
