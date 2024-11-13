@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FogManager : MonoBehaviour
 {
-    private float targetFogEndDistance = 5f;
+    private float targetFogEndDistance = 3f;
     private float initialFogEndDistance = 50f;
     private float fogFadeDuration = 0.5f;  
 
