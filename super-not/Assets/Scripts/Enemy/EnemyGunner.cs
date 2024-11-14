@@ -8,6 +8,7 @@ public class EnemyGunner : EnemyBase
     public FireBullet gun;
     [SerializeField] private float attackRange = 5;
     [SerializeField] private float turnSpeed = 5;
+    private Transform playerTarget;
     private Transform playerHead;
 
     private Quaternion localRotationGun;
@@ -15,6 +16,7 @@ public class EnemyGunner : EnemyBase
     protected override void Start()
     {
         base.Start();
+        playerTarget = GameObject.FindGameObjectWithTag("XR").transform;
         playerHead = GameObject.FindGameObjectWithTag("MainCamera").transform;
         localRotationGun = gun.spawnpoint.localRotation;
     }
