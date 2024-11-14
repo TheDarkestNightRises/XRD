@@ -12,6 +12,13 @@ public class EnemyBruiser : EnemyBase
     private float lastAttackTime = 0f;
     private float distanceToPlayer = Mathf.Infinity;
     private bool isProvoked = false;
+    private Transform playerTarget;
+
+    protected override void Start()
+    {
+        base.Start();
+        playerTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
+    }
 
     public void Update()
     {

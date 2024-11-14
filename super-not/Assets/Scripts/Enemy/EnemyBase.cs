@@ -16,7 +16,6 @@ public abstract class EnemyBase : MonoBehaviour
 
     protected virtual void Start()
     {
-        playerTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
