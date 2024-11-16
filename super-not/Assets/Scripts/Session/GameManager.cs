@@ -48,6 +48,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         Time.fixedDeltaTime = 0.01f;
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
         SceneManager.LoadScene(nextSceneIndex);
     }
 
