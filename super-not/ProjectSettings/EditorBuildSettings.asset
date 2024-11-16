@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Warehouse level 2.unity
     guid: 78aaa9fd102fb804281d156ef24ec61b
   - enabled: 1
+    path: Assets/Scenes/Warehouse level 3.unity
+    guid: e96bf0d9b35c26643b463f12cc71f4ae
+  - enabled: 1
     path: Assets/Scenes/ScienceLaboratory.unity
     guid: 959d199dcd499f5439797e28e290cc49
   - enabled: 1
