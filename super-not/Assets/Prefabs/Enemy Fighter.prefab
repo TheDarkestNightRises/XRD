@@ -1456,8 +1456,8 @@ MonoBehaviour:
     type: 3}
   isDead: 0
   chaseRange: 20
-  punchRange: 3
-  attackCooldown: 1.5
+  punchRange: 1.5
+  attackCooldown: 1
   turnSpeed: 5
 --- !u!1 &3448030439635870895 stripped
 GameObject:
