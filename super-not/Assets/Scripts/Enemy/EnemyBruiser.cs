@@ -17,7 +17,7 @@ public class EnemyBruiser : EnemyBase
     protected override void Start()
     {
         base.Start();
-        playerTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        playerTarget = GameObject.FindGameObjectWithTag("XR").transform;
     }
 
     public void Update()
