@@ -12,7 +12,7 @@ public class HapticFeedback : MonoBehaviour
     private void Start()
     {
         XRBaseInteractable interactable = GetComponent<XRBaseInteractable>();
-        interactable.activated.AddListener();
+        interactable.activated.AddListener(TriggerHaptic);
     }
 
     public void TriggerHaptic(BaseInteractionEventArgs eventArgs)
