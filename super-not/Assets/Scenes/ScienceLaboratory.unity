@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 9450b48661da2cd49960c5630fd9edfd,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4e13e5e52c478bd4b92c7b6852aa4e0b,
     type: 2}
 --- !u!196 &4
@@ -370,12 +371,17 @@ PrefabInstance:
     - target: {fileID: -6722085885383957590, guid: aec1d80080aca024bbe77d83fb216bb2,
         type: 3}
       propertyPath: m_Intensity
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6722085885383957590, guid: aec1d80080aca024bbe77d83fb216bb2,
         type: 3}
       propertyPath: m_Lightmapping
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: aec1d80080aca024bbe77d83fb216bb2,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: -6465036834199976545, guid: aec1d80080aca024bbe77d83fb216bb2,
         type: 3}
@@ -707,6 +713,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 68db6fa7fecd81841b2ea075e7189cba, type: 2}
+    - target: {fileID: -447275898630060098, guid: aec1d80080aca024bbe77d83fb216bb2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08
+      objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: aec1d80080aca024bbe77d83fb216bb2,
         type: 3}
       propertyPath: m_LocalPosition.z
