@@ -1574,15 +1574,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1883180753}
     m_Modifications:
-    - target: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy Gunner
-      objectReference: {fileID: 0}
     - target: {fileID: 7877142066688856780, guid: 0564c30491331394e8bec6f767e1229b,
         type: 3}
       propertyPath: playerTarget
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy Gunner
       objectReference: {fileID: 0}
     - target: {fileID: 8822208757143967994, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}
@@ -2456,15 +2456,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1883180753}
     m_Modifications:
-    - target: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy Gunner (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7877142066688856780, guid: 0564c30491331394e8bec6f767e1229b,
         type: 3}
       propertyPath: playerTarget
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 535440831565205092, guid: b491779f839ecbb4fa5665a2b04f9106,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy Gunner (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8822208757143967994, guid: b491779f839ecbb4fa5665a2b04f9106,
         type: 3}
@@ -2576,7 +2576,7 @@ PrefabInstance:
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.646
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
@@ -2586,7 +2586,7 @@ PrefabInstance:
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.49
+      value: -5.26
       objectReference: {fileID: 0}
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
