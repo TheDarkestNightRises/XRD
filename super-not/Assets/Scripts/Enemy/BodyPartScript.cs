@@ -19,19 +19,19 @@ public class BodyPartScript : MonoBehaviour
         if (replaced)
             return;
 
-        if(bodyPartRenderer!=null)
-        bodyPartRenderer.enabled = false;
+        if (bodyPartRenderer != null)
+            bodyPartRenderer.enabled = false;
 
-        GameObject part = new GameObject();
-        if (bodyPartPrefab !=null)
-        part = Instantiate(bodyPartPrefab, transform.position, transform.rotation);
-
-        Rigidbody[] rbs = part.GetComponentsInChildren<Rigidbody>();
-
-        foreach(Rigidbody r in rbs)
+        if (bodyPartPrefab != null)
         {
-            r.interpolation = RigidbodyInterpolation.Interpolate;
-            r.AddExplosionForce(15, transform.position, 5);
+            GameObject part = Instantiate(bodyPartPrefab, transform.position, transform.rotation);
+            Rigidbody[] rbs = part.GetComponentsInChildren<Rigidbody>();
+
+            foreach (Rigidbody r in rbs)
+            {
+                r.interpolation = RigidbodyInterpolation.Interpolate;
+                r.AddExplosionForce(15, transform.position, 5);
+            }
         }
 
         rb.AddExplosionForce(15, transform.position, 5);
