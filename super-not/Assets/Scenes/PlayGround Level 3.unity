@@ -1042,10 +1042,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 1383249902214766540, guid: ce64042081b119f49a9e7a4e52999cac,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1238994524}
     - target: {fileID: 1384909132067424830, guid: ce64042081b119f49a9e7a4e52999cac,
         type: 3}
       propertyPath: m_Name
       value: AK47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317275951757305158, guid: ce64042081b119f49a9e7a4e52999cac,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
