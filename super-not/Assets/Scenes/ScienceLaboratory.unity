@@ -2576,17 +2576,17 @@ PrefabInstance:
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.38
+      value: 2.942
       objectReference: {fileID: 0}
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.324
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.26
+      value: -5.397
       objectReference: {fileID: 0}
     - target: {fileID: 174918315088280986, guid: 2e9fc5ff5e6a4064fadd4fbda41b937b,
         type: 3}
@@ -2813,6 +2813,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661176608548562067, guid: eb0bc3dfad269af46aa88cead51dc2e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8997998321363999349, guid: eb0bc3dfad269af46aa88cead51dc2e5,
         type: 3}
@@ -3982,7 +3987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1883180753
 Transform:
   m_ObjectHideFlags: 0
@@ -4120,6 +4125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Time Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184402358297613021, guid: ce4a2b8098f250a449b43deca9f84aba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
