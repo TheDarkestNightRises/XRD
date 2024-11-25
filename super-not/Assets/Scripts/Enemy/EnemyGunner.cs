@@ -75,7 +75,7 @@ public class EnemyGunner : EnemyBase
 
     private void FaceTarget()
     {
-        Vector3 direction = (playerTarget.position - transform.position).normalized;
+        Vector3 direction = (playerHead.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
