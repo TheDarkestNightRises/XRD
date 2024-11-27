@@ -1,6 +1,6 @@
 # Blogpost 2 #
 
-## Description ##
+![image](https://github.com/user-attachments/assets/6e2ad8b2-499e-41b1-aba9-aabeb50c60ce)
 
 In this blog post update, we have implemented the portal and the method to place it, along with a custom portal shader that ensures objects within the portal are only visible from inside of it. Additionally, we configured the AR scene, which includes essential components such as buttons for summoning the portal, XR Origin, XR Interaction Manager, and AR Session 
 
