@@ -34,7 +34,7 @@ To make the Leonardo's portal experience both educational and immersive, I integ
 ### Enhancing Engagement and Learning with Pop-Up Text
 The pop-up text system encourages focused exploration, displaying information only when the visitor is actively engaging with a model. This design choice avoids information overload and helps create a more interactive and personalized learning experience. Visitors are free to explore each invention at their own pace, gaining a deeper understanding of Leonardo's contributions to engineering.
 
-## 2D Object Description (Andrei)##
+## 2D Object Description ##
 
 As a way of learning about specific objects or animals, we have implemented a 2D object description on tap. To be able to find out about some information about a specific object or animal, the user can tap on the hitbox of an object and the text will appear on the top of the screen.
   
@@ -49,21 +49,15 @@ The AR scene uses the Object Tap Handler to identify the objects that have a des
 <br>![image](https://github.com/user-attachments/assets/71b507a3-e88c-44de-872d-05c6791299d9)<br><br>
 
 ## Spatial Music ##  
-
-# Interactive Portal Project
-
 In this interactive portal project, visitors can embark on **immersive journeys** through different eras, each with its own distinctive atmosphere.
 
-## Viking-Inspired Environment music
-
+Viking-Inspired Environment music  <br>
 One path leads to a **Viking-inspired environment**, where epic, atmospheric music sets the tone, transporting visitors into the world of **Norse explorers** and legendary warriors. The evocative soundscape brings this ancient setting to life, adding a sense of **adventure and discovery**.
 
-## Leonardo da Vinci environment music
-
+Leonardo da Vinci environment music <br>
 In the **Leonardo da Vinci** section, a soothing piano melody fills the air, creating a calm, contemplative ambiance ideal for exploring **Leonardo’s mechanical innovations**. This relaxing soundtrack enhances the thoughtful design and interactive storytelling, inviting visitors to reflect on **Leonardo’s genius** and the impact of his inventions.
 
-## Prehistoric Environment music
-
+Prehistoric Environment music  <br>
 Another path offers a **prehistoric environment** steeped in mystery, with subtle dinosaur sounds that evoke the **primal landscapes of ancient Earth**.
 
 Each of these environments is carefully crafted, combining **ambient sound, design, and interactivity** to fully engage visitors in the stories of **innovation and history**, making each exploration a memorable journey through time.
