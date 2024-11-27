@@ -24,7 +24,7 @@ This design highlights the user experience and allows users to engage with the v
 
 ![image](https://github.com/user-attachments/assets/c4831b6a-2da1-421b-ac01-d931a9af28cf)
 
-## App UI (Andrei) ##  
+## App UI ##  
 
 The UI of the application consists of 3 buttons that resemble 3 different historic places: Leonardo da Vinci's pieces of art, the Vikings era, and the Mesozoic era.
 
@@ -40,7 +40,9 @@ The Mesozoic era is known as the "Age of Reptiles" marking the existence of diff
 
 <br>![image](https://github.com/user-attachments/assets/0e3c576d-9e90-4285-85fd-7eda6e5443fb)<br><br>
 
-### Vikings era (Emanuel) ###
+### Vikings era ###
+![image](https://github.com/user-attachments/assets/19c2d45c-2c7a-49fc-a615-cfba118fa18e)
+In the heart of the Viking era, nestled between rolling hills and dense forests, a small village stands as a testament to the ingenuity and resilience of its people. The architecture of the village, crafted in the traditional Viking style, is both simple and functional. Despite their fierce reputation as seafarers and warriors, the Vikings are portrayed here in their more peaceful moments.
 
 ### Crafting a Portal Space that Reflects Leonardo’s Vision
 
