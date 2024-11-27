@@ -4,7 +4,6 @@
 
 In this update, we've made some improvements to the placement marker and fixed some clipping issues while transitioning from the real world to the inside of a portal. To make the experience more pleasant, we have added an interface before entering the app and we have properly built the portal environments to create an immersive experience.
 
-
 ## Marker ##
 
 ![image](https://github.com/user-attachments/assets/d5d93ac1-4764-48c7-9aff-8dc19b8b6bdf)
@@ -33,9 +32,9 @@ The UI of the application consists of 3 buttons that resemble 3 different histor
 
 Upon pressing one of these 3 buttons, the specific era portal will appear. Only one portal can be placed at a time. Upon placing another portal, the old one will disappear.
 
-## History locations environments (Andrei / Emanuel / Oriana) ##
+## History locations environments ##
 
-### Mesozoic era (Andrei) ###
+### Mesozoic era ###
 
 The Mesozoic era is known as the "Age of Reptiles" marking the existence of different types of dinosaurs. Especially for children, this topic is always an interesting one, and since it is hard to resemble how they exactly look or the color of their skin, the existence of them can not be denied. In this environment 3 dinosaur species were covered: Stegasaurus, Velociraptor, and Pachycephalasaurus, each of them having a description of the species that they belong to, upton tapping on them.
 
@@ -43,38 +42,31 @@ The Mesozoic era is known as the "Age of Reptiles" marking the existence of diff
 
 ### Vikings era (Emanuel) ###
 
-### Leonardo da Vinci's enginnering (Oriana) ###
 ### Crafting a Portal Space that Reflects Leonardo’s Vision
 
 ![image](https://github.com/user-attachments/assets/ebe704c6-1ec8-49e0-aff2-8f7ab367b4d2)
 
 The portal is designed to evoke the feeling of stepping into Leonardo da Vinci's world. Using a clean, minimalist room layout, I assembled an environment inspired by the essence of his workshop. While I didn’t create the 3D models of his inventions, I added custom pedestals that highlight each piece. This arrangement invites visitors to fully engage with Leonardo’s mechanical concepts, from early prototypes of helicopters to innovative bicycle designs, all within a cohesive and focused space. Leonardo da Vinci was not just a famous artist; he was also a brilliant engineer. His collection of engineering designs showcases his fascination with flight and mechanics, making them perfect for educational purposes in a portal. A bust of Leonardo da Vinci is placed in the middle of the display to introduce the subject. The text pops up whenever you look at any object in the room, providing a good user experience and quick insights about the items.
 
-### Wings
+Wings <br>
 Leonardo's wing designs reflect his dream of human flight. He studied birds and imagined wings that could flap like theirs, showing his understanding of how to soar through the skies.
 
-### Flying Airplane
+Flying Airplane <br>
 One of his most daring ideas was a flying machine, similar to an airplane. This concept combined glider and helicopter elements, illustrating his creative vision of what flying could be long before it became reality.
 
-### Odometer
+Odometer <br>
 The odometer is a clever invention that measured how far a vehicle traveled. It demonstrates Leonardo's practical side and his interest in helping people navigate better.
 
-### Bicycle
+Bicycle <br>
 Leonardo also sketched a bicycle, showing his forward-thinking approach to personal transportation. His design had two wheels and a frame that resembles modern bicycles, highlighting his innovative spirit.
 
 ![image](https://github.com/user-attachments/assets/aa507be3-119c-42af-8ec3-c0cca58b05bb)
 
-
-### Catapult
+Catapult <br>
 His designs for catapults reveal his understanding of physics and mechanics. Leonardo created different types, each with unique ways to launch projectiles, showcasing his talent for improving existing technology.
 
-### Drum
+Drum <br>
 Leonardo da Vinci's sketches of drums show his appreciation for music. By exploring how instruments work, he combined art and engineering in a way that was truly inspiring.
-
-## Clipping Issue ##    
-
-
-
 
 ### Assets sources
 
@@ -95,5 +87,9 @@ Music by [Mikhail Smusev](https://pixabay.com/users/sigmamusicart-36860929/?utm_
 "Catapult" [link](https://skfb.ly/6YPCs) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 
 "Drum" [link](https://skfb.ly/6WWIJ) by GmedranoTIC is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+"Dinosaurs" https://assetstore.unity.com/publishers/37734
+"Magic portals" https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-free-247933
+
+
 
 
