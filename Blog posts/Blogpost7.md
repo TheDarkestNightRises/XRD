@@ -36,6 +36,19 @@ The room combines the **silence of scientific research** with the **anticipation
 ![image](https://github.com/user-attachments/assets/85031a29-02a1-4ea9-9d3c-aa26ca721b92)
 
 
+## Science Laboratory 3
+
+In the Laboratory 3 I wanted to make the player perceive to be immersed in a state of **controlled chaos**, where everything has its place. The space is lined with **cabinets**, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests **tension**, as though something is hidden just out of sight, adding to the mystery.
+
+In addittion to that, there are three enemies scattered across the room—one armed with pistols or trying to punch the player. Their movements are calculated. The entire scene feels like a **set-up**. It's a place where **precision and strategy** mean everything, where every decision may determine either life or death for the player.
+
+Near the center are three tables, each with weapons ready to be grasped. **Knives**, lie beside shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
+
+Opposite these tables, **screens flicker** with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a **door stands ajar**, revealing a row of cameras that appear to control the space, giving the feeling that **full control** over the environment is being exerted by someone—or something.
+
+
+
+
 ## Main menu ##
 ## Gameplay loop ##
 ## Reset ##
