@@ -105,6 +105,10 @@ This configuration ensures the shuriken is an engaging and functional weapon tha
 The **Knife** is a weapon in the VR game, providing dynamic interaction and realistic physics to enhance the player’s combat experience.
 
 ## Knife Features
+
+![image](https://github.com/user-attachments/assets/62932291-48a4-4fe8-9bb3-0ab426056d75)
+
+
 ### Tagging and Layer
 - **Tag:** The knife is tagged as a **Weapon** to categorize it within the game.
 - **Layer:** It is set to the **Default** layer.
