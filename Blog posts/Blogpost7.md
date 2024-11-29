@@ -1,6 +1,18 @@
 # Blogpost 7 #
 ## Description ##
 ## Level design ##
+## Science Laboratory
+
+**Laboratory** - This is a room that I created by importing some assets. There is a **dark blue floor** where the humanoid models were placed to attract the attention of the users while engaging them in gaming. 
+
+The **bold orange tones** of the enemies starkly contrast with the cool hues of the floor, providing high contrast and making them easy to spot during navigation and interaction. The **white camera icon** is strategically positioned to mark observation points, while the **sci-fi-looking machinery** in the background adds realism and purpose to this environment. The entire space has a **clean, futuristic vibe**, perfectly aligned with the immersive experience I’m crafting for my laboratory scene in *Super Not*.
+
+The **table** is positioned in the background, serving as the central point for weapon selection. **Three weapons** are laid out clearly in front, each featuring bold designs and vibrant highlights that draw attention. The table feels like a pivotal spot, where the right weapon can be chosen to prepare for fight ahead. 
+
+The scifi scene doesn't distract from the weapons; instead, it contrasts perfectly, making them impossible to miss. The weapons are arranged for **quick access**, allowing for seamless transitions into the action of battle. It's the perfect setup for making tactical decisions before facing the incoming enemies.
+
+
+
 ## Main menu ##
 ## Gameplay loop ##
 ## Reset ##
