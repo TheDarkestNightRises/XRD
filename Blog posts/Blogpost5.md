@@ -3,6 +3,18 @@
 ## Description ##
 ## VR setup ##
 ## Pistol ##
+
+![image](https://github.com/user-attachments/assets/256af9ce-b48c-4338-8e57-26fa0c241480)
+
+
+The **Pistol** object in this case defines both the functionality and physical properties of a pistol for use in *SuperNot* game. The name of the object is "Pistol", attached to a prefab, and no overrides are applied. No tag has been added to it, nor is it assigned to any layer. Its position is set in the game world, no rotation applied, and a scale to size it accordingly. A **Box Collider** component is applied to define the physical bounds of the pistol for collision detection. The collider is small, with slight offsets, and is set to be a solid object rather than a trigger.  
+
+The pistol has a **Rigidbody** component attached to it, which enables the pistol to interact with Unity's physics. It has a standard mass and low angular drag to provide some resistance to rotation. Gravity is turned on, so if the pistol is not supported, it will fall. Its collision detection is discrete; the object is not marked as kinematic, meaning it will respond to physical forces in the game world.  
+
+A custom script named **FireBullet** has been created to handle the shooting mechanics. It references a bullet prefab and an exact spawn point at which bullets are instantiated. The bullets are given a set speed, and an audio clip is played through an attached Audio Source component when the pistol is fired. A particle system is also used to create a muzzle flash for the pistol, providing visual feedback whenever the pistol is fired.  
+
+This setup will ensure that the pistol will have realistic physics interactions, be able to fire projectiles complete with sound and visual effects, making it a fully functional weapon in the VR game environment.
+
 ## Enemy Gunner ##
 ![image](https://github.com/user-attachments/assets/1a844cac-a23e-4c68-a184-a318b698d85b) <br>
 The enemy gunner is one of the most prominent enemies in our game. He is using the same script as the pistol that was explained previously and tries to shot down the player by aiming at his head. 
