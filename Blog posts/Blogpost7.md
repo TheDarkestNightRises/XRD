@@ -6,31 +6,27 @@
 ![image](https://github.com/user-attachments/assets/f704cafa-e326-4e3b-b65e-8be262b9c7d8)
 The warehouse levels are inspired from the stark and gritty aesthetics of SuperHot. The sound of pipes in the background makes the player feel uneasy and confused.
 The white material attached on each object represents a great contrast to the blood, enemy and shotting guns. Each level is intricately connected, forming a seamless progression through an abstract, minimalist maze. In the first level, glimpses of the second are visible, providing a sense of continuity and foreshadowing the challenges ahead 
+
 ### Science Laboratory ###
 
-**Science Laboratory** - This is a room that I created by importing some assets. There is a **dark blue floor** where the humanoid models were placed to attract the attention of the users while engaging them in gaming. 
+The design of this room is inspired by a science laboratory and it is realized by importing some assets. There is a dark blue floor where the humanoid models are placed to attract the attention of the users engaging them in the game. 
+The bold orange tones of the enemies and the cool hues of the floor, provide high contrast and make them easy to spot during navigation and interaction. The white camera icon is strategically positioned to mark observation points, while the sci-fi-looking machinery in the background adds realism and purpose to this environment. The entire space has a clean, futuristic vibe, perfectly aligned with the immersive experience of the scene in Super Not.
+The table is positioned in the background, serving as the central point for weapon selection. The weapons are laid out clearly in front, each featuring bold designs and vibrant highlights that draw attention. The table feels like a central spot, where the right weapon can be chosen to prepare for the fight ahead. 
 
-The **bold orange tones** of the enemies starkly contrast with the cool hues of the floor, providing high contrast and making them easy to spot during navigation and interaction. The **white camera icon** is strategically positioned to mark observation points, while the **sci-fi-looking machinery** in the background adds realism and purpose to this environment. The entire space has a **clean, futuristic vibe**, perfectly aligned with the immersive experience I’m crafting for my laboratory scene in *Super Not*.
-
-The **table** is positioned in the background, serving as the central point for weapon selection. **Three weapons** are laid out clearly in front, each featuring bold designs and vibrant highlights that draw attention. The table feels like a pivotal spot, where the right weapon can be chosen to prepare for fight ahead. 
-
-The scifi scene doesn't distract from the weapons; instead, it contrasts perfectly, making them impossible to miss. The weapons are arranged for **quick access**, allowing for seamless transitions into the action of battle. It's the perfect setup for making tactical decisions before facing the incoming enemies.
+The sci-fi scene doesn’t distract from the weapons; instead, it contrasts perfectly, making them impossible to miss. The weapons are arranged for quick access, allowing for seamless transitions into battle action. It’s the perfect setup for making tactical decisions before facing incoming enemies.
 
 ![image](https://github.com/user-attachments/assets/5ab56873-557c-4b22-9b67-02aca4e08949)
 
 ![image](https://github.com/user-attachments/assets/9c33b8c2-3054-4be7-9c44-1d52940891c3)
 
-
-
 ## Science Laboratory 2
 
-The room has a strongly **high-tech, science-fiction feel**—a blend of research and danger. Along the **left wall** stand three **cameras**, tall and pulsing with light. Around the room, various tools and objects enhance the atmosphere, emphasizing advanced experimentation.
+The design of the science laboratory 2 has a strongly high-tech, science-fiction feel like a blend of research and danger. Along the left wall stand three cameras, tall and pulsing with light. Around the room, various tools and objects enhance the atmosphere, emphasizing advanced experimentation.
 
-On the **right side**, three tables are arranged with weapons, such as shuriken pistol and knives. They can be grasped and used against oncoming enemies. Some experimental glass capsule with grey and green accents surround the area. 
+On the right side, three tables are arranged with weapons, such as shuriken pistol and knives. They can be grasped and used against oncoming enemies. Some experimental glass capsule with grey and green accents surround the area. 
+Mystery emanates from various raised platforms that surround the room. Glowing lights and complicated panels adorning these platforms suggest they might be devices for generating enemies  or, at the very least, something bad is about to unfold for the player. While some of the platforms are purely cosmetic, others give the entire space a fight atmosphere.
 
-**Mystery emanates** from various **raised platforms** that surround the room. **Glowing lights** and **complicated panels** adorning these platforms suggest they might be devices for generating enemies—or, at the very least, something bad is about to unfold for the player. While some of the platforms are purely cosmetic, others give the entire space a fight atmosphere.
-
-The room combines the **silence of scientific research** with the **anticipation of battle**, drawing attention to its clean-cut design and the shooting action.
+The room combines the silence of scientific research with the anticipation of battle, drawing attention to its clean-cut design and the shooting action.
 
 ![image](https://github.com/user-attachments/assets/181a8127-7c21-4f35-b129-0502b5b050c5)
 
@@ -39,13 +35,10 @@ The room combines the **silence of scientific research** with the **anticipation
 
 ## Science Laboratory 3
 
-In Laboratory 3 I wanted to make the player perceive to be immersed in a state of **controlled chaos**, where everything has its place. The space is lined with **cabinets**, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests **tension**, as though something is hidden just out of sight, adding to the mystery.
-
-In addition to that, there are three enemies scattered across the room—one armed with pistol or trying to punch the player. Their movements are calculated. The entire scene feels like a **set-up**. It's a place where **precision and strategy** mean everything, where every decision may determine either life or death for the player.
-
-Near the center are three tables, each with weapons ready to be grasped. **Knives**, lie beside the shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
-
-Opposite these tables, **screens flicker** with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a **door stands ajar**, revealing a row of cameras that appear to control the space, giving the feeling that **full control** over the environment is being exerted by someone—or something.
+In Laboratory 3 I wanted to make the player perceive to be immersed in a state of controlled chaos, where everything has its place. The space is lined with cabinets, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests tension, as though something is hidden just out of sight, adding to the mystery.
+In addition to that, there are three enemies scattered across the room—one armed with pistol or trying to punch the player. Their movements are calculated. The entire scene feels like a set-up. It's a place where precision and strategy mean everything, where every decision may determine either life or death for the player.
+Near the center are three tables, each with weapons ready to be grasped. Knives, lie beside the shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
+Opposite these tables, there is a screen that would flicker with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a door stands ajar, revealing a row of cameras that appear to control the space, giving the feeling that full control over the environment is being exerted by someone or something.
 
 ![image](https://github.com/user-attachments/assets/e0719583-892f-4d5d-b643-dffb29ddca7a)
 
@@ -74,14 +67,10 @@ The third playground level is inspired by a scene from "Rambo" where the player 
 ## Main menu ##
 
 The main menu in *Super Not* is very **minimalistic**. At the top, the title of the game, *Super Not*, is written in a **neat, round white font** that is both easy to read and eye-catching. The smooth, modern curves of the letters give it a **futuristic feel**, standing out clearly against the darker background.
-
 Below the title, there are two buttons: **Start** and **Quit**.
-
-- The **Start** button is white. On hover, it brightens, glowing blue to indicate that it’s ready to be clicked.  
-- The **Quit** button, in contrast, has a more **urgent appearance**, and when hovered it draws attention immediately with its red color.
-
+The Start button is white. On hover, it brightens, glowing blue to indicate that it’s ready to be clicked.  
+The Quit button, in contrast, has a more **urgent appearance**, and when hovered it draws attention immediately with its red color.
 The contrast between the buttons creates a smooth, **intuitive experience**. It’s easy to see which button is selected, and the entire menu feels **responsive**, guiding players through the options without being distracting. 
-
 This simple yet effective design makes navigating the menu feel seamless and engaging.
 
 ![image](https://github.com/user-attachments/assets/a0b5d334-8352-470c-8dd0-0a99bcfc2aaf)
@@ -97,43 +86,26 @@ This code creates a class, `MenuManager`, which is responsible for managing the 
 
 
 ## Methods
-
-### `Start()`
 When the game starts, `Start()` is called. This is where the initialization happens, such as ensuring that the main menu is visible at the start or that some UI elements are ready.
-
-### `Update()`
-In this method, the code continuously checks for player input, such as whether the player has pressed a button to start the game. It tracks these inputs and updates the menu's state accordingly.
+In the Update() method, the code continuously checks for player input, such as whether the player has pressed a button to start the game. It tracks these inputs and updates the menu's state accordingly.
 
 
 ## Gameplay loop ##
 
-The following script example is the `GameManager` class, which handles key aspects of gameplay, particularly focusing on player input and the management of enemies and game play loop.
-
+The following script shows the GameManager class, which handles key aspects of the gameplay, particularly focusing on player input and the management of enemies and game play loop.
 
 ![image](https://github.com/user-attachments/assets/ef531288-dd72-4302-ba1f-0bfd1c0e1e70)
-
-
-## Event Listener
 
 An event listener is set up and bound to player death events. This means that if the character dies during gameplay—such as from combat with enemies—the system will respond to execute an action based on this event to reset.
 
 ![image](https://github.com/user-attachments/assets/637079b4-9dc9-430e-9f8a-e73a8e4cfd28)
 
-
-## GameManager Details
-
-### Private Variables
-The `GameManager` starts by declaring private variables:
-- **Player Character Reference:** A reference to the player character, important for controlling gameplay mechanics.
-- **Fog Manager:** A reference to a fog manager, which plays a role in controlling environmental effects like visibility.
-- **Active Enemy Count:** The class also keeps track of the active enemies in the scene using two integer variables:
-  - One counts the original enemies created at the start.
-  - The other tracks the number of enemies defeated throughout gameplay.
-
-### `Start()` Method
-Inside the `Start()` method, which runs automatically when the game starts, Unity's functionality is used to find all objects in the scene that derive from `EnemyBase`. This helps count instances of enemies immediately. The first count helps balance the game, ensuring the player understands the number of enemies they are facing.
-
-The `GameManager` plays a crucial role in orchestrating various game elements. Both directly and indirectly, it enhances the user experience while ensuring smooth gameplay operation across different sessions.
+The GameManager starts by declaring private variables: first, a reference to the player character, which is important for controlling gameplay mechanics; and then the Fog Manager, which plays a role in managing environmental effects like visibility.
+There is also an Active Enemy Count that also keeps track of the active enemies in the scene using two integer variables:
+one counts the original enemies created at the start, while the other tracks the number of enemies defeated throughout gameplay.
+Inside the start() method, which runs automatically when the game starts, Unity's functionality is used to find all objects in the scene that derive from EnemyBase. This helps count instances of enemies immediately. The first count helps balance the game, ensuring the player understands the number of enemies they are facing.
+the code transitions to the next level using the GoToNextLevel method, which determines the next scene to load. It gets the current scene's index, increments it, and checks whether it is the last scene. If it is, it loops back to the first scene. The new scene is then loaded using SceneManager.LoadScene. Supporting methods, such as HandleNextLevelTransition, handle tasks like clearing fog via fogManager.ClearFog before moving to the next level.
+The GameManager plays a crucial role in orchestrating various game elements. Both directly and indirectly, it enhances the user experience while ensuring smooth gameplay operation across different sessions.
 
 
 
