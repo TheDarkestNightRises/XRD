@@ -14,6 +14,8 @@ To set up locomotion, we added a Locomotion System along with a Continuous Move 
 
 Each hand is equipped with an XR Controller, which enables hand movement. We also imported custom hand models featuring animations for grabbing and animating each finger. To enable the character to grab objects, the XR Origin contains an Active Ray Interactor, which highlights white when an object is selectable.
 
+![image](https://github.com/user-attachments/assets/08438e68-bce8-42fa-89d4-999bf5eaa405)
+
 This setup ensures immersive and fluid movement for the VR experience.
 
 
