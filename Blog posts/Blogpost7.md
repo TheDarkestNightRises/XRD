@@ -139,6 +139,18 @@ The `GameManager` plays a crucial role in orchestrating various game elements. B
 
 
 ## Reset ##
+To improve the performance of the game and to be able to quickly instantiate the levels again if the player dies, instead of loading the scene again, we chose to reset each game object individually at their initial state of the load. To do this we created the script "Resetable Manager" which uses the system. action reset event method. 
+
+![image](https://github.com/user-attachments/assets/9d90cbad-22fd-49de-b882-369f06fa2923)
+
+Then we have created a resettable entity that is actively listening to the "Restable Manager" singleton. 
+
+![image](https://github.com/user-attachments/assets/3b12717d-c9b3-492a-b69d-d290900bc02d)
+
+Each entity such as player, enemy, or weapon has its resettable manager which inherits from the resettable base entity and is then attached as a script. The following example represents how the weapons are reset:
+
+![image](https://github.com/user-attachments/assets/3cc3b383-9d25-429d-98e0-cff89dcc77d0)
+
 ## Performance ##
 Performance is really important for VR experiences. Any lag or input delay could massively impact the experience and shatter the illusion. VR headsets also have hardware limitations, which means that we need to take a few things into consideration. To improve performance we did the following:
 #### Lighting ####
