@@ -100,6 +100,52 @@ The technical integration of the shuriken makes it:
 This configuration ensures the shuriken is an engaging and functional weapon that enhances the player experience in *SuperNot*.
 
 
+# Knife 
+
+The **Knife** is a weapon in the VR game, providing dynamic interaction and realistic physics to enhance the player’s combat experience.
+
+## Knife Features
+### Tagging and Layer
+- **Tag:** The knife is tagged as a **Weapon** to categorize it within the game.
+- **Layer:** It is set to the **Default** layer.
+
+### Size and Physics Setup
+- **Size:** The knife's size is kept at the default scale.
+- **Rigidbody Component:**
+  - **Mass:** Set to standard, simulating realistic weight.
+  - **Drag:** No drag, allowing the knife to move freely.
+  - **Angular Drag:** Slight angular drag enables the knife to spin or tilt naturally and slow down its rotation over time.
+  - **Gravity:** Turned on to ensure the knife falls when released.
+  - **Dynamic Rigidbody:** Full interaction with physics, allowing the knife to react to forces and collisions.
+  - **Collision Detection:** Set to **Discrete** for efficient collision handling.
+  - **No Constraints:** The knife is free to move without restrictions.
+
+### XR Interaction Setup
+
+- **XR Grab Interactable Two Attach Script:** This script enables the knife to be picked up and manipulated within the VR environment.
+- **XR Interaction Manager:** The knife is linked to the XR Interaction Manager, which handles its interactions in the VR space.
+- **Interaction Layer Mask:** is set to **Everything**, allowing the knife to interact with any object in the environment.
+- **Interaction Distance:** Calculated from the Collider Position, with no custom reticle defined. The interaction range depends on where the player places their hand.
+- **Interaction Modes:**
+  - **Select Mode:** Single, allowing only one action or focus at a time.
+  - **Focus Mode:** Single, ensuring only one focused interaction (such as grabbing or throwing) occurs at a time.
+
+### Movement and Responsiveness
+
+- **Instantaneous Response:** The knife reacts immediately to the player’s hand movements, tracking both position and rotation for precise control.
+- **No Smoothing for Position and Rotation:** Both position and rotation smoothing are disabled to make the movement sharp and direct, ensuring a responsive gameplay experience.
+- **Throw Smoothing:** A slight smoothing duration is applied when the knife is thrown, making its flight path more natural while maintaining accuracy.
+
+## Purpose and Effectiveness
+
+This configuration allows the knife to be:
+- **Realistic** and **responsive** in VR, with dynamic physics that make it react naturally to the player’s actions.
+- **Precise** in both close combat and when thrown, tracking position and rotation for tight control.
+- **Intuitive** to interact with, offering a seamless and engaging experience during gameplay.
+
+With these settings, the knife becomes an effective and versatile weapon in the VR game, providing a smooth and satisfying experience in both close-quarter combat and ranged throwing.
+
+
 
 
 ## Enemy death ##
