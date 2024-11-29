@@ -87,6 +87,31 @@ In this method, the code continuously checks for player input, such as whether t
 
 
 ## Gameplay loop ##
+
+The following script example is the `GameManager` class, which handles key aspects of gameplay, particularly focusing on player input and the management of enemies.
+
+## Event Listener
+
+An event listener is set up and bound to player death events. This means that if the character dies during gameplay—such as from combat with enemies—the system will respond to execute an action based on this event to reset.
+
+## GameManager Details
+
+### Private Variables
+The `GameManager` starts by declaring private variables:
+- **Player Character Reference:** A reference to the player character, important for controlling gameplay mechanics.
+- **Fog Manager:** A reference to a fog manager, which plays a role in controlling environmental effects like visibility.
+- **Active Enemy Count:** The class also keeps track of the active enemies in the scene using two integer variables:
+  - One counts the original enemies created at the start.
+  - The other tracks the number of enemies defeated throughout gameplay.
+
+### `Start()` Method
+Inside the `Start()` method, which runs automatically when the game starts, Unity's functionality is used to find all objects in the scene that derive from `EnemyBase`. This helps count instances of enemies immediately. The first count helps balance the game, ensuring the player understands the number of enemies they are facing.
+
+The `GameManager` plays a crucial role in orchestrating various game elements. Both directly and indirectly, it enhances the user experience while ensuring smooth gameplay operation across different sessions.
+
+
+
+
 ## Reset ##
 ## Performance ##
 Performance is really important for VR experiences. Any lag or input delay could massively impact the experience and shatter the illusion. VR headsets also have hardware limitations, which means that we need to take a few things into consideration. To improve performance we did the following:
