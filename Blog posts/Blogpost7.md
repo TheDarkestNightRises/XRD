@@ -46,7 +46,9 @@ Near the center are three tables, each with weapons ready to be grasped. **Knive
 
 Opposite these tables, **screens flicker** with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a **door stands ajar**, revealing a row of cameras that appear to control the space, giving the feeling that **full control** over the environment is being exerted by someone—or something.
 
+![image](https://github.com/user-attachments/assets/e0719583-892f-4d5d-b643-dffb29ddca7a)
 
+![image](https://github.com/user-attachments/assets/e7f04f24-bfa6-4428-b5d7-c22635d07e4b)
 
 
 ## Main menu ##
