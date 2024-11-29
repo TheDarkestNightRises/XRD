@@ -1,5 +1,9 @@
 # Blogpost 6 #
+
 ## Description ##
+
+We have added a bruiser enemy which works the same as the gunner enemies but instead, they are fighting with their fists. To better manage the enemies' state we have added an "EnemyBase" script from which both bruiser and gunner enemies inherit. We have also added new weapons: a katana which is capable of slicing enemies and destroying bullets,  an ak47 which can be grabbed with two hands and fire at a high rate,  a shuriken which can be thrown at a high speed, and a knife which can be used as a melee weapon or throw at enemies. We have also implemented VFX effects for enemies death and now the bodies dynamically detach upon death.
+
 ## Enemy Bruiser ##
 ![image](https://github.com/user-attachments/assets/8307e078-679e-403c-9055-1ee0ea9ff540)# <br>
 The enemy bruiser is designed to relentlessly chase the player and apply constant pressure, forcing the player to take immediate action to avoid being overwhelmed.
