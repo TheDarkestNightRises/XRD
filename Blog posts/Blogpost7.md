@@ -1,7 +1,12 @@
 # Blogpost 7 #
 ## Description ##
 ## Level design ##
-## Science Laboratory
+### Warehouse level ###
+![image](https://github.com/user-attachments/assets/eb008d05-9377-4cf8-970b-7551c45668b8)
+![image](https://github.com/user-attachments/assets/f704cafa-e326-4e3b-b65e-8be262b9c7d8)
+The warehouse levels are inspired from the stark and gritty aesthetics of SuperHot. The sound of pipes in the background makes the player feel uneasy and confused.
+The white material attached on each object represents a great contrast to the blood, enemy and shotting guns. Each level is intricately connected, forming a seamless progression through an abstract, minimalist maze. In the first level, glimpses of the second are visible, providing a sense of continuity and foreshadowing the challenges ahead 
+### Science Laboratory ###
 
 **Science Laboratory** - This is a room that I created by importing some assets. There is a **dark blue floor** where the humanoid models were placed to attract the attention of the users while engaging them in gaming. 
 
