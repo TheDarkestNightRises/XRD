@@ -25,30 +25,8 @@ The `Punch` method calls the punch animations. The enemy has sphere colliders th
 
 ![image](https://github.com/user-attachments/assets/dff595eb-d3eb-420c-873f-5c8bc573d75c)
 
+This Unity script enhances the interaction of VR objects, adding distinctive attachment points for the left and right hands. This script inherits from the `XRGrabInteractable` class, thus enabling an object to dynamically switch its attachment point depending on which hand grabbed it. The script defines two variables of type Transform, one for the left hand and one for the right. Upon object grab, it checks the VR controller's tag to identify it as either the left or right hand and thus positions the attachment point accordingly. To set this up create two empty GameObjects in the scene as attachment points, and assign them via the script in the Inspector. Also tag the left and right controllers in Unity's **Tags & Layers** settings as "Left Hand" and "Right Hand". Then the script will automatically align the object with the proper hand. Because it integrates neatly with Unity's XR Interaction Toolkit, making a solution simple to implement that could provide in-VR interaction to objects that feels really intuitive and natural with hand motions.
 
-## VR Object Interaction Script Overview
-
-This Unity script enhances the interaction of VR objects by adding distinctive attachment points for the left and right hands. It enables an object to dynamically switch its attachment point based on which hand grabs it, offering a more natural and intuitive interaction.
-
-## Inheritance from `XRGrabInteractable`
-
-The script inherits from the `XRGrabInteractable` class, which makes the object interactable within the XR (Extended Reality) environment. By doing so, the object can be grabbed and manipulated by the VR controllers.
-
-## Variables
-
-The script defines two variables of type `Transform`:
-- **Left Hand Attachment Point**
-- **Right Hand Attachment Point**
-
-These variables determine where the object will be attached depending on which hand grabs it.
-
-## Object Grab Logic
-
-Upon an object grab, the script checks the tag of the VR controller to identify whether it is the left or right hand. Based on this, the script positions the attachment point accordingly:
-- If the left hand grabs the object, it will be attached to the left hand's specified attachment point.
-- If the right hand grabs it, the object will align with the right hand's attachment point.
-
-This script integrates smoothly with Unity's XR Interaction Toolkit, making it simple to implement and providing a seamless, intuitive, and natural in-VR interaction experience with hand motions.
 
 ## Shuriken 
 
@@ -56,107 +34,32 @@ The image shows the configuration of the **Shuriken** object, a throwable weapon
 
 ![image](https://github.com/user-attachments/assets/cfaf9aee-ea18-4d8f-80b5-b55908ee039c)
 
-## Shuriken Features
+The shurikens are positioned on tables across the labs, placed conveniently for quick access. This setup ensures that grabbing and throwing them is intuitive, fitting smoothly into the flow of combat without breaking the pace. The technical integration makes these launchable knife shurikens a dynamic and satisfying tool for taking down enemies in the game.
 
+This is the configuration for a **Shuriken** object used as a throwable weapon in our VR game *SuperNot*. Tagged as a Weapon and using a prefab, its size is scaled up for a larger appearance. A Rigidbody component is added to handle physics with a standard mass, no drag, and slight angular drag, allowing the shuriken to spin realistically while gradually slowing. Gravity is turned off to keep it on a course of flight for controlled, precise throws. Collision Detection is set to Discrete for efficient handling of interactions. The Rigidbody is dynamic, enabling full interaction with forces and collisions in the game.
+The **XR Grab Interactable Two Attach** script allows for VR interaction, enabling the shuriken to be grabbed and thrown within the VR environment. The interaction mode is set to Single, allowing only one action or focus at a time.
+The movement of the shuriken is Instantaneous. It immediately responds on the instant of grabbing or throwing it. It tracks position and rotation for precise control, with no smoothing for sharp responsiveness. Slight smoothing upon throw gives a more natural trajectory.
+This setup keeps the shuriken intuitive, responsive, and accurate-pretty versatile and effective as a throwable weapon in-game.
 
-### Tagging and Prefab
-- **Tag:** The shuriken is tagged as a **Weapon** for easy identification within the game.
-- **Prefab:** The object uses a prefab for consistency and easy reuse throughout the game.
-
-### Size and Physics Setup
-- **Size:** The shuriken’s size is scaled up for a larger, more noticeable appearance, making it easier for players to grab and throw.
-- **Rigidbody Component:** 
-  - **Mass:** Standard mass to simulate realistic weight and physics.
-  - **Drag:** No drag, allowing the shuriken to move freely through the air.
-  - **Angular Drag:** Slight angular drag enables the shuriken to spin realistically, gradually slowing over time.
-  - **Gravity:** Turned off to keep the shuriken on a controlled flight path, allowing for precise throws.
-  - **Collision Detection:** Set to **Discrete** for efficient interaction with other objects and characters.
-  - **Dynamic Rigidbody:** Full interaction with forces and collisions in the game world, making the shuriken behave naturally in different scenarios.
-
-### XR Interaction
-
-The shuriken uses the **XR Grab Interactable Two Attach** script, which allows for VR interaction:
-- **Interaction Mode:** Set to **Single**, meaning only one interaction (e.g., grabbing or throwing) can happen at a time.
-
-### Movement and Responsiveness
-- **Instantaneous Movement:** The shuriken responds immediately when grabbed or thrown, providing sharp, precise control.
-- **Position and Rotation Tracking:** It tracks position and rotation for accurate handling, with no smoothing for immediate responsiveness.
-- **Throw Smoothing:** Slight smoothing is applied upon throwing to create a more natural flight trajectory.
-
-## Placement and Accessibility
+The **Shuriken** are used as a throwable weapon in our VR game *SuperNot*. Tagged as a Weapon and using a prefab, its size is scaled up for a larger appearance. A Rigidbody component is added to handle physics with a standard mass, no drag, and slight angular drag, allowing the shuriken to spin realistically while gradually slowing. Gravity is turned off to keep it on a course of flight for controlled, precise throws. Collision Detection is set to Discrete for efficient handling of interactions. The Rigidbody is dynamic, enabling full interaction with forces and collisions in the game.The **XR Grab Interactable Two Attach** script allows for VR interaction, enabling the shuriken to be grabbed and thrown within the VR environment. The interaction mode is set to Single, allowing only one action or focus at a time.The movement of the shuriken is Instantaneous. It immediately responds on the instant of grabbing or throwing it. It tracks position and rotation for precise control, with no smoothing for sharp responsiveness. Slight smoothing upon throw gives a more natural trajectory.The shurikens are positioned on tables across the labs, placed conveniently for quick access. This setup ensures that grabbing and throwing them is intuitive, fitting smoothly into the flow of combat without breaking the pace. The technical integration makes these launchable knife shurikens a dynamic and satisfying tool for taking down enemies in the game.This setup keeps the shuriken intuitive, responsive, and accurate-pretty versatile and effective as a throwable weapon in-game.
 
 ![image](https://github.com/user-attachments/assets/65a23e46-782a-45f8-bfdc-bf76c554f654)
 
 
 - The shurikens are placed on tables across the labs, positioned for quick and easy access. This setup ensures that players can grab and throw them without interrupting the flow of combat, keeping the gameplay smooth and intuitive.
 
-## Purpose and Effectiveness
-
-The technical integration of the shuriken makes it:
-- **Intuitive** and **responsive**, with sharp control over movement and positioning.
-- **Accurate**, providing players with reliable precision when throwing the weapon.
-- **Versatile** and **effective** in combat, adding a dynamic, satisfying tool for taking down enemies.
-
-This configuration ensures the shuriken is an engaging and functional weapon that enhances the player experience in *SuperNot*.
 
 
 # Knife 
 
-The **Knife** is a weapon in the VR game, providing dynamic interaction and realistic physics to enhance the player’s combat experience.
-
-## Knife Features
-
 ![image](https://github.com/user-attachments/assets/62932291-48a4-4fe8-9bb3-0ab426056d75)
 
+In Unity, the **Knife** object has been set up to be a usable weapon for the VR game. It has been tagged as a Weapon and set to the Default layer, while its size is left to default scale. It adds a Rigidbody component, which allows it to interact with physics; its mass is set to standard, and it has no drag, but slight angular drag allows it to naturally spin or tilt and also slow down rotation over time. It has gravity turned on to make sure it falls when let loose. Its Rigidbody is set to Dynamic and the collision detection to Discrete for efficiency; thus, no constraints have been set, and that will make the knife free to move.To enable interaction in VR, the **XR Grab Interactable Two Attach** script allows the knife to be picked up and manipulated, supporting two-handed interactions if needed. It is linked to the XR Interaction Manager, which manages how the object is handled in the VR environment. The Interaction Layer Mask is set to Everything, which allows the knife to interact with any object. Interaction distance is calculated from the Collider Position, with no custom reticle defined; it depends on where the player places his hand. Select Mode and Focus Mode are Single, so only one action or focus is allowed at a time.The movement of the knife is responsive and intuitive, reacting instantaneously to the player's hand movement, tracking position and rotation so that it precisely follows the controller's movements. Both position and rotation have Smoothing disabled to make it sharp and direct during gameplay. When released, the knife can be thrown with slight Throw Smoothing Duration to make it natural yet accurate.This configuration allows the knife to be a very realistic, responsive weapon inside VR because of dynamic physics with precise interaction by the player in close combat and when thrown.
 
-### Tagging and Layer
-- **Tag:** The knife is tagged as a **Weapon** to categorize it within the game.
-- **Layer:** It is set to the **Default** layer.
-
-### Size and Physics Setup
-- **Size:** The knife's size is kept at the default scale.
-- **Rigidbody Component:**
-  - **Mass:** Set to standard, simulating realistic weight.
-  - **Drag:** No drag, allowing the knife to move freely.
-  - **Angular Drag:** Slight angular drag enables the knife to spin or tilt naturally and slow down its rotation over time.
-  - **Gravity:** Turned on to ensure the knife falls when released.
-  - **Dynamic Rigidbody:** Full interaction with physics, allowing the knife to react to forces and collisions.
-  - **Collision Detection:** Set to **Discrete** for efficient collision handling.
-  - **No Constraints:** The knife is free to move without restrictions.
-
-### XR Interaction Setup
-
-- **XR Grab Interactable Two Attach Script:** This script enables the knife to be picked up and manipulated within the VR environment.
-- **XR Interaction Manager:** The knife is linked to the XR Interaction Manager, which handles its interactions in the VR space.
-- **Interaction Layer Mask:** is set to **Everything**, allowing the knife to interact with any object in the environment.
-- **Interaction Distance:** Calculated from the Collider Position, with no custom reticle defined. The interaction range depends on where the player places their hand.
-- **Interaction Modes:**
-  - **Select Mode:** Single, allowing only one action or focus at a time.
-  - **Focus Mode:** Single, ensuring only one focused interaction (such as grabbing or throwing) occurs at a time.
-
-### Movement and Responsiveness
-
-
-
-- **Instantaneous Response:** The knife reacts immediately to the player’s hand movements, tracking both position and rotation for precise control.
-- **No Smoothing for Position and Rotation:** Both position and rotation smoothing are disabled to make the movement sharp and direct, ensuring a responsive gameplay experience.
-- **Throw Smoothing:** A slight smoothing duration is applied when the knife is thrown, making its flight path more natural while maintaining accuracy.
-
-  
-
-## Purpose and Effectiveness
-
-This configuration allows the knife to be:
-- **Realistic** and **responsive** in VR, with dynamic physics that make it react naturally to the player’s actions.
-- **Precise** in both close combat and when thrown, tracking position and rotation for tight control.
-- **Intuitive** to interact with, offering a seamless and engaging experience during gameplay.
-
-![image](https://github.com/user-attachments/assets/cac4a8dd-fde5-427f-80b0-09f4749a0d3c)
-
-
-With these settings, the knife becomes an effective and versatile weapon in the VR game, providing a smooth and satisfying experience in both close-quarter combat and ranged throwing.
 
 ## Bottle
+
+![image](https://github.com/user-attachments/assets/2d0dc403-15c2-407e-966c-9a67bdf857de)
 
 The Unity inspector panel describes the setup of the **Bottle** a weapon created for combat. It's created using a reusable prefab with adjustments for its placement and use in the game. The bottle is small, upright, and scaled to resemble the size of a real whisky bottle. The bottle gets its 3D form from a **Bottle** mesh, together with a sleek and brilliant material called **"black super hot."** It receives shadows for realism, effectively merging into the dynamic lighting of the game to add that glossy look without heavy performance requirements. It also features motion blur for its movements and responds naturally to light in real life for immersive visuals. A **Box Collider** defines its interaction boundaries, and physics settings make it behave correctly, with proper weight and gravity effects, and nice movement when thrown or rolled.
 
