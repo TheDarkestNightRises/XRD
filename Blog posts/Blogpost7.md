@@ -88,11 +88,18 @@ In this method, the code continuously checks for player input, such as whether t
 
 ## Gameplay loop ##
 
-The following script example is the `GameManager` class, which handles key aspects of gameplay, particularly focusing on player input and the management of enemies.
+The following script example is the `GameManager` class, which handles key aspects of gameplay, particularly focusing on player input and the management of enemies and game play loop.
+
+
+![image](https://github.com/user-attachments/assets/ef531288-dd72-4302-ba1f-0bfd1c0e1e70)
+
 
 ## Event Listener
 
 An event listener is set up and bound to player death events. This means that if the character dies during gameplay—such as from combat with enemies—the system will respond to execute an action based on this event to reset.
+
+![image](https://github.com/user-attachments/assets/637079b4-9dc9-430e-9f8a-e73a8e4cfd28)
+
 
 ## GameManager Details
 
