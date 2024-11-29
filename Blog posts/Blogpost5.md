@@ -1,7 +1,22 @@
 # Blogpost 5 #
 
 ## Description ##
+
 ## VR setup ##
+
+VR setup
+
+At the start of the project, we imported the XR Interaction Toolkit library, which provides premade scripts and components made for creating VR games. In Unity, the XR Manager plays a key role by managing XR subsystems and ensuring that the XR environment is properly configured. The XR Origin represents our player.
+
+![image](https://github.com/user-attachments/assets/2e0f183c-72e5-4fb5-ae5d-04db59380552)
+
+To set up locomotion, we added a Locomotion System along with a Continuous Move Provider to allow movement for the XR character. For turning, we added a Continuous Turn Provider, which allows the character to rotate smoothly in either direction. Additionally, the XR Origin includes a Character Controller, which is responsible for managing the player's physical movement and collision detection within the virtual environment. For locomotion, we intentionally chose not to include teleportation or snap turn to avoid potential confusion for the player during gameplay
+
+Each hand is equipped with an XR Controller, which enables hand movement. We also imported custom hand models featuring animations for grabbing and animating each finger. To enable the character to grab objects, the XR Origin contains an Active Ray Interactor, which highlights white when an object is selectable.
+
+This setup ensures immersive and fluid movement for the VR experience.
+
+
 ## Pistol ##
 
 ![image](https://github.com/user-attachments/assets/256af9ce-b48c-4338-8e57-26fa0c241480)
