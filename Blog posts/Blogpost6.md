@@ -22,6 +22,33 @@ The `Punch` method calls the punch animations. The enemy has sphere colliders th
 ## Katana ##
 ## AK47 ##
 ## Grabbables ##
+# VR Object Interaction Script Overview
+
+This Unity script enhances the interaction of VR objects by adding distinctive attachment points for the left and right hands. It enables an object to dynamically switch its attachment point based on which hand grabs it, offering a more natural and intuitive interaction.
+
+## Inheritance from `XRGrabInteractable`
+
+The script inherits from the `XRGrabInteractable` class, which makes the object interactable within the XR (Extended Reality) environment. By doing so, the object can be grabbed and manipulated by the VR controllers.
+
+## Variables
+
+The script defines two variables of type `Transform`:
+- **Left Hand Attachment Point**
+- **Right Hand Attachment Point**
+
+These variables determine where the object will be attached depending on which hand grabs it.
+
+## Object Grab Logic
+
+Upon an object grab, the script checks the tag of the VR controller to identify whether it is the left or right hand. Based on this, the script positions the attachment point accordingly:
+- If the left hand grabs the object, it will be attached to the left hand's specified attachment point.
+- If the right hand grabs it, the object will align with the right hand's attachment point.
+
+## Integration with XR Interaction Toolkit
+
+This script integrates smoothly with Unity's XR Interaction Toolkit, making it simple to implement and providing a seamless, intuitive, and natural in-VR interaction experience with hand motions.
+
+
 ## Enemy death ##
 Killing enemies should be satysfying and rewarding, especially in a game with shooting mechanics. Similar to SuperHot we created a shattering effect with VFX particles and replaceble body parts. <br>
 ![image](https://github.com/user-attachments/assets/75fc38ed-5194-4504-ad71-b392df1234ad) <br>
