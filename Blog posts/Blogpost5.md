@@ -23,7 +23,7 @@ This setup ensures immersive and fluid movement for the VR experience.
 
 ## Pistol ##
 
-![image](https://github.com/user-attachments/assets/256af9ce-b48c-4338-8e57-26fa0c241480)
+![image](https://github.com/user-attachments/assets/db196bf0-b38f-47f6-b01d-4d116d47d1c7)
 
 
 The **Pistol** object in this case defines both the functionality and physical properties of a pistol for use in *SuperNot* game. The name of the object is "Pistol", attached to a prefab, and no overrides are applied. No tag has been added to it, nor is it assigned to any layer. Its position is set in the game world, no rotation applied, and a scale to size it accordingly. A **Box Collider** component is applied to define the physical bounds of the pistol for collision detection. The collider is small, with slight offsets, and is set to be a solid object rather than a trigger.  
