@@ -52,6 +52,21 @@ Opposite these tables, **screens flicker** with constantly refreshed data, givin
 
 
 ## Main menu ##
+
+The main menu in *Super Not* is very **minimalistic**. At the top, the title of the game, *Super Not*, is written in a **neat, round white font** that is both easy to read and eye-catching. The smooth, modern curves of the letters give it a **futuristic feel**, standing out clearly against the darker background.
+
+Below the title, there are two buttons: **Start** and **Quit**.
+
+- The **Start** button is white. On hover, it brightens, glowing blue to indicate that it’s ready to be clicked.  
+- The **Quit** button, in contrast, has a more **urgent appearance**, and when hovered it draws attention immediately with its red color.
+
+The contrast between the buttons creates a smooth, **intuitive experience**. It’s easy to see which button is selected, and the entire menu feels **responsive**, guiding players through the options without being distracting. 
+
+This simple yet effective design makes navigating the menu feel seamless and engaging.
+
+
+
+
 ## Gameplay loop ##
 ## Reset ##
 ## Performance ##
