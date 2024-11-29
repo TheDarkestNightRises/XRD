@@ -39,4 +39,10 @@ The `BallisticVelocityVector` calculates the required velocity for the gun to cr
 This method is using a projectile motion formnula. It uses the positions of the source and target, adjusts for height differences, and applies a specified launch angle to compute the velocity. 
 The method ensures the object follows a parabolic trajectory by factoring in gravity and trigonometric calculations, resulting in a natural throw. 
 To learn more on how this effect can be acheived I will link this video, because it will take me a lot of time to explain this: https://www.youtube.com/watch?v=8NLzuURxFwY&t=708s
+
 ## Time manager ## 
+
+This TimeManager script adjusts the game's time scale based on the player's movement, just like in the original game "Super Hot". The script calculates the speed magnitude based on the movement of the hands and head. To prevent a complete freeze we have set a minimum time scale. Time.fixedDeltaTime is also adjusted to match the time scale, ensuring smooth gameplay. This script is attached to each scene to apply the slowing down of time. 
+
+![image](https://github.com/user-attachments/assets/f2ff38b6-47d7-440d-a22f-f04172f6ca99)
+
