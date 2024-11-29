@@ -27,6 +27,15 @@ to check if collides with a bullet. On collision, it destroys the bullet object.
 ![image](https://github.com/user-attachments/assets/d37b199e-8483-43d7-a439-40a0e1cf78e9)
 
 ## AK47 ##
+
+AK47 known also as "Avtomat Kalashnikova" it's a weapon from 1947 that is commonly used in games. It's an atypical weapon from the other since it uses two grabbing points. 
+
+![image](https://github.com/user-attachments/assets/5720c7ad-6dce-41c2-bbe6-d291a46a1aec)
+
+To make that possible the "XR Grab Interactible" script was used with an "attach transform" and an "secondary attach transform".
+
+![image](https://github.com/user-attachments/assets/78c8e316-6c45-43e4-98e1-1dcf256d4006)
+
 ## Grabbables ##
 
 ![image](https://github.com/user-attachments/assets/dff595eb-d3eb-420c-873f-5c8bc573d75c)
