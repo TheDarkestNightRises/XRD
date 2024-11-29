@@ -136,9 +136,13 @@ The **Knife** is a weapon in the VR game, providing dynamic interaction and real
 
 ### Movement and Responsiveness
 
+
+
 - **Instantaneous Response:** The knife reacts immediately to the player’s hand movements, tracking both position and rotation for precise control.
 - **No Smoothing for Position and Rotation:** Both position and rotation smoothing are disabled to make the movement sharp and direct, ensuring a responsive gameplay experience.
 - **Throw Smoothing:** A slight smoothing duration is applied when the knife is thrown, making its flight path more natural while maintaining accuracy.
+
+  
 
 ## Purpose and Effectiveness
 
@@ -152,6 +156,9 @@ This configuration allows the knife to be:
 
 With these settings, the knife becomes an effective and versatile weapon in the VR game, providing a smooth and satisfying experience in both close-quarter combat and ranged throwing.
 
+## Bottle
+
+The Unity inspector panel describes the setup of the **Bottle** a weapon created for combat. It's created using a reusable prefab with adjustments for its placement and use in the game. The bottle is small, upright, and scaled to resemble the size of a real whisky bottle. The bottle gets its 3D form from a **Bottle** mesh, together with a sleek and brilliant material called **"black super hot."** It receives shadows for realism, effectively merging into the dynamic lighting of the game to add that glossy look without heavy performance requirements. It also features motion blur for its movements and responds naturally to light in real life for immersive visuals. A **Box Collider** defines its interaction boundaries, and physics settings make it behave correctly, with proper weight and gravity effects, and nice movement when thrown or rolled.
 
 
 
