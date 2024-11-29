@@ -11,6 +11,8 @@ The **Pistol** object in this case defines both the functionality and physical p
 
 The pistol has a **Rigidbody** component attached to it, which enables the pistol to interact with Unity's physics. It has a standard mass and low angular drag to provide some resistance to rotation. Gravity is turned on, so if the pistol is not supported, it will fall. Its collision detection is discrete; the object is not marked as kinematic, meaning it will respond to physical forces in the game world.  
 
+![image](https://github.com/user-attachments/assets/01a1042a-a734-448f-a4bd-478d4f19f498)
+
 A custom script named **FireBullet** has been created to handle the shooting mechanics. It references a bullet prefab and an exact spawn point at which bullets are instantiated. The bullets are given a set speed, and an audio clip is played through an attached Audio Source component when the pistol is fired. A particle system is also used to create a muzzle flash for the pistol, providing visual feedback whenever the pistol is fired.  
 
 This setup will ensure that the pistol will have realistic physics interactions, be able to fire projectiles complete with sound and visual effects, making it a fully functional weapon in the VR game environment.
