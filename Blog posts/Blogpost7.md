@@ -26,7 +26,9 @@ On the **right side**, three tables are arranged with weapons, such as shuriken 
 
 The room combines the **silence of scientific research** with the **anticipation of battle**, drawing attention to its clean-cut design and the shooting action.
 
+![image](https://github.com/user-attachments/assets/181a8127-7c21-4f35-b129-0502b5b050c5)
 
+![image](https://github.com/user-attachments/assets/85031a29-02a1-4ea9-9d3c-aa26ca721b92)
 
 
 ## Main menu ##
