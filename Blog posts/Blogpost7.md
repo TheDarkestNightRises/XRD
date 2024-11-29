@@ -1,14 +1,14 @@
 # Blogpost 7 #
 ## Description ##
 
-We have added 3 different types of levels to the game: warehouse levels, science laboratory levels, and playground levels. Each of them has unique aspects and the features of the games were evenly split between them. We have also added a main menu to be able to replay and exit the game. As a last update, we tried to optimize the game performance by using baked lighting, URP rendering, occlusion culling and reduce the level objects
+We have added 3 different types of levels to the game: warehouse levels, science laboratory levels, and playground levels. Each of them has unique aspects and the features of the games were evenly split between them. We have also added a main menu to be able to replay and exit the game. As a last update, we tried to optimize the game performance by using baked lighting, URP rendering, occlusion culling, and reducing the level objects
 ## Level design ##
 
 ### Warehouse level ###
 ![image](https://github.com/user-attachments/assets/eb008d05-9377-4cf8-970b-7551c45668b8)
 ![image](https://github.com/user-attachments/assets/f704cafa-e326-4e3b-b65e-8be262b9c7d8)
-The warehouse levels are inspired from the stark and gritty aesthetics of SuperHot. The sound of pipes in the background makes the player feel uneasy and confused.
-The white material attached on each object represents a great contrast to the blood, enemy and shotting guns. Each level is intricately connected, forming a seamless progression through an abstract, minimalist maze. In the first level, glimpses of the second are visible, providing a sense of continuity and foreshadowing the challenges ahead 
+The warehouse levels are inspired by the stark and gritty aesthetics of SuperHot. The sound of pipes in the background makes the player feel uneasy and confused.
+The white material attached to each object represents a great contrast to the blood, enemy, and shooting guns. Each level is intricately connected, forming a seamless progression through an abstract, minimalist maze. In the first level, glimpses of the second are visible, providing a sense of continuity and foreshadowing the challenges ahead 
 
 ### Science Laboratory ###
 
@@ -26,7 +26,7 @@ The sci-fi scene doesn’t distract from the weapons; instead, it contrasts perf
 
 The design of the science laboratory 2 has a strongly high-tech, science-fiction feel like a blend of research and danger. Along the left wall stand three cameras, tall and pulsing with light. Around the room, various tools and objects enhance the atmosphere, emphasizing advanced experimentation.
 
-On the right side, three tables are arranged with weapons, such as shuriken pistol and knives. They can be grasped and used against oncoming enemies. Some experimental glass capsule with grey and green accents surround the area. 
+On the right side, three tables are arranged with weapons, such as shuriken pistols and knives. They can be grasped and used against oncoming enemies. Some experimental glass capsules with grey and green accents surround the area. 
 Mystery emanates from various raised platforms that surround the room. Glowing lights and complicated panels adorning these platforms suggest they might be devices for generating enemies  or, at the very least, something bad is about to unfold for the player. While some of the platforms are purely cosmetic, others give the entire space a fight atmosphere.
 
 The room combines the silence of scientific research with the anticipation of battle, drawing attention to its clean-cut design and the shooting action.
@@ -39,9 +39,9 @@ The room combines the silence of scientific research with the anticipation of ba
 ## Science Laboratory 3
 
 In Laboratory 3 I wanted to make the player perceive to be immersed in a state of controlled chaos, where everything has its place. The space is lined with cabinets, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests tension, as though something is hidden just out of sight, adding to the mystery.
-In addition to that, there are three enemies scattered across the room—one armed with pistol or trying to punch the player. Their movements are calculated. The entire scene feels like a set-up. It's a place where precision and strategy mean everything, where every decision may determine either life or death for the player.
+In addition to that, there are three enemies scattered across the room—one armed with a pistol or trying to punch the player. Their movements are calculated. The entire scene feels like a set-up. It's a place where precision and strategy mean everything, where every decision may determine either life or death for the player.
 Near the center are three tables, each with weapons ready to be grasped. Knives, lie beside the shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
-Opposite these tables, there is a screen that would flicker with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a door stands ajar, revealing a row of cameras that appear to control the space, giving the feeling that full control over the environment is being exerted by someone or something.
+Opposite these tables, there is a screen that flickers with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a door stands ajar, revealing a row of cameras that appear to control the space, giving the feeling that full control over the environment is being exerted by someone or something.
 
 ![image](https://github.com/user-attachments/assets/e0719583-892f-4d5d-b643-dffb29ddca7a)
 
@@ -95,7 +95,7 @@ In the Update() method, the code continuously checks for player input, such as w
 
 ## Gameplay loop ##
 
-The following script shows the GameManager class, which handles key aspects of the gameplay, particularly focusing on player input and the management of enemies and game play loop.
+The following script shows the GameManager class, which handles key aspects of the gameplay, particularly focusing on player input the management of enemies, and the gameplay loop.
 
 ![image](https://github.com/user-attachments/assets/ef531288-dd72-4302-ba1f-0bfd1c0e1e70)
 
@@ -104,11 +104,11 @@ An event listener is set up and bound to player death events. This means that if
 ![image](https://github.com/user-attachments/assets/637079b4-9dc9-430e-9f8a-e73a8e4cfd28)
 
 The GameManager starts by declaring private variables: first, a reference to the player character, which is important for controlling gameplay mechanics; and then the Fog Manager, which plays a role in managing environmental effects like visibility.
-There is also an Active Enemy Count that also keeps track of the active enemies in the scene using two integer variables:
+There is also an Active Enemy Count that keeps track of the active enemies in the scene using two integer variables:
 one counts the original enemies created at the start, while the other tracks the number of enemies defeated throughout gameplay.
 Inside the start() method, which runs automatically when the game starts, Unity's functionality is used to find all objects in the scene that derive from EnemyBase. This helps count instances of enemies immediately. The first count helps balance the game, ensuring the player understands the number of enemies they are facing.
 the code transitions to the next level using the GoToNextLevel method, which determines the next scene to load. It gets the current scene's index, increments it, and checks whether it is the last scene. If it is, it loops back to the first scene. The new scene is then loaded using SceneManager.LoadScene. Supporting methods, such as HandleNextLevelTransition, handle tasks like clearing fog via fogManager.ClearFog before moving to the next level.
-The GameManager plays a crucial role in orchestrating various game elements. Both directly and indirectly, it enhances the user experience while ensuring smooth gameplay operation across different sessions.
+The Game Manager plays a crucial role in orchestrating various game elements. Both directly and indirectly, it enhances the user experience while ensuring smooth gameplay operation across different sessions.
 
 
 
@@ -127,19 +127,19 @@ Each entity such as player, enemy, or weapon has its resettable manager which in
 ![image](https://github.com/user-attachments/assets/3cc3b383-9d25-429d-98e0-cff89dcc77d0)
 
 ## Performance ##
-Performance is really important for VR experiences. Any lag or input delay could massively impact the experience and shatter the illusion. VR headsets also have hardware limitations, which means that we need to take a few things into consideration. To improve performance we did the following:
+Performance is really important for VR experiences. Any lag or input delay could massively impact the experience and shatter the illusion. VR headsets also have hardware limitations, which means that we need to consider a few things. To improve performance we did the following:
 #### Lighting ####
-For the lighting we used subtractive shadows because they pre-calculate shadow details and apply them as a static layer to the scene, reducing the need for complex real-time calculations. In the scene all the light are set to baked. The environment was set to static to improve performance and the models were set to receive UV lightmaps. By clicking on the generate lighing we can generate lights for the scene and then we can store them in a map in the scene folder.
+For the lighting we used subtractive shadows because they pre-calculate shadow details and apply them as a static layer to the scene, reducing the need for complex real-time calculations. In the scene, all the lights are set to bake. The environment was set to static to improve performance and the models were set to receive UV lightmaps. By clicking on the generate lighting we can generate lights for the scene and then we can store them in a map in the scene folder.
 ![image](https://github.com/user-attachments/assets/62357399-49e4-4e2c-abc6-9fa639f92690)
 #### Quality ####
-Unfortunately VR headsets don't have a lot of hardware power when it comes to rendering. We disabled the VCount sync as well as setting the build quality to balanced. At first we used the built in render pipeline but then we switched to URP for the perfomance gains it uses. In older versions of the game we had also postprocessing but we disabled it because it was too slow for the VR experience. 
+Unfortunately, VR headsets don't have a lot of hardware power when it comes to rendering. We disabled the VCount sync as well as set the build quality to balanced. At first, we used the built-in render pipeline but then we switched to URP for the performance gains it uses. In older versions of the game we had also postprocessing but we disabled it because it was too slow for the VR experience. 
 ![image](https://github.com/user-attachments/assets/06269a40-50fe-4705-be06-eff6333efb62)
 #### Oclusion ####
-Using oclusion is a powerful performance tool, because it renders only the objects that are visible to the screen. If any objects hide behind something, then that object will not be rendered. All levels contain clusion set on the main camera of the player.
+Using occlusion is a powerful performance tool because it renders only the objects that are visible to the screen. If any object hides behind something, then that object will not be rendered. All levels contain caution set on the main camera of the player.
 #### Level design ####
 Initially, we created large levels for players to explore and fight enemies, but this proved too demanding for the VR headset. To optimize performance, we significantly reduced the size of the levels, creating a more confined and claustrophobic experience. Additionally, we selected assets with fewer vertices to further improve performance.
 #### Physics ####
-Our game uses a lot of physics. Setting the time to be slower is unfortunately a huge performance problem. We also encountered a very annoying bug where the process responsible for setting the fixed delta time to normal would get stuck, making the game very slow on every scene load. Because this process takes a lot of time , the game would run slower and slower progressively. We didn't find a fix for this, but we hope Unity will fix this at some point with later releases since there is no issue with any code written.
+Our game uses a lot of physics. Setting the time to be slower is unfortunately a huge performance problem. We also encountered a very annoying bug where the process responsible for setting the fixed delta time to normal would get stuck, making the game very slow on every scene load. Because this process takes a lot of time, the game would run slower and slower progressively. We didn't find a fix for this, but we hope Unity will fix this at some point with later releases since there is no issue with any code written.
 
 
 
