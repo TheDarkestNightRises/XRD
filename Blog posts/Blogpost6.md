@@ -50,11 +50,15 @@ Upon an object grab, the script checks the tag of the VR controller to identify 
 
 This script integrates smoothly with Unity's XR Interaction Toolkit, making it simple to implement and providing a seamless, intuitive, and natural in-VR interaction experience with hand motions.
 
-# Shuriken 
+## Shuriken 
 
-This image shows the configuration of the **Shuriken** object, a throwable weapon used in the VR game *SuperNot*. The shuriken is designed for intuitive VR interaction and provides a satisfying combat experience for players.
+The image shows the configuration of the **Shuriken** object, a throwable weapon used in the VR game *SuperNot*. The shuriken is designed for intuitive VR interaction and provides a satisfying combat experience for players.
+
+![image](https://github.com/user-attachments/assets/cfaf9aee-ea18-4d8f-80b5-b55908ee039c)
+
 
 ## Shuriken Features
+
 
 ### Tagging and Prefab
 - **Tag:** The shuriken is tagged as a **Weapon** for easy identification within the game.
@@ -81,6 +85,8 @@ The shuriken uses the **XR Grab Interactable Two Attach** script, which allows f
 - **Throw Smoothing:** Slight smoothing is applied upon throwing to create a more natural flight trajectory.
 
 ## Placement and Accessibility
+
+
 
 - The shurikens are placed on tables across the labs, positioned for quick and easy access. This setup ensures that players can grab and throw them without interrupting the flow of combat, keeping the gameplay smooth and intuitive.
 
