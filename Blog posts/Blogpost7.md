@@ -39,17 +39,24 @@ The room combines the **silence of scientific research** with the **anticipation
 
 ## Science Laboratory 3
 
-In the Laboratory 3 I wanted to make the player perceive to be immersed in a state of **controlled chaos**, where everything has its place. The space is lined with **cabinets**, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests **tension**, as though something is hidden just out of sight, adding to the mystery.
+In Laboratory 3 I wanted to make the player perceive to be immersed in a state of **controlled chaos**, where everything has its place. The space is lined with **cabinets**, with a sharp design cutting through the flow of the room. These cabinets disrupt the rhythm in a way that suggests **tension**, as though something is hidden just out of sight, adding to the mystery.
 
-In addittion to that, there are three enemies scattered across the room—one armed with pistols or trying to punch the player. Their movements are calculated. The entire scene feels like a **set-up**. It's a place where **precision and strategy** mean everything, where every decision may determine either life or death for the player.
+In addition to that, there are three enemies scattered across the room—one armed with pistol or trying to punch the player. Their movements are calculated. The entire scene feels like a **set-up**. It's a place where **precision and strategy** mean everything, where every decision may determine either life or death for the player.
 
-Near the center are three tables, each with weapons ready to be grasped. **Knives**, lie beside shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
+Near the center are three tables, each with weapons ready to be grasped. **Knives**, lie beside the shuriken and there is also a pistol to shoot the enemies. Each item seems capable of delivering a deadly strike.
 
 Opposite these tables, **screens flicker** with constantly refreshed data, giving the impression that the entire environment is being watched by unseen eyes. On the far side of the room, a **door stands ajar**, revealing a row of cameras that appear to control the space, giving the feeling that **full control** over the environment is being exerted by someone—or something.
 
 ![image](https://github.com/user-attachments/assets/e0719583-892f-4d5d-b643-dffb29ddca7a)
 
 ![image](https://github.com/user-attachments/assets/e7f04f24-bfa6-4428-b5d7-c22635d07e4b)
+
+## Playground Level 1
+
+The first playground-level purpose is to test the quick reflections of the player. The popular scene inspires it with 2 men at the table and only one gun in the middle. To adapt it to the current game mechanics, the enemy already has a gun, and the player needs to be quick enough to grab it from the table and shoot the enemy down.
+
+![image](https://github.com/user-attachments/assets/03c3a0fe-b1ac-4eb1-a7ff-e5443f77c047)
+
 
 
 ## Main menu ##
