@@ -65,6 +65,11 @@ The second playground level represents a coordinated attack from 3 different ene
 
 ![image](https://github.com/user-attachments/assets/d5de9c44-32eb-4a48-9e2a-19c8a0251900)
 
+## Playground Level 3 
+
+The third playground level is inspired by a scene from "Rambo" where the player has to let it all out in the form of rage and use the AK47 to destroy the enemies.
+
+![image](https://github.com/user-attachments/assets/751575f2-f717-4702-b4ef-f85176a57121)
 
 ## Main menu ##
 
