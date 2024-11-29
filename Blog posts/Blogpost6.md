@@ -22,7 +22,11 @@ The `Punch` method calls the punch animations. The enemy has sphere colliders th
 ## Katana ##
 ## AK47 ##
 ## Grabbables ##
-# VR Object Interaction Script Overview
+
+![image](https://github.com/user-attachments/assets/dff595eb-d3eb-420c-873f-5c8bc573d75c)
+
+
+## VR Object Interaction Script Overview
 
 This Unity script enhances the interaction of VR objects by adding distinctive attachment points for the left and right hands. It enables an object to dynamically switch its attachment point based on which hand grabs it, offering a more natural and intuitive interaction.
 
