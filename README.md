@@ -10,6 +10,8 @@ Welcome to the **XRD** repository! This repository features two projects made du
 
 ## 🏛️ History AR Portal
 
+[Showcase](https://www.youtube.com/shorts/lzTBki-EZZ0)
+
 **History AR Portal** lets you travel through time. Step into different eras like the age of dinosaurs, ancient civilizations, or the Renaissance, all through interactive augmented reality.
 
 ## 📚 Blogposts
