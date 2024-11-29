@@ -2,6 +2,8 @@
 
 ## Description ##
 
+We integrated essential VR mechanics, including smooth locomotion, and grabbing functionalities. A pistol was added with realistic physics, firing effects, and sound. We have added an enemy gunner that features AI-driven movement, combat behaviors, and ragdoll effects. Additionally, we have implemented a TimeManager script that replicates Superhot's time-slowing mechanic.
+
 ## VR setup ##
 
 At the start of the project, we imported the XR Interaction Toolkit library, which provides premade scripts and components made for creating VR games. In Unity, the XR Manager plays a key role by managing XR subsystems and ensuring that the XR environment is properly configured. The XR Origin represents our player.
