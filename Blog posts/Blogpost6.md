@@ -147,6 +147,9 @@ This configuration allows the knife to be:
 - **Precise** in both close combat and when thrown, tracking position and rotation for tight control.
 - **Intuitive** to interact with, offering a seamless and engaging experience during gameplay.
 
+![image](https://github.com/user-attachments/assets/cac4a8dd-fde5-427f-80b0-09f4749a0d3c)
+
+
 With these settings, the knife becomes an effective and versatile weapon in the VR game, providing a smooth and satisfying experience in both close-quarter combat and ranged throwing.
 
 
