@@ -160,6 +160,7 @@ With these settings, the knife becomes an effective and versatile weapon in the 
 
 The Unity inspector panel describes the setup of the **Bottle** a weapon created for combat. It's created using a reusable prefab with adjustments for its placement and use in the game. The bottle is small, upright, and scaled to resemble the size of a real whisky bottle. The bottle gets its 3D form from a **Bottle** mesh, together with a sleek and brilliant material called **"black super hot."** It receives shadows for realism, effectively merging into the dynamic lighting of the game to add that glossy look without heavy performance requirements. It also features motion blur for its movements and responds naturally to light in real life for immersive visuals. A **Box Collider** defines its interaction boundaries, and physics settings make it behave correctly, with proper weight and gravity effects, and nice movement when thrown or rolled.
 
+![image](https://github.com/user-attachments/assets/a0af0847-6ab4-44b5-848e-78b0316b5262)
 
 
 ## Enemy death ##
