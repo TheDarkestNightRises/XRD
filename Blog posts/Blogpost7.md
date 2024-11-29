@@ -21,6 +21,7 @@ The scifi scene doesn't distract from the weapons; instead, it contrasts perfect
 ![image](https://github.com/user-attachments/assets/9c33b8c2-3054-4be7-9c44-1d52940891c3)
 
 
+
 ## Science Laboratory 2
 
 The room has a strongly **high-tech, science-fiction feel**—a blend of research and danger. Along the **left wall** stand three **cameras**, tall and pulsing with light. Around the room, various tools and objects enhance the atmosphere, emphasizing advanced experimentation.
@@ -68,6 +69,18 @@ This simple yet effective design makes navigating the menu feel seamless and eng
 
 ![image](https://github.com/user-attachments/assets/183dcb5e-c25d-48a0-993b-6d7faee74d1a)
 
+
+# MenuManager Code Overview
+
+This code creates a class, `MenuManager`, which is responsible for managing the menu in the game. It is designed to show and hide the menu at appropriate times. The script is attached to a GameObject in Unity, and as it inherits from `MonoBehaviour`, it interacts with Unity's events, such as when the game starts.
+
+## Methods
+
+### `Start()`
+When the game starts, `Start()` is called. This is where the initialization happens, such as ensuring that the main menu is visible at the start or that some UI elements are ready.
+
+### `Update()`
+In this method, the code continuously checks for player input, such as whether the player has pressed a button to start the game. It tracks these inputs and updates the menu's state accordingly.
 
 
 ## Gameplay loop ##
