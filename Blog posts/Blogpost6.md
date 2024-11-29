@@ -48,9 +48,52 @@ Upon an object grab, the script checks the tag of the VR controller to identify 
 - If the left hand grabs the object, it will be attached to the left hand's specified attachment point.
 - If the right hand grabs it, the object will align with the right hand's attachment point.
 
-## Integration with XR Interaction Toolkit
-
 This script integrates smoothly with Unity's XR Interaction Toolkit, making it simple to implement and providing a seamless, intuitive, and natural in-VR interaction experience with hand motions.
+
+# Shuriken 
+
+This image shows the configuration of the **Shuriken** object, a throwable weapon used in the VR game *SuperNot*. The shuriken is designed for intuitive VR interaction and provides a satisfying combat experience for players.
+
+## Shuriken Features
+
+### Tagging and Prefab
+- **Tag:** The shuriken is tagged as a **Weapon** for easy identification within the game.
+- **Prefab:** The object uses a prefab for consistency and easy reuse throughout the game.
+
+### Size and Physics Setup
+- **Size:** The shuriken’s size is scaled up for a larger, more noticeable appearance, making it easier for players to grab and throw.
+- **Rigidbody Component:** 
+  - **Mass:** Standard mass to simulate realistic weight and physics.
+  - **Drag:** No drag, allowing the shuriken to move freely through the air.
+  - **Angular Drag:** Slight angular drag enables the shuriken to spin realistically, gradually slowing over time.
+  - **Gravity:** Turned off to keep the shuriken on a controlled flight path, allowing for precise throws.
+  - **Collision Detection:** Set to **Discrete** for efficient interaction with other objects and characters.
+  - **Dynamic Rigidbody:** Full interaction with forces and collisions in the game world, making the shuriken behave naturally in different scenarios.
+
+### XR Interaction
+
+The shuriken uses the **XR Grab Interactable Two Attach** script, which allows for VR interaction:
+- **Interaction Mode:** Set to **Single**, meaning only one interaction (e.g., grabbing or throwing) can happen at a time.
+
+### Movement and Responsiveness
+- **Instantaneous Movement:** The shuriken responds immediately when grabbed or thrown, providing sharp, precise control.
+- **Position and Rotation Tracking:** It tracks position and rotation for accurate handling, with no smoothing for immediate responsiveness.
+- **Throw Smoothing:** Slight smoothing is applied upon throwing to create a more natural flight trajectory.
+
+## Placement and Accessibility
+
+- The shurikens are placed on tables across the labs, positioned for quick and easy access. This setup ensures that players can grab and throw them without interrupting the flow of combat, keeping the gameplay smooth and intuitive.
+
+## Purpose and Effectiveness
+
+The technical integration of the shuriken makes it:
+- **Intuitive** and **responsive**, with sharp control over movement and positioning.
+- **Accurate**, providing players with reliable precision when throwing the weapon.
+- **Versatile** and **effective** in combat, adding a dynamic, satisfying tool for taking down enemies.
+
+This configuration ensures the shuriken is an engaging and functional weapon that enhances the player experience in *SuperNot*.
+
+
 
 
 ## Enemy death ##
