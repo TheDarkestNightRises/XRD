@@ -36,6 +36,10 @@ To make that possible the "XR Grab Interactible" script was used with an "attach
 
 ![image](https://github.com/user-attachments/assets/78c8e316-6c45-43e4-98e1-1dcf256d4006)
 
+To be able to fire from it the AK47 has an "AK47 Fire" script. The Fire method stores the last fire time to ensure the fire rate of the AK47. Then spawns a new bullet prefab at the gun's spawn point and applies velocity in the forward direction using the Rigidbody component. For a better performance, the bullets are destroyed automatically after 5 seconds.
+
+![image](https://github.com/user-attachments/assets/118887f0-8034-4df2-808f-e23227c52dca)
+
 ## Grabbables ##
 
 ![image](https://github.com/user-attachments/assets/dff595eb-d3eb-420c-873f-5c8bc573d75c)
