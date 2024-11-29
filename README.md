@@ -2,7 +2,9 @@
 
 Welcome to the **XRD** repository! This repository features two projects made during the XRD course.
 
-## ⏳ SuperNot
+## ⏳ SuperNot 
+
+[Showcase](https://www.youtube.com/watch?v=7Vvzaf-PJlI&ab_channel=AndreiLichi)
 
 **SuperNot** is a fast-paced VR shooter inspired by *SuperHot*. Time only moves when you move, making every decision critical in this game.
 
