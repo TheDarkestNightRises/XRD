@@ -16,6 +16,19 @@ The scifi scene doesn't distract from the weapons; instead, it contrasts perfect
 ![image](https://github.com/user-attachments/assets/9c33b8c2-3054-4be7-9c44-1d52940891c3)
 
 
+## Science Laboratory 2
+
+The room has a strongly **high-tech, science-fiction feel**—a blend of research and danger. Along the **left wall** stand three **cameras**, tall and pulsing with light. Around the room, various tools and objects enhance the atmosphere, emphasizing advanced experimentation.
+
+On the **right side**, three tables are arranged with weapons, such as shuriken pistol and knives. They can be grasped and used against oncoming enemies. Some experimental glass capsule with grey and green accents surround the area. 
+
+**Mystery emanates** from various **raised platforms** that surround the room. **Glowing lights** and **complicated panels** adorning these platforms suggest they might be devices for generating enemies—or, at the very least, something bad is about to unfold for the player. While some of the platforms are purely cosmetic, others give the entire space a fight atmosphere.
+
+The room combines the **silence of scientific research** with the **anticipation of battle**, drawing attention to its clean-cut design and the shooting action.
+
+
+
+
 ## Main menu ##
 ## Gameplay loop ##
 ## Reset ##
