@@ -1,6 +1,9 @@
 # Blogpost 7 #
 ## Description ##
+
+We have added 3 different types of levels to the game: warehouse levels, science laboratory levels, and playground levels. Each of them has unique aspects and the features of the games were evenly split between them. We have also added a main menu to be able to replay and exit the game. As a last update, we tried to optimize the game performance by using baked lighting, URP rendering, occlusion culling and reduce the level objects
 ## Level design ##
+
 ### Warehouse level ###
 ![image](https://github.com/user-attachments/assets/eb008d05-9377-4cf8-970b-7551c45668b8)
 ![image](https://github.com/user-attachments/assets/f704cafa-e326-4e3b-b65e-8be262b9c7d8)
