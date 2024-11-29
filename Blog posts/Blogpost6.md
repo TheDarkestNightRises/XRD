@@ -24,6 +24,7 @@ The `Punch` method calls the punch animations. The enemy has sphere colliders th
 Katana is a Japanese sword and it is one of our weapons that can be used to slice enemies. It has a box collider to be able to make the collision with the enemies. To be able to grab it it has the "XR Grab interactable two attachments" attached to it. That script also lets the user grab the katana in either hand with a different grabbing point. The katana has 2 main functionalities: slice enemies and destroy bullets. To destroy enemies it uses the "On trigger Die script" which uses "OnTriggerEnter" to check if it is colliding with an enemy. For the bullets, it is using the "Destroy Bullet" script which is also using "OnTriggerEnter"
 to check if collides with a bullet. On collision, it destroys the bullet object.
 
+![image](https://github.com/user-attachments/assets/d37b199e-8483-43d7-a439-40a0e1cf78e9)
 
 ## AK47 ##
 ## Grabbables ##
