@@ -74,6 +74,9 @@ This simple yet effective design makes navigating the menu feel seamless and eng
 
 This code creates a class, `MenuManager`, which is responsible for managing the menu in the game. It is designed to show and hide the menu at appropriate times. The script is attached to a GameObject in Unity, and as it inherits from `MonoBehaviour`, it interacts with Unity's events, such as when the game starts.
 
+![image](https://github.com/user-attachments/assets/b74ad39c-bb7d-4c98-8956-851576632c0d)
+
+
 ## Methods
 
 ### `Start()`
