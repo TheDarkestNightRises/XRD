@@ -57,6 +57,13 @@ The first playground-level purpose is to test the quick reflections of the playe
 
 ![image](https://github.com/user-attachments/assets/03c3a0fe-b1ac-4eb1-a7ff-e5443f77c047)
 
+## Playground Level 2
+
+The second playground level represents a coordinated attack from 3 different enemies. The player to defend himself can either jump into a fight of fists or analyze the environment and make use of the katana on the table that is located on the right side of the player
+
+![image](https://github.com/user-attachments/assets/538cffd6-2bb0-433c-af90-aaba3a7c233c)
+
+![image](https://github.com/user-attachments/assets/d5de9c44-32eb-4a48-9e2a-19c8a0251900)
 
 
 ## Main menu ##
