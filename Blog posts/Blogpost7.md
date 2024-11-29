@@ -64,6 +64,9 @@ The contrast between the buttons creates a smooth, **intuitive experience**. Itâ
 
 This simple yet effective design makes navigating the menu feel seamless and engaging.
 
+![image](https://github.com/user-attachments/assets/a0b5d334-8352-470c-8dd0-0a99bcfc2aaf)
+
+![image](https://github.com/user-attachments/assets/183dcb5e-c25d-48a0-993b-6d7faee74d1a)
 
 
 
