@@ -56,7 +56,6 @@ The image shows the configuration of the **Shuriken** object, a throwable weapon
 
 ![image](https://github.com/user-attachments/assets/cfaf9aee-ea18-4d8f-80b5-b55908ee039c)
 
-
 ## Shuriken Features
 
 
@@ -86,6 +85,7 @@ The shuriken uses the **XR Grab Interactable Two Attach** script, which allows f
 
 ## Placement and Accessibility
 
+![image](https://github.com/user-attachments/assets/65a23e46-782a-45f8-bfdc-bf76c554f654)
 
 
 - The shurikens are placed on tables across the labs, positioned for quick and easy access. This setup ensures that players can grab and throw them without interrupting the flow of combat, keeping the gameplay smooth and intuitive.
