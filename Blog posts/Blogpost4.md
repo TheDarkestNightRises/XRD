@@ -14,7 +14,7 @@ The marker component enhances the immersive experience and user interaction by p
 
 ## UpdateMarkerPosition Method
 
-The `UpdateMarkerPosition` method plays a crucial role in keeping the marker accurately positioned. It calculates the center of the screen and performs a raycast to check for valid surfaces below. When it finds a suitable surface, the method updates the marker’s position and rotation to match, ensuring it remains clear and visible for users. If no valid surface is detected, the marker is turned off, giving users straightforward feedback about where they can and cannot place a portal.
+The `UpdateMarkerPosition` method plays a crucial role in keeping the marker accurately positioned. It calculates the center of the screen and performs a ray cast to check for valid surfaces below. When it finds a suitable surface, the method updates the marker’s position and rotation to match, ensuring it remains clear and visible for users. If no valid surface is detected, the marker is turned off, giving users straightforward feedback about where they can and cannot place a portal.
 
 ## OnPress Method
 
