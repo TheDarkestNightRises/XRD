@@ -6,7 +6,7 @@
 ## Enemy Gunner ##
 ![image](https://github.com/user-attachments/assets/1a844cac-a23e-4c68-a184-a318b698d85b) <br>
 The enemy gunner is one of the most prominent enemies in our game. He is using the same script as the pistol that was explained previously and tries to shot down the player by aiming at his head. 
-To create the enemy a 3d model was imported which is similar to the one in SuperHot , a geometrical blob with a bunch of features. 
+To create the enemy a 3d model was imported which is similar to the one in SuperHot , a geometrical blob with a bunch of features. <br>
 ![image](https://github.com/user-attachments/assets/b3eaa08c-1fd8-4cc8-b220-5dcb77e62454) <br>
 The character contains joints for legs, arms , head etc. We first started addin g a ragdoll to the character. 
 When the enemy dies then he could roll over the floor creating an interesting effect. At the start of the game we setup the ragdoll by setting all the rigidbody's in body parts kinematic to true. 
