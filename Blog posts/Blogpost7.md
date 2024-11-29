@@ -143,7 +143,7 @@ To improve the performance of the game and to be able to quickly instantiate the
 
 ![image](https://github.com/user-attachments/assets/9d90cbad-22fd-49de-b882-369f06fa2923)
 
-Then we have created a resettable entity that is actively listening to the "Restable Manager" singleton. 
+Then we have created a resettable that subscribes to the "Restable Manager" singleton. 
 
 ![image](https://github.com/user-attachments/assets/3b12717d-c9b3-492a-b69d-d290900bc02d)
 
