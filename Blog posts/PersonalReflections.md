@@ -9,18 +9,21 @@ It was my first time working with VR and AR templates in Unity and the technolog
 Looking back at the two projects I completed for the XRD subject, I can say they helped me understanding what can be done practically with both VR and AR technologies. 
 One project I have worked on was in VR, which was creating a virtual museum on Leonardo Da Vinci's work on engineering. The purpose was to create an immersive environment where users can experience his inventions in new and innovative ways. One of the most enjoyable aspects was working on the UI design. I loved how the text would appear when users interacted with objects and how, when the camera moved away, the text disappeared. As a matter of fact, I believe it can be seen as very natural, looking at the objects and pointing the camera toward them, adding fluency without intrusiveness to the experience. Finding that balance between delivering information and making sure not to overwhelm the user was a good challenge, but it made the project even more satisfying. What really amazed me with all this was the potential of AR in changing how we learn. It is more than just a virtual environment; it is a place that can build an experience that will enhance education in an engaging way. What I found out was that AR makes learning alive, especially to a younger audience that gets to interact with history and see it in 3D. In this way, it makes complex ideas tangible and exciting. Then in VR, we worked on *SuperNot*, a game in which I chose my part of the environments and weapons, and also made some interactive combat weapons. Working on the evolution of this game from a concept to an executed game has been a huge reward. Freedom to realize something with relatively complex mechanics was given to me since the game had to loop and manage time in a virtual space. Firsthand feelings, rooms, the weapons that one can interact with, gameplay-all that have given a new sense to the feeling of being satisfied by this work. While AR allowed me to explore new ways of presenting and interacting with information, VR gave me the freedom to dive into pure creativity and 3D technology. Now, I can look back and appreciate how much I have grown in both areas and contemplate with excitement the continued possibility spaces that are created with AR and VR. It was an enriching experience working on these projects with my colleagues. It brought out the best from all of us-something amazing, really inspiring, because you see how our various skills and strengths complement each other. Then we brainstormed on solutions, exchanged ideas freely, and shared the excitement to see our work come into being. The dynamic teamwork involved in building both the portal and the game made the journey even more meaningful, and I’m grateful for the opportunity to learn from each other and grow together throughout the projects.
 
-Features I worked on:
-VR: SuperNot
-Science Laboratory
-Science Laboratory 2 
-Science Laboratory 3 
-knife
-shuriken
+## Features I Worked On
 
-AR:Leonardo da Vinci room
-pop up text when camera points at engineering art-pieces
-cubes pedestals
-setting scene
-music
+### VR  
+- SuperNot  
+- Science Laboratory  
+- Science Laboratory 2  
+- Science Laboratory 3  
+- Knife  
+- Shuriken  
+
+### AR  
+- Leonardo da Vinci room  
+- Pop-up text when the camera points at engineering art pieces  
+- Cubes pedestals  
+- Setting scene music  
+
 
 
