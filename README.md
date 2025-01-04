@@ -23,4 +23,4 @@ Welcome to the **XRD** repository! This repository features two projects made du
 - [Blogpost 5](https://github.com/TheDarkestNightRises/XRD/blob/main/Blog%20posts/Blogpost5.md)
 - [Blogpost 6](https://github.com/TheDarkestNightRises/XRD/blob/main/Blog%20posts/Blogpost6.md)
 - [Blogpost 7](https://github.com/TheDarkestNightRises/XRD/blob/main/Blog%20posts/Blogpost7.md)
-
+- [Personal Reflections](https://github.com/TheDarkestNightRises/XRD/blob/main/Blog%20posts/PersonalReflections.md)
